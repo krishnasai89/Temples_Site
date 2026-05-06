@@ -45,16 +45,26 @@ const About = () => {
         },
       });
 
-      // Pillar Cards Animations
-      gsap.from(".pillar-card", {
-        y: 60,
-        opacity: 1,
-        ease: "power2.out",
+      // Pillar Cards Animations (FIXED WITH TIMELINE)
+      const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".pillars-section",
           start: "top 80%",
         },
       });
+
+      tl.fromTo(
+        ".pillar-card",
+        { y: 60, opacity: 0 }, // Explicit starting point
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          stagger: 0.2,
+          ease: "power2.out",
+          clearProps: "all", // Hands control back to Tailwind after animating
+        },
+      );
     },
     { scope: container },
   );
