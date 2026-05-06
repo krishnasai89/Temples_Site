@@ -28,7 +28,7 @@ const storiesData = [
     category: "Mythology",
     excerpt:
       "Discover the epic tale of the churning of the cosmic ocean, where Devas and Asuras united to extract the nectar of immortality, bringing forth divine treasures and cosmic balance.",
-    image: "/Architecture.jpg",
+    image: "/Architectur.jpg",
     readTime: "8 min read",
   },
   {
@@ -37,7 +37,7 @@ const storiesData = [
     category: "Architecture",
     excerpt:
       "Carved from a single massive rock top-down, explore the human ingenuity and divine inspiration behind the awe-inspiring Kailasa Temple of Ellora.",
-    image: "/Architecture.jpg",
+    image: "/Architectur.jpg",
     readTime: "5 min read",
   },
   {
@@ -55,7 +55,7 @@ const storiesData = [
     category: "Bhakti Movement",
     excerpt:
       "The life and poetry of Meera Bai, a mystic poet whose fearless love for Lord Krishna challenged empires and redefined spiritual surrender.",
-    image: "/Architecture.jpg",
+    image: "/Architectur.jpg",
     readTime: "4 min read",
   },
   {

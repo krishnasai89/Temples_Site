@@ -12,19 +12,18 @@ Vishwaguru is an immersive, cinematic web experience dedicated to preserving and
 
 ## ✨ Key Features
 
-* **Cinematic Dark Mode UI:** A premium, glassmorphic design system utilizing deep blacks, slate grays, and glowing cosmic orange accents.
-* **Scroll-Triggered Animations:** Smooth, hardware-accelerated scroll animations powered by **GSAP** and ScrollTrigger, bringing stories and architecture to life as the user scrolls.
-* **Immersive Video Backgrounds:** High-performance, muted autoplay videos (like the Nataraja cosmic dance) that set a profound tone without sacrificing page speed.
-* **Dynamic Routing:** Seamless navigation using Next.js App Router for deep-diving into specific temple details, sacred stories, and classical dances.
-* **Interactive Data Filtering:** A custom, glass-styled masonry grid that allows users to instantly filter ancient temples by category (UNESCO, Jyotirlinga, Char Dham, etc.).
-* **State Preservation:** Engineered with native browser history APIs and session storage to ensure users never lose their scroll position when navigating back from a deep dive.
+- **Cinematic Dark Mode UI:** A premium, glassmorphic design system utilizing deep blacks, slate grays, and glowing cosmic orange accents.
+- **Scroll-Triggered Animations:** Smooth, hardware-accelerated scroll animations powered by **GSAP** and ScrollTrigger, bringing stories and architecture to life as the user scrolls.
+- **Dynamic Routing:** Seamless navigation using Next.js App Router for deep-diving into specific temple details, sacred stories, and classical dances.
+- **Interactive Data Filtering:** A custom, glass-styled masonry grid that allows users to instantly filter ancient temples by category (UNESCO, Jyotirlinga, Char Dham, etc.).
+- **State Preservation:** Engineered with native browser history APIs and session storage to ensure users never lose their scroll position when navigating back from a deep dive.
 
 ## 🛠️ Tech Stack
 
-* **Framework:** [Next.js](https://nextjs.org/) (React) utilizing the App Router
-* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-* **Animations:** [GSAP](https://gsap.com/) (GreenSock Animation Platform) & [Framer Motion](https://www.framer.com/motion/)
-* **Data Handling:** Local JSON architecture for ultra-fast, static data delivery
+- **Framework:** [Next.js](https://nextjs.org/) (React) utilizing the App Router
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Animations:** [GSAP](https://gsap.com/) (GreenSock Animation Platform) & [Framer Motion](https://www.framer.com/motion/)
+- **Data Handling:** Local JSON architecture for ultra-fast, static data delivery
 
 ## 🗺️ Project Structure
 
@@ -44,7 +43,7 @@ vishwaguru/
 │   │   └── [id]/page.jsx     # Deep dive into temple architecture
 │   ├── layout.js             # Root layout with global fonts and Navbar/Footer
 │   └── page.js               # Home page (Hero, About, Temple Showcase)
-├── public/                   # Static assets (Images, Videos, Fonts)
+├── public/                   # Static assets (Images, Fonts)
 └── templesData.json          # Main database for site content
 ```
 
@@ -53,21 +52,25 @@ vishwaguru/
 To run this project locally on your machine:
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/krishnasai89/Temples_Site.git
    ```
 
 2. **Navigate into the directory:**
+
    ```bash
    cd Temples_Site
    ```
 
 3. **Install the dependencies:**
+
    ```bash
    npm install
    ```
 
 4. **Run the development server:**
+
    ```bash
    npm run dev
    ```
@@ -77,10 +80,11 @@ To run this project locally on your machine:
 
 ## 🎨 Design Philosophy (The Yantra)
 
-In Indian classical tradition, the concept of *Yantra* refers to sacred geometry representing the cosmos. This website was designed with that same philosophy:
-* **Symmetry:** Grid layouts and flex containers are mathematically balanced.
-* **Motion:** Animations are eased and staggered to mimic the rhythm of classical dance.
-* **Depth:** Drop shadows, backdrop blurs, and gradient overlays create a sense of multi-dimensional space, much like walking into the sanctum of an ancient temple.
+In Indian classical tradition, the concept of _Yantra_ refers to sacred geometry representing the cosmos. This website was designed with that same philosophy:
+
+- **Symmetry:** Grid layouts and flex containers are mathematically balanced.
+- **Motion:** Animations are eased and staggered to mimic the rhythm of classical dance.
+- **Depth:** Drop shadows, backdrop blurs, and gradient overlays create a sense of multi-dimensional space, much like walking into the sanctum of an ancient temple.
 
 ## 📜 License
 

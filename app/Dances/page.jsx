@@ -15,100 +15,301 @@ const classicalDances = [
     id: "bharatanatyam",
     name: "Bharatanatyam",
     origin: "Tamil Nadu",
-    timeline:
-      "Ancient (Roots 200 BCE–200 CE; Well-established 6th–9th Century CE)",
-    origins:
-      "Originally performed by Devadasis in Tamil Nadu temples (formerly known as Sadir). It is widely considered the oldest classical dance form, with roots in the ancient Tamil epic Silappadikaram.",
     description:
       "Known for its fixed upper torso, bent legs, and spectacular footwork. It is one of the oldest and most widely practiced classical dances.",
-    image: "/Indiandevi.jpg",
+    image: "/Dance/Bharatanatyam.jpg",
   },
   {
     id: "kathak",
     name: "Kathak",
     origin: "North India",
-    timeline:
-      "Ancient/Medieval (Bards of North India; Mughal influence 16th Century)",
-    origins:
-      "Originated from the Kathakars or storytellers in North India, later evolving in Hindu temples and Mughal courts.",
     description:
       "Derived from 'Katha' (story). Famous for its intricate footwork, rapid pirouettes (chakkars), and expressive storytelling.",
-    image: "/Architecture.jpg",
+    image: "/Dance/Kathak.jpg",
   },
   {
     id: "kathakali",
     name: "Kathakali",
     origin: "Kerala",
-    timeline: "17th Century",
-    origins:
-      "Evolved from Ramanattam and Krishnattam, deeply rooted in Kerala's martial arts and temple rituals.",
     description:
       "A highly stylized 'story play' known for its elaborate makeup, massive headgear, and incredibly detailed facial expressions.",
-    image: "/Indiandevi.jpg",
+    image: "/Dance/Kathakali.jpg",
   },
   {
     id: "odissi",
     name: "Odissi",
     origin: "Odisha",
-    timeline: "Ancient (Traced to 2nd Century BCE in Jain caves)",
-    origins:
-      "Rooted in temple rituals of Odisha, historically performed by female temple dancers called Maharis.",
     description:
       "Characterized by the 'Tribhangi' (three-part break) posture, mimicking the graceful sculptures found in ancient temple walls.",
-    image: "/Architecture.jpg",
+    image: "/Dance/Odissi.jpg",
   },
   {
     id: "kuchipudi",
     name: "Kuchipudi",
     origin: "Andhra Pradesh",
-    timeline: "17th Century (Modern form)",
-    origins:
-      "Developed as a dance-drama by Vaishnavaite monk Siddhendra Yogi in Andhra Pradesh.",
     description:
       "A dance-drama performance that combines graceful movements, fast footwork, and sometimes dancing on the rim of a brass plate.",
-    image: "/Indiandevi.jpg",
+    image: "/Dance/Kuchipudi.jpg",
   },
   {
     id: "manipuri",
     name: "Manipuri",
     origin: "Manipur",
-    timeline: "Ancient/Medieval (Ritual roots; Formalization 18th Century)",
-    origins:
-      "Deeply spiritual, rooted in pre-recorded history. The popular Rasleela style was developed in the 18th century under King Bhagyachandra.",
     description:
       "A gentle, lyrical dance form often focused on the Ras Lila, featuring unique barrel-shaped skirts.",
-    image: "/Architecture.jpg",
+    image: "/Dance/Manipuri.jpg",
   },
   {
     id: "mohiniyattam",
     name: "Mohiniyattam",
     origin: "Kerala",
-    timeline: "16th Century",
-    origins:
-      "Developed in the courts of Kerala, blending elements of Kathakali and Bharatanatyam.",
     description:
       "The 'Dance of the Enchantress', characterized by graceful, swaying movements and traditional white and gold costumes.",
-    image: "/Indiandevi.jpg",
+    image: "/Dance/Mohiniyattam.jpg",
   },
   {
     id: "sattriya",
     name: "Sattriya",
     origin: "Assam",
-    timeline: "15th Century",
-    origins:
-      "Introduced by the Vaishnava saint Srimanta Sankardeva, performed in Assamese monasteries (Sattras).",
     description:
       "A living tradition that combines devotion, music, and dance, often depicting mythological stories of Krishna.",
-    image: "/Architecture.jpg",
+    image: "/Dance/Sattriya.jpg",
+  },
+];
+// Data for the 4 Theatrical & Extended Classical Traditions
+const theatricalDances = [
+  {
+    id: "chhau",
+    name: "Chhau",
+    origin: "Eastern India",
+    badge: "9th Classical Dance",
+    description:
+      "A spectacular, high-energy martial dance-drama known for breathtaking acrobatics, sword combat, and massive masks.",
+    image: "/Dance/Chhau.jpg",
+  },
+  {
+    id: "gaudiya-nritya",
+    name: "Gaudiya Nritya",
+    origin: "West Bengal",
+    badge: "Reconstructed Classical",
+    description:
+      "A highly spiritual, fluid, and lyrical dance deeply connected to Gaudiya Vaishnavism and ancient terracotta temple sculptures.",
+    image: "/Dance/Gaudiya.jpg",
+  },
+  {
+    id: "yakshagana",
+    name: "Yakshagana",
+    origin: "Karnataka",
+    badge: "Traditional Theatre",
+    description:
+      "A twilight-to-dawn theatrical masterpiece known for its booming drums, extempore dialogue, and glittering headgear.",
+    image: "/Dance/Yakshagana.jpg",
+  },
+  {
+    id: "bhagavata-mela",
+    name: "Bhagavata Mela",
+    origin: "Tamil Nadu",
+    badge: "Sacred Temple Theatre",
+    description:
+      "A highly religious, all-male traditional dance-drama performed exclusively in the temples of the Thanjavur district.",
+    image: "/Dance/BhagavataMela.jpg",
+  },
+  {
+    id: "padayani",
+    name: "Padayani",
+    origin: "Kerala",
+    badge: "Ritual Mask Theatre",
+    description:
+      "A visually striking ritualistic theatre art using massive, colorful masks made of areca nut fronds to enact divine mythology.",
+    image: "/Dance/Padayani.jpg",
+  },
+  {
+    id: "paika",
+    name: "Paika Dance",
+    origin: "Odisha",
+    badge: "Martial Dance",
+    description:
+      "An explosive martial arts dance performed with swords and shields, preserving the ancient combat techniques of Odisha's warriors.",
+    image: "/Dance/Paika.jpg",
+  },
+];
+// The Regional Folk Dances of India
+const folkDances = [
+  {
+    name: "Lava",
+    origin: "Lakshadweep",
+    desc: "A vibrant, rhythmic dance performed by men to the beats of drums.",
+  },
+  {
+    name: "Garadi",
+    origin: "Puducherry",
+    desc: "A celebratory dance historically associated with the epic Ramayana.",
+  },
+  {
+    name: "Dekhni",
+    origin: "Goa",
+    desc: "A semi-classical Goan dance combining Indian and Western musical styles.",
+  },
+  {
+    name: "Nicobari",
+    origin: "Andaman & Nicobar",
+    desc: "A traditional tribal dance performed during the Ossuary Feast.",
+  },
+  {
+    name: "Perini Shivatandavam",
+    origin: "Telangana",
+    desc: "An ancient warrior dance performed by men in honor of Lord Shiva.",
+  },
+  {
+    name: "Lavani",
+    origin: "Maharashtra",
+    desc: "A high-energy dance known for its powerful rhythm and expressiveness.",
+  },
+  {
+    name: "Tarpa",
+    origin: "Dadra & Nagar Haveli",
+    desc: "A tribal dance performed in a circle around a musician playing a wind instrument.",
+  },
+  {
+    name: "Garba",
+    origin: "Gujarat",
+    desc: "A joyful, circular devotion dance performed during the Navaratri festival.",
+  },
+  {
+    name: "Jawara",
+    origin: "Madhya Pradesh",
+    desc: "A harvest dance performed by women balancing baskets of jawar on their heads.",
+  },
+  {
+    name: "Gaur Maria",
+    origin: "Chhattisgarh",
+    desc: "A ritualistic tribal dance imitating the movements of the wild bison.",
+  },
+  {
+    name: "Jhumair",
+    origin: "Jharkhand",
+    desc: "A lively folk dance performed during the harvest season and local festivals.",
+  },
+  {
+    name: "Hojagiri",
+    origin: "Tripura",
+    desc: "Performed by women balancing earthen pitchers and lamps on their heads.",
+  },
+  {
+    name: "Cheraw",
+    origin: "Mizoram",
+    desc: "A highly skilled dance involving the rhythmic tapping of bamboo staves.",
+  },
+  {
+    name: "Chang Lo",
+    origin: "Nagaland",
+    desc: "A warrior dance traditionally performed to celebrate a victory over enemies.",
+  },
+  {
+    name: "Buiya",
+    origin: "Arunachal Pradesh",
+    desc: "A joyful dance of the Digaru Mishmi tribe celebrating community ties.",
+  },
+  {
+    name: "Bihu",
+    origin: "Assam",
+    desc: "A joyous dance celebrating the Assamese New Year and the spring season.",
+  },
+  {
+    name: "Chu-Faat",
+    origin: "Sikkim",
+    desc: "A Lepcha tribal dance performed in honor of Mount Khangchendzonga.",
+  },
+  {
+    name: "Ka Shad Suk Mynsiem",
+    origin: "Meghalaya",
+    desc: "The 'Dance of the Joyful Heart', a thanksgiving festival dance.",
+  },
+  {
+    name: "Jat-Jatin",
+    origin: "Bihar",
+    desc: "A narrative dance depicting the story of the lovers Jat and Jatin.",
+  },
+  {
+    name: "Ghumar",
+    origin: "Rajasthan",
+    desc: "A graceful, twirling dance traditionally performed by women in flowing skirts.",
+  },
+  {
+    name: "Jhumar",
+    origin: "Haryana",
+    desc: "A lively dance, taking its name from the 'Jhumar' ornament worn on the forehead.",
+  },
+  {
+    name: "Choliya",
+    origin: "Uttarakhand",
+    desc: "A martial sword dance traditionally performed during marriage processions.",
+  },
+  {
+    name: "Nati",
+    origin: "Himachal Pradesh",
+    desc: "A slow, rhythmic community dance celebrating the harvest and new year.",
+  },
+  {
+    name: "Bhangra",
+    origin: "Punjab",
+    desc: "A highly energetic, vibrant harvest dance performed to the beat of the dhol.",
+  },
+  {
+    name: "Rouf",
+    origin: "Jammu & Kashmir",
+    desc: "A traditional springtime dance performed by women in synchronized rows.",
+  },
+  {
+    name: "Kathok Chenmo",
+    origin: "Sikkim",
+    desc: "A traditional monastic dance deeply related to Buddhist rituals.",
+  },
+];
+// Data for the Contemporary & Avant-Garde Traditions
+const contemporaryDances = [
+  {
+    id: "pioneer-modern",
+    name: "Pioneer Modern",
+    origin: "Pan-India",
+    badge: "The Foundation",
+    description:
+      "Pioneered by Uday Shankar in the 1920s, this style beautifully blends European theatrical techniques with Indian themes and aesthetics.",
+    image: "/Dance/ModernIndian.jpg",
+  },
+  {
+    id: "neo-bharatam",
+    name: "Neo-Classical",
+    origin: "Chennai / South India",
+    badge: "Deconstructed",
+    description:
+      "A radical deconstruction of classical forms, fusing Bharatanatyam with Yoga and Kalaripayattu to explore modern, abstract themes.",
+    image: "/Dance/NeoClassical.jpg",
+  },
+  {
+    id: "martial-fusion",
+    name: "Aerial & Martial",
+    origin: "Modern Stages",
+    badge: "Avant-Garde",
+    description:
+      "A breathtaking fusion of Chhau, Kalaripayattu, Mallakhamb, and aerial acrobatics that pushes human kinetic boundaries.",
+    image: "/Dance/MartialFusion.jpg",
+  },
+  {
+    id: "urban-bollywood",
+    name: "Urban Contemporary",
+    origin: "Mumbai / Media",
+    badge: "Pop & Lyrical",
+    description:
+      "A highly emotional, lyrical, and acrobatic style that blends Western contemporary with Indian rhythm, dominating modern television.",
+    image: "/Dance/UrbanContemp.jpg",
   },
 ];
 
 const Dance = () => {
   const container = useRef(null);
-  const videoRef = useRef(null);
 
   const [showTopBtn, setShowTopBtn] = useState(false);
-  const [isMuted, setIsMuted] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
 
   // Preloader Logic
@@ -116,14 +317,6 @@ const Dance = () => {
     const timer = setTimeout(() => setIsLoading(false), 2000);
     return () => clearTimeout(timer);
   }, []);
-
-  // Toggle Video Sound
-  const toggleMute = () => {
-    if (videoRef.current) {
-      videoRef.current.muted = !isMuted;
-      setIsMuted(!isMuted);
-    }
-  };
 
   // Scroll to Top Logic
   useEffect(() => {
@@ -174,8 +367,6 @@ const Dance = () => {
       gsap.from(".dance-card", {
         y: 60,
         opacity: 1,
-        duration: 0.8,
-        stagger: 0.15,
         ease: "power2.out",
         scrollTrigger: {
           trigger: ".dance-grid",
@@ -208,59 +399,15 @@ const Dance = () => {
           isLoading ? "opacity-0" : "opacity-100"
         }`}
       >
-        {/* 1. HERO SECTION */}
+        {/* HERO SECTION */}
         <section className="relative h-screen w-screen flex items-center justify-center overflow-hidden">
-          <video
-            ref={videoRef}
-            src="/Dance/Nataraja.mp4"
-            autoPlay
-            loop
-            muted={isMuted}
-            playsInline
-            className="absolute inset-0 w-screen h-screen object-cover scale-105 opacity-60"
+          {/* Properly styled Hero Image */}
+          <img
+            src="/Dance/Nataraja.jpg"
+            alt="Nataraja Cosmic Dance"
+            className="absolute inset-0 w-full h-full object-cover scale-105 opacity-60"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-[#0a0a0a]"></div>
-
-          <button
-            onClick={toggleMute}
-            className="absolute bottom-24 right-10 md:right-12 z-20 p-3 rounded-full bg-black/40 backdrop-blur-md border border-white/20 text-white shadow-lg hover:bg-orange-500 hover:border-orange-500 hover:shadow-[0_0_20px_rgba(249,115,22,0.4)] transition-all duration-300"
-            aria-label={isMuted ? "Unmute Video" : "Mute Video"}
-          >
-            {isMuted ? (
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"
-                />
-              </svg>
-            ) : (
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15.536 8.464a5 5 0 010 7.072M17.657 6.343a8 8 0 010 11.314M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"
-                />
-              </svg>
-            )}
-          </button>
 
           <div className="relative z-10 text-center px-6 mt-20">
             <span className="hero-delayed-text opacity-0 translate-y-12 inline-block text-orange-500 font-bold tracking-[0.3em] uppercase text-sm mb-4">
@@ -275,8 +422,9 @@ const Dance = () => {
           </div>
         </section>
 
-        <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto border-b border-white/5">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            {/* LEFT COLUMN: Text & Iconography List */}
             <div className="gsap-fade-up order-2 lg:order-1">
               <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">
                 Who is{" "}
@@ -284,104 +432,212 @@ const Dance = () => {
                   Nataraja?
                 </span>
               </h2>
-              <p className="text-lg leading-relaxed mb-6 font-light">
+              <p className="text-lg leading-relaxed mb-6 font-light text-gray-300">
                 Nataraja is a depiction of the Hindu god Shiva as the divine
                 cosmic dancer. His dance, the <strong>Ananda Tandava</strong>{" "}
                 (Dance of Bliss), represents the continuous cycle of creation,
                 preservation, and destruction of the universe.
               </p>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-3 text-xl">🔥</span>
-                  <span>
-                    <strong>Upper Left Hand hand The Fire (Agni):</strong> Held
-                    in his upper left hand, representing destruction and
-                    transformation.
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-3 text-xl">🥁</span>
-                  <span>
-                    <strong>Upper Right Hand having the Drum (Damaru):</strong>{" "}
-                    Held in his upper right hand, creating the primal sound of
-                    creation (Om).
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-3 text-xl">✋</span>
-                  <span>
-                    <strong>With Lower Right Hand giving Abhaya Mudra:</strong>{" "}
-                    His lower right hand signals "fear not," offering protection
-                    to the righteous.
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-3 text-xl">🐘</span>
-                  <span>
-                    <strong>With Lower Left Hand Gajahasta Mudra:</strong> It
-                    features one hand stretched across the chest or hanging
-                    down, resembling an elephant's trunk.Represents the trunk of
-                    an elephant (gaja), signifying strength, wisdom, and the
-                    removal of obstacles
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-3 text-xl">🦶🏻</span>
-                  <span>
-                    <strong>Right Foot:</strong> Tramples the dwarf demon
-                    Apasmara, symbolizing the subjugation of ignorance and ego.
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-3 text-xl">🦶🏻</span>
-                  <span>
-                    <strong>Left Foot:</strong> Raised in the "dance of bliss,"
-                    representing liberation.
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-3 text-xl">❖</span>
-                  <span>
-                    <strong>Prabha Mandala:</strong> A halo of fire surrounding
-                    Shiva, representing the cosmos, the cycle of birth and
-                    death, and the separation of the divine from the material
-                    world.
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-3 text-xl"></span>
-                  <span>
-                    <strong>Hair:</strong>His long, flowing locks (jatamukuta)
-                    signify his yogic nature, with the goddess Ganga often
-                    depicted in them.
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-3 text-xl">✋</span>
-                  <span>
-                    <strong>Serpent:</strong> A snake, symbolizing the kundalini
-                    power (spiritual energy), uncoils from his lower right
-                    forearm.
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-3 text-xl">✋</span>
-                  <span>
-                    <strong>Earrings:</strong>A male makara-kundala (mythical
-                    sea creature earring) in one ear and a female circular
-                    earring in the other, reflecting the balance of male and
-                    female energies.
-                  </span>
-                </li>
-              </ul>
+
+              {/* Added a scrollable container for the long list */}
+              <div className="relative">
+                {/* Fade overlays for the scroll area */}
+                <div className="absolute top-0 left-0 right-0 h-4 bg-gradient-to-b from-[#0a0a0a] to-transparent z-10"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-[#0a0a0a] to-transparent z-10"></div>
+
+                <ul className="space-y-5 h-[500px] overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-orange-500/30 scrollbar-track-transparent py-4">
+                  <li className="flex items-start">
+                    <span className="text-orange-500 mr-4 text-xl">🔥</span>
+                    <span className="text-sm font-light leading-relaxed text-gray-300">
+                      <strong className="text-white text-base block mb-1">
+                        Upper Left Hand (Agni)
+                      </strong>
+                      Holds the divine fire, representing destruction,
+                      transformation, and the end of the universe.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-orange-500 mr-4 text-xl">🥁</span>
+                    <span className="text-sm font-light leading-relaxed text-gray-300">
+                      <strong className="text-white text-base block mb-1">
+                        Upper Right Hand (Damaru)
+                      </strong>
+                      Holds the hourglass drum, creating the primal rhythmic
+                      sound of creation (Om).
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-orange-500 mr-4 text-xl">✋</span>
+                    <span className="text-sm font-light leading-relaxed text-gray-300">
+                      <strong className="text-white text-base block mb-1">
+                        Lower Right Hand (Abhaya Mudra)
+                      </strong>
+                      Signals "fear not," offering protection and peace to the
+                      righteous.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-orange-500 mr-4 text-xl">🐘</span>
+                    <span className="text-sm font-light leading-relaxed text-gray-300">
+                      <strong className="text-white text-base block mb-1">
+                        Lower Left Hand (Gajahasta)
+                      </strong>
+                      Stretched across the chest resembling an elephant's trunk,
+                      signifying strength, wisdom, and the removal of obstacles.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-orange-500 mr-4 text-xl">🦶🏽</span>
+                    <span className="text-sm font-light leading-relaxed text-gray-300">
+                      <strong className="text-white text-base block mb-1">
+                        The Right Foot
+                      </strong>
+                      Tramples the dwarf demon Apasmara, symbolizing the
+                      absolute subjugation of human ignorance and ego.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-orange-500 mr-4 text-xl">🕊️</span>
+                    <span className="text-sm font-light leading-relaxed text-gray-300">
+                      <strong className="text-white text-base block mb-1">
+                        The Left Foot (Raised)
+                      </strong>
+                      Lifted high in the "dance of bliss," representing ultimate
+                      spiritual liberation (Moksha).
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-orange-500 mr-4 text-xl">☀️</span>
+                    <span className="text-sm font-light leading-relaxed text-gray-300">
+                      <strong className="text-white text-base block mb-1">
+                        Prabha Mandala (Halo of Fire)
+                      </strong>
+                      The arch of flames surrounding Shiva represents the
+                      boundary of the cosmos and the endless cycle of time.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-orange-500 mr-4 text-xl">🌪️</span>
+                    <span className="text-sm font-light leading-relaxed text-gray-300">
+                      <strong className="text-white text-base block mb-1">
+                        Flying Locks (Jata)
+                      </strong>
+                      His matted hair spreads horizontally, indicating the
+                      fierce, intense, and vigorous motion of his cosmic dance.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-orange-500 mr-4 text-xl">🌊</span>
+                    <span className="text-sm font-light leading-relaxed text-gray-300">
+                      <strong className="text-white text-base block mb-1">
+                        Goddess Ganga
+                      </strong>
+                      Nestled in his flying hair, she symbolizes purification
+                      and the taming of her wild descent from heaven to earth.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-orange-500 mr-4 text-xl">🌙</span>
+                    <span className="text-sm font-light leading-relaxed text-gray-300">
+                      <strong className="text-white text-base block mb-1">
+                        Crescent Moon
+                      </strong>
+                      Tucked into his locks, it symbolizes his dominion over the
+                      cycles of time, seasons, and enlightenment.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-orange-500 mr-4 text-xl">💀</span>
+                    <span className="text-sm font-light leading-relaxed text-gray-300">
+                      <strong className="text-white text-base block mb-1">
+                        The Skull
+                      </strong>
+                      A profound symbol of mortality, detachment, and Shiva's
+                      conquest over death (Mahakala).
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-orange-500 mr-4 text-xl">🐍</span>
+                    <span className="text-sm font-light leading-relaxed text-gray-300">
+                      <strong className="text-white text-base block mb-1">
+                        The Serpents (Kundalini)
+                      </strong>
+                      Snakes uncoiling from his arms and waist represent
+                      Kundalini energy, the shedding of past lives, and mastery
+                      over fear and ego.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-orange-500 mr-4 text-xl">👁️</span>
+                    <span className="text-sm font-light leading-relaxed text-gray-300">
+                      <strong className="text-white text-base block mb-1">
+                        The Three Eyes
+                      </strong>
+                      Represent the Sun (action/creation), the Moon
+                      (introspection/tranquility), and the Third Eye of higher
+                      wisdom.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-orange-500 mr-4 text-xl">😌</span>
+                    <span className="text-sm font-light leading-relaxed text-gray-300">
+                      <strong className="text-white text-base block mb-1">
+                        The Serene Smile
+                      </strong>
+                      Despite the violent, chaotic energy of the dance of
+                      destruction, his face remains entirely calm—a bliss of
+                      divine self-absorption.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-orange-500 mr-4 text-xl">💎</span>
+                    <span className="text-sm font-light leading-relaxed text-gray-300">
+                      <strong className="text-white text-base block mb-1">
+                        Dual Earrings
+                      </strong>
+                      A male earring in one ear and a female earring in the
+                      other, reflecting the perfect balance of masculine and
+                      feminine energies (Ardhanarishvara).
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-orange-500 mr-4 text-xl">😈</span>
+                    <span className="text-sm font-light leading-relaxed text-gray-300">
+                      <strong className="text-white text-base block mb-1">
+                        Apasmara / Muyalaka
+                      </strong>
+                      The dwarf figure crushed under Lord Shiva’s right foot is
+                      Apasmara (or Muyalaka), representing ignorance, ego, and
+                      the loss of consciousness. Shiva’s "Dance of Bliss"
+                      (Anandatandava) on Apasmara symbolizes the suppression of
+                      ego and ignorance, highlighting that true knowledge is
+                      only attained when ignorance is subdued.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-orange-500 mr-4 text-xl">🪷</span>
+                    <span className="text-sm font-light leading-relaxed text-gray-300">
+                      <strong className="text-white text-base block mb-1">
+                        Lotus Pedestal
+                      </strong>
+                      The flower upon which the entire scene takes place,
+                      representing purity rising from the mud of the material
+                      world.
+                    </span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className="gsap-fade-up order-1 lg:order-2 relative h-[500px] rounded-3xl overflow-hidden border border-white/10 shadow-[0_0_40px_rgba(249,115,22,0.15)]">
+
+            {/* RIGHT COLUMN: Image */}
+            <div className="gsap-fade-up order-1 lg:order-2 relative h-[600px] rounded-3xl overflow-hidden border border-white/10 shadow-[0_0_40px_rgba(249,115,22,0.15)] sticky top-24">
               <Image
-                src="/Indiandevi.jpg"
-                alt="Statue of Nataraja"
+                src="/Dance/Nataraja.jpg"
+                alt="Detailed statue of Nataraja"
                 fill
                 className="object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div>
             </div>
           </div>
         </section>
@@ -422,7 +678,7 @@ const Dance = () => {
           </div>
         </section>
 
-        {/* 2. THE DIVINE LINEAGE TIMELINE */}
+        {/* THE DIVINE LINEAGE TIMELINE */}
         <section className="py-24 px-6 md:px-12 relative max-w-6xl mx-auto">
           <div className="text-center mb-20">
             <span className="gsap-fade-up text-orange-500 font-bold tracking-widest uppercase text-sm mb-4 block">
@@ -519,7 +775,7 @@ const Dance = () => {
           </div>
         </section>
 
-        {/* 3. THE NATYA SHASTRA & THE 3 PILLARS */}
+        {/* THE NATYA SHASTRA & THE 3 PILLARS */}
         <section className="py-24 px-6 md:px-12 relative bg-gradient-to-b from-[#0a0a0a] to-[#111]">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -583,7 +839,7 @@ const Dance = () => {
           </div>
         </section>
 
-        {/* 3. NEW: THE NATYA SHASTRA */}
+        {/* NEW: THE NATYA SHASTRA */}
         <section className="py-24 px-6 md:px-12 relative bg-gradient-to-b from-[#0a0a0a] to-[#111]">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -696,10 +952,8 @@ const Dance = () => {
           </div>
         </section>
 
-        {/* 4. SACRED GEOMETRY (Mathematics in Motion) */}
+        {/* SACRED GEOMETRY (Mathematics in Motion) */}
         <section className="py-24 px-6 md:px-12 relative border-t border-white/5">
-          <div className="absolute inset-0 bg-orange-500/5 backdrop-blur-[2px]"></div>
-
           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
             <div className="gsap-fade-up">
               <span className="text-orange-500 font-bold tracking-widest uppercase text-sm mb-4 block">
@@ -729,24 +983,115 @@ const Dance = () => {
                 </p>
               </div>
             </div>
-
             {/* Geometric Visualization (CSS Art) */}
-            <div className="gsap-fade-up relative h-[400px] w-full flex items-center justify-center">
-              {/* Outer glowing circle */}
-              <div className="absolute w-[300px] h-[300px] rounded-full border border-orange-500/30 animate-[spin_20s_linear_infinite]"></div>
-              {/* Inner glowing circle */}
-              <div className="absolute w-[200px] h-[200px] rounded-full border border-orange-400/50 animate-[spin_15s_linear_infinite_reverse]"></div>
-              {/* Triangle */}
-              <div className="absolute w-0 h-0 border-l-[100px] border-l-transparent border-r-[100px] border-r-transparent border-b-[173px] border-b-orange-500/20"></div>
-              {/* Center Dot */}
-              <div className="absolute w-4 h-4 bg-white rounded-full shadow-[0_0_20px_#fff]"></div>
+            <div className="gsap-fade-up relative h-[400px] w-full flex items-center justify-center overflow-hidden">
+              {/* 1. KATHAK: The Outer Circle (Mandala / Cycles of Time) */}
+              <div className="absolute w-[320px] h-[320px] rounded-full border border-orange-500/30 animate-[spin_20s_linear_infinite]"></div>
 
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent"></div>
+              {/* 2. MANIPURI & SATTRIYA: The Inner Circle (Spiritual Devotion) */}
+              <div className="absolute w-[226px] h-[226px] rounded-full border border-orange-400/40 animate-[spin_15s_linear_infinite_reverse]"></div>
+
+              {/* 3. ODISSI: The Lotus (Created via a rotated square forming an 8-point star Yantra) */}
+              <div className="absolute w-[160px] h-[160px] border border-orange-500/30 rotate-45 animate-[spin_30s_linear_infinite]"></div>
+
+              {/* 4. KUCHIPUDI: The Square (Earth / Tarangam Brass Plate) */}
+              <div className="absolute w-[160px] h-[160px] border border-orange-500/50 animate-[spin_30s_linear_infinite_reverse]"></div>
+
+              {/* 5. THE SHATKONA: Union of Shiva & Shakti */}
+              <div className="absolute w-[200px] h-[200px] flex items-center justify-center animate-[spin_40s_linear_infinite]">
+                {/* BHARATANATYAM: Upward Triangle (Fire / Araimandi Posture) */}
+                <div className="absolute w-0 h-0 border-l-[80px] border-l-transparent border-r-[80px] border-r-transparent border-b-[138px] border-b-orange-500/40 -translate-y-[20px]"></div>
+
+                {/* KATHAKALI: Downward Triangle (Water / Deep Stance) */}
+                <div className="absolute w-0 h-0 border-l-[80px] border-l-transparent border-r-[80px] border-r-transparent border-t-[138px] border-t-orange-500/40 translate-y-[20px]"></div>
+              </div>
+
+              {/* 6. THE BINDU: The Center Dot (The Source / Nataraja) */}
+              <div className="absolute w-3 h-3 bg-white rounded-full shadow-[0_0_20px_2px_#f97316]"></div>
+
+              {/* Gradient fade to blend into the background */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div>
             </div>
           </div>
         </section>
 
-        {/* 6. CLASSICAL DANCES (Cards Grid) */}
+        {/* ADDED BACK: THE LIVING YANTRAS (Specific Dances) */}
+        <section className="py-16 px-6 md:px-12 relative border-t border-white/5 max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <span className="gsap-fade-up text-orange-500 font-bold tracking-widest uppercase text-sm mb-4 block">
+              The Living Yantras
+            </span>
+            <h2 className="gsap-fade-up text-4xl md:text-5xl font-serif text-white mb-6">
+              Where to Find the Geometry
+            </h2>
+            <p className="gsap-fade-up text-lg text-gray-400 font-light max-w-3xl mx-auto">
+              These are not abstract concepts. The mathematics of the universe
+              are explicitly coded into the foundational postures of the dances.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="gsap-fade-up bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:border-orange-500/40 transition-all duration-300 hover:-translate-y-2">
+              <div className="text-orange-500 text-4xl mb-6">🔺</div>
+              <h3 className="text-2xl font-serif text-white mb-2">
+                The Triangle
+              </h3>
+              <h4 className="text-orange-400 font-bold text-xs uppercase tracking-widest mb-4">
+                Bharatanatyam
+              </h4>
+              <p className="text-gray-300 font-light text-sm leading-relaxed">
+                The foundational <strong>Araimandi</strong> (half-sit) posture.
+                The bent knees, torso, and extended arms create interlocking
+                triangles, representing Fire and stability.
+              </p>
+            </div>
+
+            <div className="gsap-fade-up bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:border-orange-500/40 transition-all duration-300 hover:-translate-y-2">
+              <div className="text-orange-500 text-4xl mb-6">⭕</div>
+              <h3 className="text-2xl font-serif text-white mb-2">
+                The Circle
+              </h3>
+              <h4 className="text-orange-400 font-bold text-xs uppercase tracking-widest mb-4">
+                Kathak
+              </h4>
+              <p className="text-gray-300 font-light text-sm leading-relaxed">
+                During the rapid <strong>Chakkars</strong> (spins), the dancer's
+                spine becomes the still center point, while their flowing skirt
+                traces a perfect Mandala.
+              </p>
+            </div>
+
+            <div className="gsap-fade-up bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:border-orange-500/40 transition-all duration-300 hover:-translate-y-2">
+              <div className="text-orange-500 text-4xl mb-6">🪷</div>
+              <h3 className="text-2xl font-serif text-white mb-2">The Lotus</h3>
+              <h4 className="text-orange-400 font-bold text-xs uppercase tracking-widest mb-4">
+                Odissi
+              </h4>
+              <p className="text-gray-300 font-light text-sm leading-relaxed">
+                Through specific mudras, the hands physically bloom from a bud
+                into an open blossom alongside sweeping arm arcs, symbolizing
+                spiritual awakening.
+              </p>
+            </div>
+
+            <div className="gsap-fade-up bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm hover:border-orange-500/40 transition-all duration-300 hover:-translate-y-2">
+              <div className="text-orange-500 text-4xl mb-6">🔲</div>
+              <h3 className="text-2xl font-serif text-white mb-2">
+                The Square
+              </h3>
+              <h4 className="text-orange-400 font-bold text-xs uppercase tracking-widest mb-4">
+                Kuchipudi
+              </h4>
+              <p className="text-gray-300 font-light text-sm leading-relaxed">
+                In the <strong>Tarangam</strong>, the dancer balances on the
+                rigid rim of a brass plate. The precise, confined footwork
+                represents the square—symbolizing the physical Earth.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* CLASSICAL DANCES (Cards Grid) */}
         <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="gsap-fade-up text-4xl md:text-5xl font-serif text-white mb-4">
@@ -763,28 +1108,272 @@ const Dance = () => {
               <Link
                 key={index}
                 href={`/Dances/${dance.id}`}
-                className="dance-card group relative h-[380px] rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm hover:border-orange-500/40 transition-all duration-500 hover:-translate-y-2 shadow-lg hover:shadow-[0_15px_40px_rgba(249,115,22,0.15)] block"
+                className="dance-card group relative h-[380px] rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm hover:border-orange-500/40 transition-all duration-500 hover:-translate-y-2 shadow-lg hover:shadow-[0_15px_40px_rgba(249,115,22,0.15)] block flex flex-col justify-end"
               >
+                {/* Background Image */}
                 <Image
                   src={dance.image}
                   alt={dance.name}
                   fill
-                  className="object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-500 group-hover:scale-105 ease-out"
+                  className="absolute inset-0 object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-500 group-hover:scale-105 ease-out z-0"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
 
-                <div className="absolute bottom-0 w-full p-6 z-10 flex flex-col h-full justify-end">
-                  <span className="text-orange-400 text-[10px] font-bold uppercase tracking-widest mb-1 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                {/* Dark Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/50 to-transparent z-0 opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                {/* Content Container */}
+                <div className="relative z-10 p-6 w-full flex flex-col justify-end">
+                  {/* Origin (Fades in) */}
+                  <span className="text-orange-400 text-[10px] font-bold uppercase tracking-widest mb-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     {dance.origin}
                   </span>
-                  <h3 className="text-2xl font-serif text-white mb-2 group-hover:text-orange-400 transition-colors duration-300">
+
+                  {/* Dance Name (Always visible, changes color on hover) */}
+                  <h3 className="text-2xl font-serif text-white group-hover:text-orange-400 transition-colors duration-300">
                     {dance.name}
                   </h3>
-                  <p className="text-xs text-gray-300 font-light leading-relaxed opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-75 line-clamp-3">
-                    {dance.description}
+
+                  {/* Expanding Description Block */}
+                  <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                    <div className="overflow-hidden">
+                      <div className="pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                        <p className="text-xs text-gray-300 font-light leading-relaxed line-clamp-3">
+                          {dance.description}
+                        </p>
+                        <div className="text-orange-500 text-[10px] font-bold uppercase tracking-widest mt-3 flex items-center gap-1">
+                          Explore Details <span>&rarr;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* EXTENDED TRADITIONS: Theatrical & Martial Arts */}
+        <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-white/5">
+          <div className="mb-16 md:flex justify-between items-end">
+            <div className="max-w-2xl">
+              <span className="text-amber-500 font-bold tracking-[0.3em] uppercase text-sm mb-4 block">
+                Beyond The 8 Pillars
+              </span>
+              <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">
+                Theatrical & Martial Traditions
+              </h2>
+              <p className="text-gray-400 text-lg font-light leading-relaxed">
+                Straddling the line between classical dance, religious theatre,
+                and ancient martial arts. These forms feature massive masks,
+                extempore dialogue, and explosive energy.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {theatricalDances.map((dance, index) => (
+              <Link
+                key={index}
+                href={`/Dances/${dance.id}`}
+                className="group relative h-[420px] rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm hover:border-amber-500/40 transition-all duration-500 hover:-translate-y-2 shadow-lg hover:shadow-[0_15px_40px_rgba(245,158,11,0.15)] flex flex-col justify-end"
+              >
+                {/* Background Image */}
+                <Image
+                  src={dance.image}
+                  alt={dance.name}
+                  fill
+                  className="absolute inset-0 object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-500 group-hover:scale-105 ease-out z-0"
+                />
+
+                {/* Dark Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent z-0 opacity-90 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                {/* Content Container */}
+                <div className="relative z-10 p-6 w-full flex flex-col justify-end h-full">
+                  {/* Top Badge (Always visible, sits at top of card) */}
+                  <div className="absolute top-6 left-6">
+                    <span className="bg-amber-500/20 border border-amber-500/50 text-amber-400 text-[9px] font-bold uppercase tracking-widest px-3 py-1 rounded-full backdrop-blur-md">
+                      {dance.badge}
+                    </span>
+                  </div>
+
+                  {/* Origin */}
+                  <span className="text-amber-400 text-[10px] font-bold uppercase tracking-widest mb-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    {dance.origin}
+                  </span>
+
+                  {/* Dance Name */}
+                  <h3 className="text-3xl font-serif text-white group-hover:text-amber-400 transition-colors duration-300 drop-shadow-lg">
+                    {dance.name}
+                  </h3>
+
+                  {/* Expanding Description Block (Same trick as classical cards) */}
+                  <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                    <div className="overflow-hidden">
+                      <div className="pt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                        <p className="text-sm text-gray-300 font-light leading-relaxed line-clamp-3">
+                          {dance.description}
+                        </p>
+                        <div className="text-amber-500 text-[10px] font-bold uppercase tracking-widest mt-4 flex items-center gap-2">
+                          View Exhibit{" "}
+                          <span className="text-lg leading-none">&rarr;</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* THE FOLK DANCES (Typography Driven Cards) */}
+        <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-white/5">
+          {/* Introduction block using your provided text */}
+          <div className="max-w-4xl mx-auto text-center mb-20">
+            <div className="mb-16">
+              <span className="text-emerald-500 font-bold tracking-[0.3em] uppercase text-sm mb-4 block">
+                The Heartbeat of the People
+              </span>
+              <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">
+                Regional Folk Traditions
+              </h2>
+              <p className="text-gray-400 text-lg font-light leading-relaxed max-w-3xl">
+                Vibrant, community-based expressions of local culture,
+                festivals, and harvests. Unlike classical styles, these
+                spontaneous dances celebrate the agricultural cycles and myths
+                of India's diverse states.
+              </p>
+            </div>
+
+            <div className="gsap-fade-up space-y-6 text-lg text-gray-300 font-light leading-relaxed text-left md:text-center p-8 rounded-3xl border border-white/10 backdrop-blur-sm bg-emerald-500/10 hover:bg-emerald-400/10">
+              <p>
+                India is known for its rich cultural heritage. Diversification
+                is the identity of the country. Indian dances are one of the
+                most revered identities of our culture.
+              </p>
+              <p>
+                In India, dance forms can be broadly classified into 2
+                categories – <strong>classical</strong> and{" "}
+                <strong>folk</strong> dance forms. Classical dance has a
+                deep-rooted relationship with the <em>Natya Shastra</em> where
+                the specific features of each form have been mentioned. There
+                are 9 classical dance forms in India as per the cultural
+                ministry (including Chhau).
+              </p>
+              <p>
+                Folk dance, on the other hand, emerged from the local traditions
+                of the respective state, ethnic, or geographic regions. Here is
+                a glimpse into the endless tapestry of India's folk traditions.
+              </p>
+            </div>
+          </div>
+
+          {/* Typography-based Grid (No Images) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {folkDances.map((dance, index) => (
+              <div
+                key={index}
+                className="gsap-fade-up group relative p-6 rounded-2xl bg-[#111] border border-white/5 hover:border-emerald-500/40 hover:bg-white/[0.02] transition-all duration-300 ease-out flex flex-col justify-between min-h-[200px]"
+              >
+                {/* Stylized geometric background glow on hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/0 to-emerald-500/0 group-hover:from-emerald-500/5 group-hover:to-transparent rounded-2xl transition-all duration-500 pointer-events-none"></div>
+
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    {/* Stylized First Letter acts as the "Icon" */}
+                    <div className="w-10 h-10 rounded-full bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-serif text-xl font-bold border border-emerald-500/20 group-hover:scale-110 transition-transform duration-300">
+                      {dance.name.charAt(0)}
+                    </div>
+                    {/* State/Origin Tag */}
+                    <span className="text-[10px] font-bold tracking-widest uppercase text-gray-500 group-hover:text-emerald-400 transition-colors duration-300 text-right">
+                      {dance.origin}
+                    </span>
+                  </div>
+
+                  <h3 className="text-xl font-serif text-white mb-2 group-hover:text-emerald-300 transition-colors duration-300">
+                    {dance.name}
+                  </h3>
+                  <p className="text-xs text-gray-400 font-light leading-relaxed line-clamp-2">
+                    {dance.desc}
                   </p>
-                  <div className="text-orange-500 text-[10px] font-bold uppercase tracking-widest mt-3 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100 flex items-center gap-1">
-                    Explore Details <span>&rarr;</span>
+                </div>
+
+                {/* Bottom decorative line that expands on hover */}
+                <div className="w-8 h-[2px] bg-white/10 mt-6 group-hover:w-full group-hover:bg-emerald-500/50 transition-all duration-500 ease-out"></div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* CONTEMPORARY DANCES: Sleek Avant-Garde Layout */}
+        <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto border-t border-white/5 mb-12">
+          <div className="mb-16 md:flex justify-between items-end">
+            <div className="max-w-2xl">
+              <span className="text-purple-500 font-bold tracking-[0.3em] uppercase text-sm mb-4 block">
+                The Modern Evolution
+              </span>
+              <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">
+                Contemporary & Avant-Garde
+              </h2>
+              <p className="text-gray-400 text-lg font-light leading-relaxed">
+                Breaking the rigid rules of antiquity. These forms fuse
+                classical Indian vocabulary, martial arts, and yoga with global
+                modern dance techniques to tell the stories of the 21st century.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {contemporaryDances.map((dance, index) => (
+              <Link
+                key={index}
+                href={`/Dances/${dance.id}`}
+                className="group relative h-[420px] rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm hover:border-purple-500/40 transition-all duration-500 hover:-translate-y-2 shadow-lg hover:shadow-[0_15px_40px_rgba(168,85,247,0.15)] flex flex-col justify-end"
+              >
+                {/* Background Image */}
+                <Image
+                  src={dance.image}
+                  alt={dance.name}
+                  fill
+                  className="absolute inset-0 object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-500 group-hover:scale-105 ease-out z-0 filter grayscale group-hover:grayscale-0"
+                />
+
+                {/* Dark Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/70 to-transparent z-0 opacity-90 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                {/* Content Container */}
+                <div className="relative z-10 p-6 w-full flex flex-col justify-end h-full">
+                  {/* Top Badge (Purple Accent) */}
+                  <div className="absolute top-6 left-6">
+                    <span className="bg-purple-500/20 border border-purple-500/50 text-purple-400 text-[9px] font-bold uppercase tracking-widest px-3 py-1 rounded-full backdrop-blur-md">
+                      {dance.badge}
+                    </span>
+                  </div>
+
+                  {/* Origin */}
+                  <span className="text-purple-400 text-[10px] font-bold uppercase tracking-widest mb-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    {dance.origin}
+                  </span>
+
+                  {/* Dance Name */}
+                  <h3 className="text-3xl font-serif text-white group-hover:text-purple-400 transition-colors duration-300 drop-shadow-lg">
+                    {dance.name}
+                  </h3>
+
+                  {/* Expanding Description Block */}
+                  <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                    <div className="overflow-hidden">
+                      <div className="pt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                        <p className="text-sm text-gray-300 font-light leading-relaxed line-clamp-3">
+                          {dance.description}
+                        </p>
+                        <div className="text-purple-500 text-[10px] font-bold uppercase tracking-widest mt-4 flex items-center gap-2">
+                          Explore Concept{" "}
+                          <span className="text-lg leading-none">&rarr;</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </Link>

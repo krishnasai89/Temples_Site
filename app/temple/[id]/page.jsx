@@ -134,17 +134,7 @@ export default function TempleDetail({ params }) {
     <main className="min-h-screen bg-[#0a0a0a] text-temple-stone pb-24 relative">
       {/* Cinematic Hero Header */}
       <div className="relative h-screen w-full bg-[#111] flex flex-col items-center justify-center overflow-hidden">
-        {temple.video ? (
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover scale-110 brightness-90 contrast-110 saturate-110"
-          >
-            <source src={temple.video} type="video/mp4" />
-          </video>
-        ) : temple.image ? (
+        {temple.image ? (
           <img
             src={temple.image}
             alt={temple.name}

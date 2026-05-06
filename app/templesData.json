@@ -9,12 +9,12 @@
     "city": "Tirumala • Seshachalam Hills • Tirupati",
     "state": "Andhra Pradesh",
     "image": "/Tirumala.jpg",
-    "video": "/Tirumala.mp4",
     "categories": [
       "Vaishnavism",
       "Swayambhu Kshetra",
       "Richest Temple",
-      "Most Visited Temple"
+      "Most Visited Temple",
+      "Divya Desams"
     ],
     "tags": ["Dravidian Architecture", "Alipiri Mettu", "Tirupati Laddu"],
     "tradition": "Vaikhanasa Agama",
@@ -111,10 +111,14 @@
     "shakti_peeth_body_part": null,
     "city": "Thiruvananthapuram | Ananthapuri | Trivandrum",
     "state": "Kerala",
-    "categories": ["Richest Temple", "Swayambhu Kshetra", "Vaishnavism"],
+    "categories": [
+      "Richest Temple",
+      "Swayambhu Kshetra",
+      "Vaishnavism",
+      "Divya Desams"
+    ],
     "tags": ["Dravidian Architecture", "Kerala Architecture"],
     "image": "/PadmanabhaswamyTemple.jpg",
-    "video": "/PadmanabhaswamyTemple.mp4",
     "tradition": "Vaishnavism (Pancharatra Agama & Kerala Tantric rites)",
     "management_history": "Managed by the Travancore royal family for centuries; later oversight by Supreme Court of India",
     "current_administration": "Travancore Royal Family under Supreme Court supervision",
@@ -169,7 +173,6 @@
     ],
     "tags": ["Cave Temple", "Mountain Pilgrimage"],
     "image": "/VaishnoDevi.jpg",
-    "video": "/VaishnoDevi.mp4",
     "tradition": "Shaktism",
     "management_history": "Managed by local priests historically; later formalized under Shri Mata Vaishno Devi Shrine Board (1986)",
     "current_administration": "Shri Mata Vaishno Devi Shrine Board",
@@ -219,7 +222,6 @@
     ],
     "tags": ["Sacred River", "Cosmic Mandala", "Spiritual Capital", "Gyanvapi"],
     "image": "/KashiVishwanath.jpg",
-    "video": "",
     "tradition": "Shaivism",
     "management_history": "Destroyed and rebuilt multiple times; current structure rebuilt by Ahilyabai Holkar in 1777 adjacent to the original site.",
     "current_administration": "Shri Kashi Vishwanath Temple Trust",
@@ -260,7 +262,6 @@
     "categories": ["Most Visited Temple", "Char Dham", "Vaishnavism"],
     "tags": ["Ratha Yatra", "Mahaprasad", "Baisi Pahacha", "Dhwaja Parivartan"],
     "image": "/JagannathTemple.jpg",
-    "video": "/JagannathTemple.mp4",
     "tradition": "Vaishnavism",
     "management_history": "Maintained by Gajapati kings historically; currently administered by the state under a specific act",
     "current_administration": "Shri Jagannath Temple Administration (SJTA)",
@@ -316,7 +317,6 @@
     ],
     "tags": ["Dravidian Architecture", "Ancient City", "Gopurams"],
     "image": "/MeenakshiTemple.jpg",
-    "video": "/MeenakshiTemple.mp4",
     "tradition": "Shaktism and Shaivism",
     "management_history": "Ancient origins; destroyed in 14th century; massively rebuilt and expanded during the Nayak dynasty (16th-17th centuries)",
     "current_administration": "Hindu Religious and Charitable Endowments Department, Government of Tamil Nadu",
@@ -366,7 +366,6 @@
     "categories": ["Peethas", "Advaita Vedanta", "Spiritual Institution"],
     "tags": ["Vedic Learning", "Tunga River", "Adi Shankaracharya"],
     "image": "/Sringeri.jpg",
-    "video": "/Sringeri.mp4",
     "tradition": "Smarta Tradition (Advaita Vedanta)",
     "management_history": "Established by Adi Shankaracharya in the 8th century; supported historically by the Vijayanagara Empire",
     "current_administration": "Sringeri Sharada Peetham Trust (headed by the presiding Jagadguru)",
@@ -417,7 +416,6 @@
       "Rakta Bastra"
     ],
     "image": "/KamakhyaTemple.jpg",
-    "video": "",
     "tradition": "Shaktism (Tantric)",
     "management_history": "Ancient temple rebuilt in 1565 by Koch kings; later patronized by Ahom kings",
     "current_administration": "Kamakhya Debutter Board",
@@ -465,7 +463,8 @@
       "Panchakshi Devi temples",
       "Shaktism",
       "Architectural Marvel",
-      "Sapta Puri"
+      "Sapta Puri",
+      "Divya Desams"
     ],
     "tags": [
       "Sri Vidya",
@@ -474,7 +473,6 @@
       "Sacred Geometry"
     ],
     "image": "/KamakshiTemple.jpg",
-    "video": "/KamakshiTemple.mp4",
     "tradition": "Shaktism (Sri Vidya / Smarta Tradition)",
     "management_history": "Originally built by Pallavas; expanded by Cholas and Vijayanagara kings; deeply associated with Adi Shankaracharya",
     "current_administration": "Hereditary Sthanikars with deep spiritual ties to the Kanchi Kamakoti Peetham / HR&CE Department",
@@ -535,7 +533,6 @@
       "Sacred Feminine"
     ],
     "image": "/VishalakshiTemple.jpg",
-    "video": "",
     "tradition": "Shaktism",
     "management_history": "Ancient origins; revived by Rani Ahilyabai Holkar and later extensively renovated by South Indian philanthropists in 1971.",
     "current_administration": "Kashi Vishalakshi Temple Trust",
@@ -590,7 +587,6 @@
       "Kishkindha"
     ],
     "image": "/VirupakshaTemple.jpg",
-    "video": "/VirupakshaTemple.mp4",
     "tradition": "Shaivism",
     "management_history": "Origins date back over 1,400 years to the 7th century; significantly expanded by the Vijayanagara rulers, especially Krishnadevaraya in the 16th century.",
     "current_administration": "Archaeological Survey of India (ASI) and Hindu Religious and Charitable Endowments (HR&CE)",
@@ -645,7 +641,6 @@
     "categories": ["Shaktism", "Sacred City", "Ancient Temple"],
     "tags": ["Annakut", "Nagar Architecture", "Golden Idol"],
     "image": "/AnnapurnaTemple.jpg",
-    "video": "/AnnapurnaTemple.mp4",
     "tradition": "Shaktism",
     "management_history": "Constructed in 1729 by Maratha Peshwa Baji Rao I; deeply tied to the Kashi Vishwanath spiritual circuit.",
     "current_administration": "Annapurna Temple Trust (Mahant tradition)",
@@ -691,7 +686,6 @@
     "categories": ["Ramayana Circuit", "Sacred Relic", "Vaishnavism"],
     "tags": ["Mithila Kingdom", "Sita Swayamvara", "Fossilized Stone"],
     "image": "/Dhanushadham.jpg",
-    "video": "/Dhanushadham.mp4",
     "tradition": "Vaishnavism (Ramanandi Sect) / Shaivism",
     "management_history": "Historically preserved by local ascetics and Mahants of the Mithila region; now supported by local municipalities.",
     "current_administration": "Dhanushadham Temple Trust",
@@ -748,7 +742,6 @@
       "Arasalar River"
     ],
     "image": "/AdiVinayaka.jpg",
-    "video": "",
     "tradition": "Shaivism / Ganapatya",
     "management_history": "Ancient Chola-era temple, praised in the ancient Tamil Shaivite hymns (Tevaram).",
     "current_administration": "Hindu Religious and Charitable Endowments Department (HR&CE), Tamil Nadu",
@@ -798,7 +791,6 @@
       "Vavu Bali"
     ],
     "image": "/JanardhanaSwamy.jpg",
-    "video": "/JanardhanaSwamy.mp4",
     "tradition": "Vaishnavism / Kerala Tantric",
     "management_history": "Ancient origins (over 2,000 years old); historically renovated by a Pandyan King; features colonial-era contributions from Dutch merchants.",
     "current_administration": "Travancore Devaswom Board",
@@ -848,7 +840,6 @@
       "Tiger Reserve"
     ],
     "image": "/Srisailam.jpg",
-    "video": "/Srisailam.mp4",
     "tradition": "Shaivism & Shaktism",
     "management_history": "Ancient origins with references across all Yugas. Witnessed massive expansions from the Satavahana, Reddi, and Vijayanagara dynasties, and received the ultimate devotion of Chhatrapati Shivaji Maharaj.",
     "current_administration": "Srisailam Devasthanam Board (Endowments Dept, Andhra Pradesh)",
@@ -903,7 +894,6 @@
     "categories": ["Shaktism", "Pilgrimage", "Kula Daivam"],
     "tags": ["Arya Vysya", "Kasi of Vysyas", "90-ft Panchaloha Idol", "Ahimsa"],
     "image": "/Vasavi.jpg",
-    "video": "/Vasavi.mp4",
     "tradition": "Shaktism & Smarta Tradition",
     "management_history": "Maintained and revered as the absolute spiritual headquarters by the Arya Vysya community globally for centuries, with massive modern upgrades including the colossal Panchaloha idol.",
     "current_administration": "Sri Vasavi Kanyaka Parameshwari Devasthanam Board (Penugonda)",
@@ -959,7 +949,6 @@
       "Elephant Hill"
     ],
     "image": "/Mangalagiri.jpg",
-    "video": "",
     "tradition": "Vaikhanasa Agama",
     "management_history": "Ancient origins spanning all Yugas. The region fell under British East India Company control in 1788, during which the magnificent Gali Gopuram was built by Zamindar Raja Vasireddy Venkatadri Nayudu.",
     "current_administration": "Andhra Pradesh Endowments Department",
@@ -1018,7 +1007,6 @@
       "Nava Narasimha"
     ],
     "image": "/Malakonda.jpg",
-    "video": "",
     "tradition": "Pancharatra Agama",
     "management_history": "A deeply sacred 14th-century shrine with its earliest stone inscriptions dating back to 1302 AD. Currently administered by the Endowments Department of Andhra Pradesh.",
     "current_administration": "Andhra Pradesh Endowments Department",
@@ -1069,7 +1057,6 @@
       "Magnetic Levitation"
     ],
     "image": "/Konark.jpg",
-    "video": "",
     "tradition": "Sauram (Sun Worship)",
     "management_history": "Built in 1250 CE by King Langula Narasingha Deva I, overseen by Shiva Samantaraya Mahapatra. Astonishingly, its complete Sanskrit and Odia planning records were preserved on palm leaves discovered in the 1960s.",
     "current_administration": "Archaeological Survey of India (ASI)",
@@ -1124,7 +1111,6 @@
       "Dakshina Kailasam"
     ],
     "image": "/Srikalahasti.jpg",
-    "video": "",
     "tradition": "Shaivism (Kamika Agama)",
     "management_history": "Ancient origins with massive structural expansions by the Chola kings in the 11th century, followed by the Vijayanagara Empire. Emperor Krishnadevaraya built the stunning 100-pillared hall and the majestic Raja Gopuram in 1516 AD.",
     "current_administration": "Andhra Pradesh Endowments Department",
@@ -1185,7 +1171,6 @@
       "Sage Jambu"
     ],
     "image": "/Akhilandeshwari.jpg",
-    "video": "",
     "tradition": "Shaivism (Kamika Agama)",
     "management_history": "Built originally by the Early Chola King Kocengannan around 1,800 years ago. Massive expansions were later carried out by the Medieval Cholas, Pandyas, Hoysalas, and the Vijayanagara Empire.",
     "current_administration": "Hindu Religious and Charitable Endowments Department (HR&CE), Tamil Nadu",
@@ -1232,7 +1217,6 @@
       "Vedic Roots"
     ],
     "image": "/Ahobilam.jpg",
-    "video": "",
     "tradition": "Pancharatra Agama & Ahobila Mutt Tradition",
     "management_history": "Mentioned in ancient Sangam literature (Paripatal). Heavily patronized by the Kakatiya, Reddy, and Vijayanagara empires. Sacked in 1579 by the Golconda Sultanate. Spiritually governed by the supreme Sri Ahobila Matha since the 15th century.",
     "current_administration": "Sri Ahobila Matha (Mutt)",
@@ -1317,7 +1301,6 @@
       "City of Temples"
     ],
     "image": "/Ekambaranathar.jpg",
-    "video": "",
     "tradition": "Shaivism (Kamika Agama)",
     "management_history": "Ancient origins dating back to at least 600 AD. The temple was built and expanded by the Pallavas, Cholas, and later the Vijayanagara Empire. In 1509 AD, Emperor Krishnadevaraya constructed the breathtaking 192-foot Raja Gopuram and the 1,000-pillared hall.",
     "current_administration": "Hindu Religious and Charitable Endowments Department (HR&CE), Tamil Nadu",
@@ -1367,7 +1350,6 @@
     ],
     "tags": ["Harihara", "Bindu Sagar", "Ekamra Kshetra", "Rukuna Rath Yatra"],
     "image": "/Lingaraj.jpg",
-    "video": "",
     "tradition": "Synthesis of Shaiva and Vaishnava Agamas",
     "management_history": "The current monumental structure was built in the 11th century by King Jajati Keshari of the Somavamsi dynasty, with major subsequent additions (like the Natamandira and Bhogamandapa) by the Ganga dynasty rulers.",
     "current_administration": "Archaeological Survey of India (ASI) & Temple Trust Board",
@@ -1418,7 +1400,6 @@
       "Sapta Matrikas"
     ],
     "image": "/Mukteswara.jpg",
-    "video": "",
     "tradition": "Shaivism (Pashupata Sect)",
     "management_history": "Mukteswara was built around 950-975 CE by the Somavamsi dynasty, marking a crucial transition in temple architecture. The adjacent Siddheswara temple was added later by the Ganga dynasty.",
     "current_administration": "Archaeological Survey of India (ASI)",
@@ -1465,7 +1446,6 @@
       "Hemadpanthi Architecture"
     ],
     "image": "/Kolhapur.jpg",
-    "video": "",
     "tradition": "Shaktism & Smarta Tradition",
     "management_history": "Constructed around 700 AD by the Chalukya Empire. It was later expanded by the Shilahara and Yadava dynasties, and fiercely protected and enriched by the Maratha Empire, particularly by Chhatrapati Shivaji Maharaj.",
     "current_administration": "Paschim Maharashtra Devasthan Samiti (PMDS)",
@@ -1521,7 +1501,6 @@
       "Elephant Sanctuary"
     ],
     "image": "/Guruvayur.jpg",
-    "video": "",
     "tradition": "Kerala Tantric Tradition (Kshetra Acharam)",
     "management_history": "Ancient origins with rituals strictly codified in the 15th century by Chennas Narayanan Namboodiri in the 'Tantra Samuchayam'. The temple has been fiercely protected and sustained by devotees through centuries of invasions and fires.",
     "current_administration": "Guruvayur Devaswom Board",
@@ -1573,7 +1552,6 @@
       "Axis Mundi / Center of the Universe"
     ],
     "image": "/Kailash.jpg",
-    "video": "",
     "tradition": "Revered by Hinduism, Buddhism, Jainism, and Bon",
     "management_history": "As a natural geological and spiritual marvel, it has no human 'management' in the traditional sense. Pilgrimages (Kailash Mansarovar Yatra) are strictly regulated and administered by the Governments of China, India, and Nepal. Climbing the mountain is strictly prohibited by the Chinese government due to its religious significance.",
     "current_administration": "Tibet Autonomous Region Authorities",
@@ -1628,7 +1606,6 @@
       "Javanese Architecture"
     ],
     "image": "/Prambanan.jpg",
-    "video": "",
     "tradition": "Javanese Hinduism",
     "management_history": "Abandoned in the 10th century and left to decay under volcanic ash and dense jungle. It was rediscovered in 1811 during the brief British rule of Java. Formal reconstruction was initiated in 1918 by the Dutch East Indies government and was completed by the Indonesian government in 1953.",
     "current_administration": "PT Taman Wisata Candi Borobudur, Prambanan, and Ratu Boko (Indonesian State-owned enterprise)",
@@ -1682,7 +1659,6 @@
       "Bengali Hindu Epicenter"
     ],
     "image": "/Dhakeshwari.jpg",
-    "video": "",
     "tradition": "Bengali Hinduism (Shaktism)",
     "management_history": "Historically patronized by various dynasties including the Sena and Mughal-appointed governors. Following the independence of Bangladesh and subsequent campaigns by the Hindu community, it was officially declared the 'National Temple' (Jatiya Mandir) of Bangladesh in 1996.",
     "current_administration": "Dhakeshwari Temple Board / Bangladesh Puja Udjapan Parishad",
@@ -1734,7 +1710,6 @@
       "Syncretic Shrine"
     ],
     "image": "/Hinglaj.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaktism) and local Sufi Islam",
     "management_history": "Historically, the shrine has been protected for centuries by the local Baloch Muslim tribes (specifically the Zikri community), who revere the Goddess as 'Nani Pir' (Maternal Grandmother Saint). This unique syncretic reverence is a primary reason the ancient temple has survived and thrived despite geopolitical shifts.",
     "current_administration": "Hinglaj Mata Temple Committee / Hinglaj Shewa Mandali (Supported by the Balochistan Provincial Government)",
@@ -1788,7 +1763,6 @@
       "Cremation Ghats"
     ],
     "image": "/Pashupatinath.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism)",
     "management_history": "Historically patronized by the Licchavi, Malla, and Shah kings of Nepal. In a unique tradition believed to have been established by the 8th-century philosopher Adi Shankaracharya, the main priests (Bhattas) are strictly selected from the Nambudiri Brahmins of South India, showcasing the deep spiritual integration of the Indian subcontinent.",
     "current_administration": "Pashupati Area Development Trust (PADT)",
@@ -1841,7 +1815,6 @@
       "7th Wonder of the World"
     ],
     "image": "/AngkorWat.jpg",
-    "video": "",
     "tradition": "Originally Hindu (Vaishnava), transitioned to Theravada Buddhism in the late 12th century",
     "management_history": "Commissioned by King Suryavarman II in the 12th century as a state temple and funerary monument. Unlike many other Angkorian sites, it was never fully abandoned, partly due to the protection offered by its massive moat. Rediscovered by the Western world in the mid-19th century through the writings of Henri Mouhot.",
     "current_administration": "APSARA National Authority (Cambodian Government)",
@@ -1892,7 +1865,6 @@
       "Krishnadevaraya"
     ],
     "image": "/VitthalaHampi.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism)",
     "management_history": "Built during the height of the Vijayanagara Empire. It was abandoned and heavily damaged during the sack of Hampi by the Deccan Sultanates in 1565. The ruins were later rediscovered and are now protected as a monument of national importance.",
     "current_administration": "Archaeological Survey of India (ASI)",
@@ -1938,7 +1910,6 @@
     ],
     "tags": ["Swarga Mandap", "No Nandi", "Gaja Peetha", "12th Century"],
     "image": "/Kopeshwar.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism)",
     "management_history": "Built in the 12th century by the Shilahara kings (Gandaraditya, Vijayaditya, and Bhoja-II) and later patronized by the Seuna Yadavas of Devagiri. It survived various historical upheavals and remains a protected monument today under the care of the Archaeological Survey of India (ASI).",
     "current_administration": "Archaeological Survey of India (ASI) / Local Temple Trust",
@@ -1995,7 +1966,6 @@
       "Pashupatastra"
     ],
     "image": "/KanakaDurga.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaktism)",
     "management_history": "Historically patronized by ancient dynasties including the Vishnukundinas, Chalukyas, and later the Vijayanagara Empire. A Telugu inscription dated 1229 CE from the Chola era records a donation to the temple, highlighting its long-standing significance. Today, it is administered by the Andhra Pradesh Endowments Department.",
     "current_administration": "Andhra Pradesh Endowments Department",
@@ -2050,7 +2020,6 @@
       "Rani Rashmoni"
     ],
     "image": "/Dakshineswar.jpg",
-    "video": "",
     "tradition": "Bengali Shaktism",
     "management_history": "Founded by Rani Rashmoni in 1855, a visionary Shudra businesswoman and philanthropist. She faced significant opposition from orthodox Brahmins of the time but successfully established the temple. It became world-famous as the workplace of the mystic saint Sri Ramakrishna Paramahansa.",
     "current_administration": "Dakshineswar Kali Temple Board of Trustees",
@@ -2105,7 +2074,6 @@
       "East Coast Road (ECR)"
     ],
     "image": "/NithyaKalyanaPerumal.jpg",
-    "video": "",
     "tradition": "Hinduism (Sri Vaishnavism)",
     "management_history": "Originally built during the Pallava dynasty (7th century). It was later extensively patronized and endowed by the Chola kings (specifically Raja Raja Chola) and the Vijayanagara emperors, as evidenced by the numerous ancient inscriptions carved onto the temple's stone walls.",
     "current_administration": "Hindu Religious and Charitable Endowments Department (HR&CE), Government of Tamil Nadu",
@@ -2156,7 +2124,6 @@
       "Baba Budangiri Range"
     ],
     "image": "/DevirammaBetta.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaktism / Local Village Deity Worship)",
     "management_history": "Managed traditionally by the local community of Bindiga village. It holds immense cultural and spiritual significance for the surrounding coffee-growing estates, villages, and the royal heritage of the region.",
     "current_administration": "Local Temple Trust / Chikkamagaluru District Administration (specifically during the annual festival)",
@@ -2211,7 +2178,6 @@
       "Pancha Narasimha"
     ],
     "image": "/Yadadri.jpg",
-    "video": "",
     "tradition": "Hinduism (Sri Vaishnavism / Pancharatra Agama)",
     "management_history": "Historically patronized by local rulers and visited by devotees for centuries as a modest cave shrine. Following the formation of Telangana state, the temple underwent a massive, state-sponsored architectural transformation between 2016 and 2022 to elevate it to a world-class pilgrimage center.",
     "current_administration": "Yadadri Temple Development Authority (YTDA) / Government of Telangana",
@@ -2253,11 +2219,11 @@
       "Vaishnavism",
       "Char Dham",
       "Chota Char Dham",
-      "Divya Desam"
+      "Divya Desam",
+      "Divya Desams"
     ],
     "tags": ["Adi Shankara", "Alaknanda River", "Tapt Kund", "Neelkanth Peak"],
     "image": "/Badrinath.jpg",
-    "video": "",
     "tradition": "Hinduism (Sri Vaishnavism / Vaikhanasa Agama)",
     "management_history": "The temple was established as a major pilgrimage center by Adi Shankara in the 8th century. It has been patronized by the Garhwal kings and local chieftains for centuries. Despite being damaged multiple times by avalanches and earthquakes, it has been rebuilt repeatedly, with the current facade and structure being largely from the 16th-century renovations.",
     "current_administration": "Shri Badrinath-Kedarnath Temple Committee (BKTC)",
@@ -2312,7 +2278,6 @@
       "Mount Arunachala"
     ],
     "image": "/Arunachaleswarar.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism / Tamil Saiva Siddhanta)",
     "management_history": "The temple's recorded history dates back to the 9th century during the Chola dynasty. Significant massive expansions, including the towering gopurams and the thousand-pillared hall, were commissioned by the Vijayanagara emperors, particularly Krishnadevaraya in the 15th century.",
     "current_administration": "Hindu Religious and Charitable Endowments Department (HR&CE), Government of Tamil Nadu",
@@ -2363,7 +2328,6 @@
       "13th Century"
     ],
     "image": "/Ramappa.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism)",
     "management_history": "Commissioned in 1213 CE during the reign of the Kakatiya ruler Ganapati Deva. Despite the fall of the Kakatiya dynasty and subsequent invasions, the temple survived largely due to its brilliant engineering. It was inscribed as a UNESCO World Heritage Site in 2021.",
     "current_administration": "Archaeological Survey of India (ASI) / Kakatiya Heritage Trust",
@@ -2418,7 +2382,6 @@
       "Gopurala Mamidada"
     ],
     "image": "/Gollalamamidada.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism and Saura traditions)",
     "management_history": "The development of these magnificent temples is largely attributed to the immense devotion and philanthropy of the local prominent personalities and zamindars, particularly the late Sri Kovvuri Basivi Reddy, who transformed this agricultural village into a major spiritual hub in the late 19th and early 20th centuries.",
     "current_administration": "Local Temple Trusts / Andhra Pradesh Endowments Department",
@@ -2469,7 +2432,6 @@
       "Lonasura Demon"
     ],
     "image": "/Daityasudan.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism)",
     "management_history": "Built during the reign of the Yadavas of Devagiri (Seuna dynasty) around the late 12th or early 13th century. Historical analysis suggests its construction was abruptly halted—leaving its shikhara (tower) unfinished—due to the disruptive invasions by the Delhi Sultanate in the early 14th century.",
     "current_administration": "Archaeological Survey of India (ASI)",
@@ -2523,7 +2485,6 @@
       "Pre-Agamic Iconography"
     ],
     "image": "/Gudimallam.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism)",
     "management_history": "The temple boasts a continuous history of worship for over 2,000 years. It features ancient inscriptions from the Pallava, Chola (specifically Vikrama Chola), and Vijayanagara dynasties, recording land grants and the funding of perpetual lamps. Today, it is brought under the protection of the Archaeological Survey of India (ASI) due to its unparalleled historical significance.",
     "current_administration": "Archaeological Survey of India (ASI)",
@@ -2574,7 +2535,6 @@
       "Destroyed Monument"
     ],
     "image": "/MartandSunTemple.jpg",
-    "video": "",
     "tradition": "Hinduism (Saura)",
     "management_history": "Built in the 8th century by Emperor Lalitaditya Muktapida of the Karkota dynasty, marking the absolute zenith of Kashmiri Hindu architecture. Tragically, it was completely destroyed in the early 15th century on the orders of Sikandar Shah Miri (Sikandar Butshikan). It lay in ruins for centuries and is now protected by the Archaeological Survey of India (ASI) as a site of national importance.",
     "current_administration": "Archaeological Survey of India (ASI)",
@@ -2621,7 +2581,6 @@
     ],
     "tags": ["Himalayas", "Mandakini River", "Adi Shankara", "Bhim Shila"],
     "image": "/Kedarnath.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism)",
     "management_history": "Legend attributes its original construction to the Pandavas, while the present monumental stone structure is credited to Adi Shankaracharya in the 8th century. It is administered by the Shri Badrinath-Kedarnath Temple Committee (BKTC), with the head priest (Rawal) traditionally belonging to the Veerashaiva community of Karnataka.",
     "current_administration": "Shri Badrinath-Kedarnath Temple Committee (BKTC)",
@@ -2677,7 +2636,6 @@
       "Self-Abhishekam"
     ],
     "image": "/Parvathamalai.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism)",
     "management_history": "Unlike massive structural temples built by kings, Parvathamalai has historically been a secluded spiritual retreat for ascetics. Today, it is maintained by a combination of local volunteer groups, Siddhar trusts, and the Tamil Nadu Hindu Religious and Charitable Endowments (HR&CE) department.",
     "current_administration": "Tamil Nadu HR&CE Department & Local Trusts",
@@ -2726,7 +2684,6 @@
       "Changdev Maharaj"
     ],
     "image": "/Kedareshwar.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism)",
     "management_history": "The surrounding Harishchandragad fort was originally built during the reign of the Kalachuri dynasty in the 6th century. Historically, the caves served as spiritual retreats for wandering ascetics and sages. Today, it is an unprotected heritage site managed collectively by the Archaeological Survey of India (ASI), local authorities, and trekking communities.",
     "current_administration": "Archaeological Survey of India (ASI) & Local Authorities",
@@ -2769,7 +2726,6 @@
       "Saptatirtha Pushkarini"
     ],
     "image": "/Harishchandreshwar.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism)",
     "management_history": "Constructed during the medieval period, likely under the patronage of the Yadava or Silahara dynasties, following the earlier 6th-century fort foundations by the Kalachuris. Today, the ruins and the temple fall under the purview of the Archaeological Survey of India (ASI) alongside local trekking and conservation communities.",
     "current_administration": "Archaeological Survey of India (ASI) & Local Authorities",
@@ -2815,7 +2771,6 @@
       "Tallest Shiva Statue"
     ],
     "image": "/Murudeshwar.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism)",
     "management_history": "While the core lingam and sanctum have been worshipped for centuries, the modern monumental complex was conceptualized, developed, and financed largely by businessman and philanthropist R. N. Shetty in the late 20th and early 21st centuries. Today, it is managed by the Shree Murudeshwar Temple Trust.",
     "current_administration": "Shree Murudeshwar Temple Trust",
@@ -2871,7 +2826,6 @@
       "Proxy Pilgrimage"
     ],
     "image": "/DwarakaTirumala.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism)",
     "management_history": "Historically supported by various local rulers and Zamindars, notably the Mylavaram Zamindars who contributed heavily to its structural expansion. Today, it is a highly organized, heavily visited, and well-funded temple administered by the Andhra Pradesh Endowments Department.",
     "current_administration": "Andhra Pradesh Endowments Department",
@@ -2920,7 +2874,6 @@
       "Annappa Swamy"
     ],
     "image": "/Dharmasthala.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism) / Jainism / Daivaradhane",
     "management_history": "Represents an extraordinary 800-year-old syncretic tradition. The temple is dedicated to Lord Shiva, but the priests are Vaishnavite Brahmins, and the administration is headed by a Jain Bunt family (the Pergade/Heggades). The head of the family is known as the 'Dharmadhikari' (currently Dr. D. Veerendra Heggade).",
     "current_administration": "The Heggade Family (Dharmadhikari)",
@@ -2978,7 +2931,6 @@
       "Vasant Panchami"
     ],
     "image": "/Basara.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaktism/Smartism)",
     "management_history": "The temple has ancient roots tracing back to the Mahabharata era, with later structural patronization from the Chalukya and Rashtrakuta dynasties. Today, it is a highly prominent shrine managed by the Telangana State Endowments Department.",
     "current_administration": "Telangana Endowments Department",
@@ -3022,7 +2974,6 @@
     ],
     "tags": ["Pind Daan", "Falgu River", "Gayasur", "Pitru Paksha", "Moksha"],
     "image": "/GayaJi_Vishnupad.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism / Ancestral Worship)",
     "management_history": "The site has been revered since antiquity, with mentions in the Ramayana and Mahabharata. However, the magnificent temple structure standing today was rebuilt in 1787 by the great Maratha queen, Ahilyabai Holkar of Indore. The ritual economy is managed entirely by the local Gayawal Brahmins (Pandas).",
     "current_administration": "Gayawal Tirth Purohit Committee / Bihar State Religious Trust Board",
@@ -3082,7 +3033,6 @@
       "Trishuls"
     ],
     "image": "/Chandrabadni.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaktism)",
     "management_history": "Historically revered for millennia and mentioned in the Skanda and Devi Bhagavata Puranas. The priesthood traditionally belongs to the Semalty Brahmin community of the nearby Pujar Gaon village, who have guarded the shrine's unique rituals for generations.",
     "current_administration": "Local Temple Trust & Traditional Priests (Semalty Brahmins)",
@@ -3128,7 +3078,6 @@
       "Tiger Reserve"
     ],
     "image": "/BiligiriRanganatha.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism)",
     "management_history": "The Gangas and Hoysalas historically developed this temple. The Maharajas of Mysore also contributed significantly to its upkeep. Today, it is managed by the Karnataka Government's Hindu Religious and Charitable Endowments (HR&CE) department.",
     "current_administration": "Karnataka State HR&CE Department",
@@ -3175,7 +3124,6 @@
       "Dandakaranya"
     ],
     "image": "/VontimittaKodandarama.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism)",
     "management_history": "The temple was built during the Chola and Vijayanagara periods (around the 16th century). It received patronage from various kings and was even recorded by the French traveler Jean-Baptiste Tavernier in 1652. Following the bifurcation of Andhra Pradesh in 2014, the temple was taken over by the Tirumala Tirupati Devasthanams (TTD) to be developed as the state's primary Ramalayam.",
     "current_administration": "Tirumala Tirupati Devasthanams (TTD)",
@@ -3227,7 +3175,6 @@
       "King Vishnuvardhana"
     ],
     "image": "/Hoysaleswara.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism)",
     "management_history": "Commissioned in 1121 CE by Ketamalla, an officer of the great Hoysala King Vishnuvardhana. After the city was sacked twice by the Delhi Sultanate in the 14th century, it fell into ruin. Today, it is a protected monument of national importance managed by the Archaeological Survey of India (ASI) and was inscribed as a UNESCO World Heritage Site in 2023.",
     "current_administration": "Archaeological Survey of India (ASI)",
@@ -3281,7 +3228,6 @@
       "Swayambhu"
     ],
     "image": "/ThalupulammaLova.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaktism / Folk Tradition)",
     "management_history": "For centuries, the shrine was a modest local Grama Devata temple patronized by the surrounding villagers and tribals. With the expansion of the nearby National Highway, its popularity skyrocketed among travelers and transport operators. Today, it is a highly revenue-generating temple administered by the Andhra Pradesh Endowments Department.",
     "current_administration": "Andhra Pradesh Endowments Department",
@@ -3329,7 +3275,6 @@
       "Golden Roof"
     ],
     "image": "/ChidambaramNataraja.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism)",
     "management_history": "Unlike most major temples in Tamil Nadu which are controlled by the government (HR&CE), Chidambaram is uniquely owned and independently managed by the 'Podhu Dikshitars', an ancient, endogamous community of Smartha Shaivite Brahmins who have served as the temple's hereditary priests for millennia. Supreme Court rulings have legally protected their exclusive right to manage the temple.",
     "current_administration": "The Podhu Dikshitars",
@@ -3387,7 +3332,6 @@
       "Narayani Peedam"
     ],
     "image": "/SripuramGoldenTemple.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaktism)",
     "management_history": "A modern marvel inaugurated in 2007, conceptualized and built under the guidance of spiritual leader Sri Sakthi Amma. It is managed by the Sri Narayani Peedam, an organization deeply involved in large-scale social welfare, healthcare (running hospitals), and educational initiatives.",
     "current_administration": "Sri Narayani Peedam",
@@ -3434,7 +3378,6 @@
       "Western Ghats"
     ],
     "image": "/BannariAmman.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaktism / Folk Tradition)",
     "management_history": "Historically patronized by local farming communities, tribal groups of the Sathyamangalam forests, and regional chieftains. Given its massive modern popularity and high revenue, it is now a major temple administered by the Tamil Nadu Hindu Religious and Charitable Endowments (HR&CE) department.",
     "current_administration": "Tamil Nadu HR&CE Department",
@@ -3478,7 +3421,6 @@
       "Senthilandavar"
     ],
     "image": "/Tiruchendur.jpg",
-    "video": "",
     "tradition": "Hinduism (Kaumaram / Shaivism)",
     "management_history": "The temple boasts immense antiquity, originally patronized by the Pandya and Chera dynasties, with massive structural additions made later by the Nayaks of Madurai. It famously survived a 17th-century occupation by the Dutch East India Company. Today, it is a flagship temple administered by the Tamil Nadu Hindu Religious and Charitable Endowments (HR&CE) department.",
     "current_administration": "Tamil Nadu HR&CE Department",
@@ -3538,7 +3480,6 @@
       "Western Ghats"
     ],
     "image": "/SabarimalaKerala.jpg",
-    "video": "",
     "tradition": "Hinduism (Ayyappan / Kerala Tantric)",
     "management_history": "Historically tied to the royal family of Pandalam, who fostered Lord Ayyappa. Following the integration of princely states, the temple's administration was handed over to the government. Today, it is managed by the Travancore Devaswom Board (TDB).",
     "current_administration": "Travancore Devaswom Board (TDB)",
@@ -3592,7 +3533,6 @@
       "Shambhavi River"
     ],
     "image": "/SVTMulki.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism / Dvaita Tradition)",
     "management_history": "Managed exclusively by the Gowd Saraswat Brahmin (GSB) community. Historically patronized by the Kashi Math Samsthan, with its spiritual roots tied deeply to the lineage of the great seers Sri Vijayendra Tirtha and Sri Sudhindra Tirtha.",
     "current_administration": "Gowd Saraswat Brahmin (GSB) Samaj / Temple Trust",
@@ -3648,7 +3588,6 @@
       "Kudaivarai Kovil"
     ],
     "image": "/NarasingamYogaNarasimha.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism)",
     "management_history": "Originally a rock-cut cave temple excavated by the Early Pandyas around the 8th century CE (specifically during the reign of King Marangari). Later structural additions, including the sprawling front mandapams, were built by the Nayaks of Madurai. Currently, it is managed by the Tamil Nadu Hindu Religious and Charitable Endowments (HR&CE) department.",
     "current_administration": "Tamil Nadu HR&CE Department",
@@ -3704,7 +3643,6 @@
       "Navanarasimha Kshetram"
     ],
     "image": "/Antarvedi.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism)",
     "management_history": "Historically supported by the local Zamindars of the Mogalturu estate and later patronized heavily by the Peddapuram Rajas. The temple was rebuilt in the 18th and 19th centuries after earlier ancient structures were lost to sea erosion. Today, it is managed by the Andhra Pradesh Endowments Department.",
     "current_administration": "Andhra Pradesh Endowments Department",
@@ -3761,7 +3699,6 @@
       "Dakshina Kashi"
     ],
     "image": "/Vemulawada.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism) / Folk Syncretism",
     "management_history": "Built originally by the Vemulawada Chalukyas in the 8th/9th century. It received extensive patronage from subsequent regional dynasties. Today, it is one of the highest-earning and most heavily visited temples administered by the Telangana State Endowments Department.",
     "current_administration": "Telangana State Endowments Department",
@@ -3819,7 +3756,6 @@
       "Cape Comorin"
     ],
     "image": "/KumariAmman.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaktism / Kerala Tantric)",
     "management_history": "Historically patronized by the Pandyas, Cholas, and later heavily expanded by the Travancore Royal Family. Following the reorganization of states, it is currently administered by the Kanyakumari Devaswom Board under the Tamil Nadu Hindu Religious and Charitable Endowments (HR&CE) department.",
     "current_administration": "Tamil Nadu HR&CE Department",
@@ -3876,7 +3812,6 @@
       "Kaveri River"
     ],
     "image": "/Malaikottai.jpg",
-    "video": "",
     "tradition": "Hinduism (Ganapatyam / Shaivism)",
     "management_history": "The ancient rock-cut caves were excavated by the Pallavas (King Mahendravarman I) in the 6th century. The Madurai Nayaks later heavily fortified the rock and completed the structural temples. The fort played a crucial role during the Carnatic Wars between the British and French. Today, the temple complex is managed by the Tamil Nadu Hindu Religious and Charitable Endowments (HR&CE) department.",
     "current_administration": "Tamil Nadu HR&CE Department",
@@ -3923,7 +3858,8 @@
       "Vaishnavism",
       "Divya Desam",
       "Monumental Architecture",
-      "Pilgrimage Epicenter"
+      "Pilgrimage Epicenter",
+      "Divya Desams"
     ],
     "tags": [
       "Largest Functioning Temple",
@@ -3933,7 +3869,6 @@
       "108 Divya Desams"
     ],
     "image": "/Srirangam.jpg",
-    "video": "",
     "tradition": "Hinduism (Sri Vaishnavism)",
     "management_history": "Historically patronized by the Cholas, Pandyas, Hoysalas, and the Vijayanagara Empire. It survived massive plunder by the Delhi Sultanate in the 14th century. Today, it is managed by the Tamil Nadu Hindu Religious and Charitable Endowments (HR&CE) department, alongside hereditary Sri Vaishnava administrators.",
     "current_administration": "Tamil Nadu HR&CE Department",
@@ -3988,7 +3923,6 @@
       "Swayambhu"
     ],
     "image": "/Pechalakona.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism)",
     "management_history": "Historically supported and patronized by the Rajas of Venkatagiri who developed the structural complex around the natural manifestation. Today, it is administered by the Andhra Pradesh Endowments Department.",
     "current_administration": "Andhra Pradesh Endowments Department",
@@ -4030,7 +3964,6 @@
       "Tula Sankramana"
     ],
     "image": "/Bhagandeshwara.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism / Smartha)",
     "management_history": "Historically patronized by the Haleri Kings of Kodagu. In the late 18th century, it was occupied and converted into a garrison by Tipu Sultan, but was soon recaptured and meticulously restored by the Kodagu king, Dodda Vira Rajendra. Today, it is managed by the Karnataka Hindu Religious and Charitable Endowments (HR&CE) department.",
     "current_administration": "Karnataka State HR&CE Department",
@@ -4086,7 +4019,6 @@
       "Dakshina Kannada"
     ],
     "image": "/PutturMahalingeshwara.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism)",
     "management_history": "Constructed during the 11th-12th century, the temple was heavily patronized by the local Banga Kings. Today, it is recognized as a 'Historical Monument' under the 1961 act with preservation overseen by the Directorate of Archaeology and Museums, and managed by the Karnataka Hindu Religious and Charitable Endowments (HR&CE) department.",
     "current_administration": "Karnataka State HR&CE Department",
@@ -4143,7 +4075,6 @@
       "Golden Lotus"
     ],
     "image": "/TiruchanurPadmavati.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism / Vaikhanasa Agama)",
     "management_history": "Ee devasthanam charithra chala purathanamainadhi. Chola, Pallava mattu Vijayanagara raajulu ee temple ni abhivruddhi chesaru. Prasthutham idi Tirumala Tirupati Devasthanams (TTD) dwara chala prathishtathmakanga nirvahinchabadthundhi.",
     "current_administration": "Tirumala Tirupati Devasthanams (TTD)",
@@ -4196,7 +4127,6 @@
       "Anna Dhanam"
     ],
     "image": "/UdupiKrishna.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism / Dvaita Vedanta)",
     "management_history": "Established by the great philosopher-saint Jagadguru Sri Madhvacharya in the 13th century. He founded the 'Ashta Mathas' (Eight Monasteries) to ensure the continuous worship of the deity. The management of the temple rotates among these eight Mathas every two years through a grand, highly structured handover ceremony known as the 'Paryaya'.",
     "current_administration": "The Ashta Mathas of Udupi (Rotating Paryaya System)",
@@ -4253,7 +4183,6 @@
       "Vanara Sena"
     ],
     "image": "/AnjanadriHill.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism / Ramayana Tradition)",
     "management_history": "While the physical hill is an ancient natural formation deeply tied to the Treta Yuga, the current structural shrines are relatively modern. The site is managed by local temple trusts under the broader supervision of the Karnataka Hindu Religious and Charitable Endowments (HR&CE) department and local Anegundi authorities.",
     "current_administration": "Karnataka State HR&CE Department / Local Temple Trust",
@@ -4305,7 +4234,6 @@
       "Garuda"
     ],
     "image": "/KukkeSubramanya.jpg",
-    "video": "",
     "tradition": "Hinduism (Kaumaram / Naga Worship)",
     "management_history": "An ancient shrine historically revered by local tribes and later patronized by the Hoysala and Vijayanagara empires. The great philosopher Sri Madhvacharya visited here and established the Samputa Narasimha Matha adjacent to it. Today, it is one of the wealthiest temples managed by the Karnataka Hindu Religious and Charitable Endowments (HR&CE) department.",
     "current_administration": "Karnataka State HR&CE Department",
@@ -4362,7 +4290,6 @@
       "Darpana Sundari"
     ],
     "image": "/BelurChennakeshava.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism / Pancharatra Agama)",
     "management_history": "Commissioned in 1117 CE by the great Hoysala King Vishnuvardhana, it took three generations and 103 years to complete. Today, it is a protected monument maintained by the Archaeological Survey of India (ASI), while the active daily rituals are managed by the Karnataka Hindu Religious and Charitable Endowments (HR&CE) department.",
     "current_administration": "Archaeological Survey of India (ASI) & Karnataka State HR&CE",
@@ -4414,7 +4341,6 @@
       "Basalt Rock"
     ],
     "image": "/ElloraKailasa.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism)",
     "management_history": "Commissioned in the 8th century by King Krishna I of the Rashtrakuta dynasty. Today, it is part of the Ellora Caves UNESCO World Heritage Site, strictly protected and managed by the Archaeological Survey of India (ASI).",
     "current_administration": "Archaeological Survey of India (ASI)",
@@ -4466,7 +4392,6 @@
       "Maavilakku"
     ],
     "image": "/SiruvachurMaduraiKaliyamman.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaktism / Folk Tradition)",
     "management_history": "Historically patronized by local chieftains and rural farming communities. Given its massive modern popularity as a 'Kula Deivam' (family deity) for millions, it is now a major temple administered by the Tamil Nadu Hindu Religious and Charitable Endowments (HR&CE) department.",
     "current_administration": "Tamil Nadu HR&CE Department",
@@ -4519,7 +4444,6 @@
       "Naga Linga"
     ],
     "image": "/LepakshiVeerabhadra.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism)",
     "management_history": "Constructed in 1530 CE by two brothers, Virupanna and Veeranna, who were governors under Emperor Achyutaraya of the glorious Vijayanagara Empire. Today, it is a protected monument maintained by the Archaeological Survey of India (ASI), while active daily worship is overseen by the Andhra Pradesh Endowments Department.",
     "current_administration": "Archaeological Survey of India (ASI) & AP Endowments Department",
@@ -4545,10 +4469,9 @@
         "importance": "The spiritual epicenter of the Vijayanagara Empire, sharing the exact same architectural DNA, mural styles, and ruling patronage as Lepakshi."
       }
     ],
-    "architecture": "<h1>The Hanging Pillar and Monolithic Giants</h1>The temple is a masterclass in <b>Vijayanagara Architecture</b>. Its most famous anomaly is the <b>Aakaasa Sthambha (Hanging Pillar)</b>—a massive granite pillar in the main hall that does not touch the ground, allowing devotees to pass a thin cloth completely underneath it. Just outside the main temple complex sits the <b>Lepakshi Nandi</b>, a magnificent 15-foot-tall, 27-foot-long monolithic bull, which is one of the largest in India. Inside the courtyard, an immense <b>Naga Linga</b>—a seven-hooded serpent shielding a Shiva Linga—is breathtakingly carved out of a single granite boulder.",
-    "festivals": "<b>Maha Shivaratri</b> is the most prominent festival, drawing thousands of devotees for night-long prayers. The temple also grandly celebrates the 10-day <b>Durgamma Festival</b> (Navaratri), honoring Goddess Bhadrakali with elaborate daily decorations.",
-    "worship": "Despite being an ASI archaeological site, it remains a fully functioning temple. Worship of Lord Veerabhadra here is intense and follows traditional Shaivite agamas. Devotees often tie small pieces of cloth or threads to the intricately carved pillars in the outer mandapam as a vow to fulfill their wishes.",
-    "modern_folklore": "The temple is haunted by the tragic, gruesome lore of its builder, Virupanna. According to local history, envious courtiers falsely informed the Emperor that Virupanna was embezzling royal treasury funds to build the temple. Furious, the Emperor ordered Virupanna to be blinded. Hearing this, the deeply loyal Virupanna decided to carry out the punishment himself. He plucked out his own eyes and hurled them against the temple wall. To this day, visitors can see two dark red, blood-like stains on the western wall of the inner enclosure, which locals firmly believe are the eternal marks of Virupanna's tragic sacrifice. Furthermore, British folklore notes that during the colonial era, an engineer named Hamilton tried to forcibly move the 'Hanging Pillar' to discover its secret, which caused the entire roof to visibly warp and shift, proving the floating pillar acts as the balancing fulcrum for the entire temple."
+    "Architecture": "<h1>The Hanging Pillar and Monolithic Giants</h1>The temple is a masterclass in <b>Vijayanagara Architecture</b>. Its most famous anomaly is the <b>Aakaasa Sthambha (Hanging Pillar)</b>—a massive granite pillar in the main hall that does not touch the ground, allowing devotees to pass a thin cloth completely underneath it. Just outside the main temple complex sits the <b>Lepakshi Nandi</b>, a magnificent 15-foot-tall, 27-foot-long monolithic bull, which is one of the largest in India. Inside the courtyard, an immense <b>Naga Linga</b>—a seven-hooded serpent shielding a Shiva Linga—is breathtakingly carved out of a single granite boulder.",
+    "Festivals": "<b>Maha Shivaratri</b> is the most prominent festival, drawing thousands of devotees for night-long prayers. The temple also grandly celebrates the 10-day <b>Durgamma Festival</b> (Navaratri), honoring Goddess Bhadrakali with elaborate daily decorations.",
+    "Worship": "Despite being an ASI archaeological site, it remains a fully functioning temple. Worship of Lord Veerabhadra here is intense and follows traditional Shaivite agamas. Devotees often tie small pieces of cloth or threads to the intricately carved pillars in the outer mandapam as a vow to fulfill their wishes. The temple is haunted by the tragic, gruesome lore of its builder, Virupanna. According to local history, envious courtiers falsely informed the Emperor that Virupanna was embezzling royal treasury funds to build the temple. Furious, the Emperor ordered Virupanna to be blinded. Hearing this, the deeply loyal Virupanna decided to carry out the punishment himself. He plucked out his own eyes and hurled them against the temple wall. To this day, visitors can see two dark red, blood-like stains on the western wall of the inner enclosure, which locals firmly believe are the eternal marks of Virupanna's tragic sacrifice. Furthermore, British folklore notes that during the colonial era, an engineer named Hamilton tried to forcibly move the 'Hanging Pillar' to discover its secret, which caused the entire roof to visibly warp and shift, proving the floating pillar acts as the balancing fulcrum for the entire temple."
   },
   {
     "id": 89,
@@ -4573,7 +4496,6 @@
       "108 Divya Desams"
     ],
     "image": "/ThiruvattarAdikesava.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism / Sri Vaishnava)",
     "management_history": "Historically patronized by the Ay dynasty and later heavily expanded by the Venad kings (the Travancore Royal Family). Although geographically in Tamil Nadu due to the state reorganization act, its history is deeply intertwined with Kerala royalty. Today, it is managed by the Tamil Nadu Hindu Religious and Charitable Endowments (HR&CE) department.",
     "current_administration": "Tamil Nadu HR&CE Department",
@@ -4599,9 +4521,9 @@
         "importance": "The famous confluence shrine of the Goddess, located in the same geographic district."
       }
     ],
-    "architecture": "<h1>Kadu-Sarkara Yogam and the Three Doors</h1>The temple is a masterpiece of traditional <b>Kerala-style architecture</b> with intricately carved wooden pillars, sloping roofs, and exquisite ancient mural paintings. The most astonishing feature is the main deity. The massive 22-foot idol is NOT made of stone or metal. It is crafted using <b>Kadu-Sarkara Yogam</b>—an ancient, highly complex Ayurvedic mixture of 108 different herbs, mustard, jaggery, and river sand. Due to the idol's immense size, devotees must view the Lord in three segments through <b>three separate wooden doors</b>: the face (first door), the torso (second door), and the lotus feet (third door).",
-    "festivals": "The major festivals are the <b>Panguni Brahmostavam</b> (March-April) and the <b>Aipasi Brahmotsavam</b> (October-November). <b>Vaikuntha Ekadasi</b> is also celebrated with tremendous grandeur, drawing thousands of pilgrims from both Tamil Nadu and Kerala.",
-    "worship": "Worship strictly follows Kerala Tantric traditions rather than standard Tamil Agamas. Male devotees must adhere to a strict dress code: shirts and inner garments must be removed before entering the inner prakaram (wearing only a dhoti/mundu). The poojas are deeply steeped in ancient rituals, and the temple actively maintains a highly serene, uncommercialized atmosphere.<br/><br/>The historic Battle of Colachel (1741). Local history dictates that the Travancore King Marthanda Varma laid his famous sword at the lotus feet of Adikesava Perumal, seeking divine intervention before facing the technologically superior Dutch East India Company. Miraculously, the Travancore army crushed the Dutch naval forces. The King firmly believed that Adikesava Perumal Himself rode unseen into battle to secure the victory for the native kingdom, and subsequently dedicated massive wealth and land to the temple in gratitude."
+    "Architecture": "<h1>Kadu-Sarkara Yogam and the Three Doors</h1>The temple is a masterpiece of traditional <b>Kerala-style architecture</b> with intricately carved wooden pillars, sloping roofs, and exquisite ancient mural paintings. The most astonishing feature is the main deity. The massive 22-foot idol is NOT made of stone or metal. It is crafted using <b>Kadu-Sarkara Yogam</b>—an ancient, highly complex Ayurvedic mixture of 108 different herbs, mustard, jaggery, and river sand. Due to the idol's immense size, devotees must view the Lord in three segments through <b>three separate wooden doors</b>: the face (first door), the torso (second door), and the lotus feet (third door).",
+    "Festivals": "The major festivals are the <b>Panguni Brahmostavam</b> (March-April) and the <b>Aipasi Brahmotsavam</b> (October-November). <b>Vaikuntha Ekadasi</b> is also celebrated with tremendous grandeur, drawing thousands of pilgrims from both Tamil Nadu and Kerala.",
+    "Worship": "Worship strictly follows Kerala Tantric traditions rather than standard Tamil Agamas. Male devotees must adhere to a strict dress code: shirts and inner garments must be removed before entering the inner prakaram (wearing only a dhoti/mundu). The poojas are deeply steeped in ancient rituals, and the temple actively maintains a highly serene, uncommercialized atmosphere.<br/><br/>The historic Battle of Colachel (1741). Local history dictates that the Travancore King Marthanda Varma laid his famous sword at the lotus feet of Adikesava Perumal, seeking divine intervention before facing the technologically superior Dutch East India Company. Miraculously, the Travancore army crushed the Dutch naval forces. The King firmly believed that Adikesava Perumal Himself rode unseen into battle to secure the victory for the native kingdom, and subsequently dedicated massive wealth and land to the temple in gratitude."
   },
   {
     "id": 90,
@@ -4630,13 +4552,12 @@
       "Six Abodes of Murugan"
     ],
     "image": "/TiruchendurMurugan.jpg",
-    "video": "",
     "tradition": "Hinduism (Kaumaram / Tamil Agamic)",
     "management_history": "An ancient shrine referenced in 2,000-year-old Sangam literature. Over centuries, it was expanded by the Cheras, Pandyas, and local chieftains. Today, it is one of the wealthiest and most heavily visited temples managed by the Tamil Nadu Hindu Religious and Charitable Endowments (HR&CE) department.",
     "current_administration": "Tamil Nadu HR&CE Department",
     "description": "Situated on the red-sand shores of the Bay of Bengal, the Tiruchendur Subramaniya Swamy Temple is the second of the 'Arupadaiveedu' (Six Holy Abodes) of Lord Murugan. It marks the exact epic battlefield where the Lord achieved his ultimate victory over the mighty demon king, Surapadman.",
     "temple_history": "The temple's antiquity is established in classical Tamil texts like the 'Tirumurugatruppadai'. Unlike most temples built by kings, Tiruchendur was largely expanded by ascetic saints (Desikars) and widespread public contribution over centuries. A massive historical event occurred in 1648 when Dutch colonial forces occupied the temple, fortified it, and eventually looted the precious panchaloha (five-metal) idol of the Lord, mistakenly believing it was solid gold.",
-    "deity_legend": "According to the Skanda Purana, Lord Murugan, acting as the supreme commander of the Devas, fought the formidable demon Surapadman on the shores of Tiruchendur. Refusing to surrender, the demon transformed himself into a massive, magical mango tree in the ocean. Lord Murugan hurled his divine spear (Vel), splitting the tree in two. One half transformed into his Vahana (Peacock mount), and the other half became his battle standard (Rooster flag).",
+    "deity_legend": "According to the Skanda Purana, Lord Murugan, acting as the supreme commander of the Devas, fought the formidable demon Surapadman on the shores of Tiruchendur. Refusing to surrender, the demon transformed himself into a massive, magical mango tree in the ocean. Lord Murugan hurled his divine spear (Vel), splitting the tree in two. One half transformed into his Vahana (Peacock mount), and the other half became his battle standard (Rooster flag). <br/><br/>     Tiruchendur is rich with legendary lore. First is the <b>Recovery of the Idol:</b> When the Dutch looted the idol in 1648, their ship was caught in a massive, unnatural storm. Terrified of the deity's wrath, they dumped the idol into the sea. Years later, Murugan appeared in the dream of a devotee, Vadamaliyappa Pillai, telling him exactly where the idol was, marked by a floating lemon and a circling kite (Garuda). Pillai rowed out and miraculously recovered it. Second is the <b>2004 Tsunami Miracle:</b> When the devastating Boxing Day Tsunami struck the east coast of India, the ocean inexplicably receded backward at Tiruchendur. Not a single drop of tsunami water entered the temple complex, which locals and millions of devotees firmly believe was Lord Murugan physically protecting his abode.",
     "schedule_time": "<b>Visiting Hours:</b> Daily from 5:00 AM to 9:00 PM.<br/><i>(Note: Darshan lines can be exceptionally long on Tuesdays, Fridays, and during the Tamil month of Karthigai.)</i>",
     "temple_complex_deities": [
       "Lord Subramaniya Swamy",
@@ -4657,10 +4578,9 @@
         "importance": "The first abode of Murugan, marking the site where he married Goddess Deivanai after his victory at Tiruchendur."
       }
     ],
-    "architecture": "<h1>The Western Gopuram and Nazhi Kinaru</h1>Because the temple is built directly on the shoreline, the crashing waves of the sea form its natural eastern boundary. Consequently, unlike standard Dravidian temples that have their main entrance tower on the East, Tiruchendur's towering 137-foot <b>Rajagopuram is uniquely located on the Western side</b>. A geographical and architectural miracle within the complex is the <b>Nazhi Kinaru</b>, an ancient 14-square-foot well. Although it is located just meters away from the salty ocean, the water inside this specific well is crystal clear and completely sweet.",
-    "festivals": "The absolute zenith of the temple is the 6-day <b>Kanda Shasti Festival</b> (October/November). On the final day, an event called <b>Soorasamharam</b> is theatrically re-enacted on the beach. Millions of devotees gather on the sand to watch the festival deity (Senthilandavar) symbolically slay the demon, followed by a grand celestial wedding (Thirukalyanam) the next day.",
-    "worship": "Worship here heavily involves physical purification. Before entering the temple, devotees are required to take a holy dip in the salty ocean, immediately followed by a purifying bath from the sweet waters of the Nazhi Kinaru well. Devotees often carry 'Kavadis' (decorated wooden arches) on their shoulders and pierce their cheeks with small 'Vels' as an extreme vow of devotion.",
-    "modern_folklore": "Tiruchendur is rich with legendary lore. First is the <b>Recovery of the Idol:</b> When the Dutch looted the idol in 1648, their ship was caught in a massive, unnatural storm. Terrified of the deity's wrath, they dumped the idol into the sea. Years later, Murugan appeared in the dream of a devotee, Vadamaliyappa Pillai, telling him exactly where the idol was, marked by a floating lemon and a circling kite (Garuda). Pillai rowed out and miraculously recovered it. Second is the <b>2004 Tsunami Miracle:</b> When the devastating Boxing Day Tsunami struck the east coast of India, the ocean inexplicably receded backward at Tiruchendur. Not a single drop of tsunami water entered the temple complex, which locals and millions of devotees firmly believe was Lord Murugan physically protecting his abode."
+    "Architecture": "<h1>The Western Gopuram and Nazhi Kinaru</h1>Because the temple is built directly on the shoreline, the crashing waves of the sea form its natural eastern boundary. Consequently, unlike standard Dravidian temples that have their main entrance tower on the East, Tiruchendur's towering 137-foot <b>Rajagopuram is uniquely located on the Western side</b>. A geographical and architectural miracle within the complex is the <b>Nazhi Kinaru</b>, an ancient 14-square-foot well. Although it is located just meters away from the salty ocean, the water inside this specific well is crystal clear and completely sweet.",
+    "Festivals": "The absolute zenith of the temple is the 6-day <b>Kanda Shasti Festival</b> (October/November). On the final day, an event called <b>Soorasamharam</b> is theatrically re-enacted on the beach. Millions of devotees gather on the sand to watch the festival deity (Senthilandavar) symbolically slay the demon, followed by a grand celestial wedding (Thirukalyanam) the next day.",
+    "Worship": "Worship here heavily involves physical purification. Before entering the temple, devotees are required to take a holy dip in the salty ocean, immediately followed by a purifying bath from the sweet waters of the Nazhi Kinaru well. Devotees often carry 'Kavadis' (decorated wooden arches) on their shoulders and pierce their cheeks with small 'Vels' as an extreme vow of devotion."
   },
   {
     "id": 91,
@@ -4685,7 +4605,6 @@
       "Kaveri River"
     ],
     "image": "/SomanathapuraChennakesava.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism)",
     "management_history": "Commissioned in 1268 CE by Somanatha Dandanayaka, an illustrious general under Hoysala King Narasimha III. Following severe damage by the Delhi Sultanate in the 14th century, it ceased to be an active center of worship. Today, it is meticulously preserved by the Archaeological Survey of India (ASI).",
     "current_administration": "Archaeological Survey of India (ASI)",
@@ -4710,10 +4629,9 @@
         "importance": "The Shaivite masterpiece of the Hoysala empire, forming the legendary UNESCO triad with Belur and Somanathapura."
       }
     ],
-    "architecture": "<h1>The Perfect Trikuta and Soapstone Mastery</h1>The temple is a flawless example of a <b>Trikuta</b> (three-shrined) layout. It sits proudly on a 16-point star-shaped <b>Jagati</b> (elevated platform) which allows visitors to circumambulate while viewing the walls at eye level. Carved entirely from soft <b>soapstone</b>, the outer walls are wrapped in horizontal bands of continuous friezes featuring marching elephants, charging horsemen, and epic stories. Remarkably, many sculptures here are signed by the master artisans, the most prolific being the legendary sculptor <b>Mallitamma</b>.",
-    "festivals": "Since this is a 'non-living' (inactive) temple protected by the ASI, traditional religious festivals and car processions are no longer conducted. However, the site is a cultural epicenter, drawing tens of thousands of tourists, history buffs, and architecture students year-round.",
-    "worship": "Active daily pooja is not performed here due to the historical desecration of the sanctums. Visitors cannot offer flowers or coconuts. However, walking through the cool, dark, lathe-turned pillars of the navaranga (main hall) still evokes a profound sense of spiritual awe, allowing visitors to marvel at the sheer devotion ancient artisans poured into every millimeter of the stone.",
-    "modern_folklore": "Local folklore suggests that when the temple was completed, it was so flawlessly beautiful that celestial beings (Devas) became jealous and decided to physically lift it and carry it away to heaven. To prevent this, the master sculptor deliberately chipped one of the outer sculptures to create a 'flaw' (Drishti Bommai/evil-eye ward), thereby grounding the temple to earth forever. Additionally, the presence of the sculptors' engraved signatures—over 40 belonging to Mallitamma alone—beautifully shatters the modern myth that ancient Indian artists always worked anonymously."
+    "Architecture": "<h1>The Perfect Trikuta and Soapstone Mastery</h1>The temple is a flawless example of a <b>Trikuta</b> (three-shrined) layout. It sits proudly on a 16-point star-shaped <b>Jagati</b> (elevated platform) which allows visitors to circumambulate while viewing the walls at eye level. Carved entirely from soft <b>soapstone</b>, the outer walls are wrapped in horizontal bands of continuous friezes featuring marching elephants, charging horsemen, and epic stories. Remarkably, many sculptures here are signed by the master artisans, the most prolific being the legendary sculptor <b>Mallitamma</b>.",
+    "Festivals": "Since this is a 'non-living' (inactive) temple protected by the ASI, traditional religious festivals and car processions are no longer conducted. However, the site is a cultural epicenter, drawing tens of thousands of tourists, history buffs, and architecture students year-round.",
+    "Worship": "Active daily pooja is not performed here due to the historical desecration of the sanctums. Visitors cannot offer flowers or coconuts. However, walking through the cool, dark, lathe-turned pillars of the navaranga (main hall) still evokes a profound sense of spiritual awe, allowing visitors to marvel at the sheer devotion ancient artisans poured into every millimeter of the stone.Local folklore suggests that when the temple was completed, it was so flawlessly beautiful that celestial beings (Devas) became jealous and decided to physically lift it and carry it away to heaven. To prevent this, the master sculptor deliberately chipped one of the outer sculptures to create a 'flaw' (Drishti Bommai/evil-eye ward), thereby grounding the temple to earth forever. Additionally, the presence of the sculptors' engraved signatures—over 40 belonging to Mallitamma alone—beautifully shatters the modern myth that ancient Indian artists always worked anonymously."
   },
   {
     "id": 92,
@@ -4738,7 +4656,6 @@
       "Western Ghats"
     ],
     "image": "/HariharFort.jpg",
-    "video": "",
     "tradition": "Folk Tradition / Historical Heritage",
     "management_history": "Built during the Seuna (Yadava) dynasty between the 9th and 14th centuries. It served as a critical watchtower to secure the trade route through the Gonda Ghat. It changed hands between the Ahmadnagar Sultanate, Mughals, and Marathas before being surrendered to the British in 1818. Today, it is maintained by the Maharashtra State Archaeology Department and local forest authorities.",
     "current_administration": "Maharashtra State Archaeology Department",
@@ -4763,10 +4680,9 @@
         "importance": "The origin point of the holy Godavari river, located in the same mountain range, reinforcing the sacred geography of the Nashik region."
       }
     ],
-    "architecture": "<h1>Prism Rock and the 80-Degree Stairs</h1>Built on a triangular prism of rock, the fort is an engineering marvel of antiquity. The most breathtaking feature is the final ascent: a sequence of 117 perfectly carved rock steps pitched at a staggering <b>80-degree incline</b>. Ancient stonemasons brilliantly carved small niches on either side of the steps for trekkers to grip with their fingers and toes. At the top of these steps lies the <b>Maha Darwaja</b> (Main Gate) and a secret trapdoor entrance leading through the solid rock, showcasing brilliant medieval defensive architecture.",
-    "festivals": "As a historic fort rather than an active Agamic temple, it does not host traditional temple car festivals. However, it sees massive crowds of trekkers and devotees during weekends and the post-monsoon season (October to January) when the Sahyadri mountains turn lush green.",
-    "worship": "There are no formal priests stationed at the top. Trekkers and locals who successfully reach the summit traditionally offer personal prayers to the small Shiva Linga and Hanuman idol, thanking the deities for a safe ascent and seeking courage for the descent—which is visually much scarier and more challenging than climbing up!",
-    "modern_folklore": "In modern internet and trekking folklore, Harihar Fort is famously dubbed as one of the 'Scariest Treks in the World'. The sheer drop visible when turning around on the 80-degree steps induces massive vertigo. An enduring local belief is that the water in the summit's rock-cut cisterns possesses medicinal properties; naturally filtered through the ancient basalt rock, it is said to provide immediate relief, healing, and energy to exhausted climbers."
+    "Architecture": "<h1>Prism Rock and the 80-Degree Stairs</h1>Built on a triangular prism of rock, the fort is an engineering marvel of antiquity. The most breathtaking feature is the final ascent: a sequence of 117 perfectly carved rock steps pitched at a staggering <b>80-degree incline</b>. Ancient stonemasons brilliantly carved small niches on either side of the steps for trekkers to grip with their fingers and toes. At the top of these steps lies the <b>Maha Darwaja</b> (Main Gate) and a secret trapdoor entrance leading through the solid rock, showcasing brilliant medieval defensive architecture.",
+    "Festivals": "As a historic fort rather than an active Agamic temple, it does not host traditional temple car festivals. However, it sees massive crowds of trekkers and devotees during weekends and the post-monsoon season (October to January) when the Sahyadri mountains turn lush green.",
+    "Worship": "There are no formal priests stationed at the top. Trekkers and locals who successfully reach the summit traditionally offer personal prayers to the small Shiva Linga and Hanuman idol, thanking the deities for a safe ascent and seeking courage for the descent—which is visually much scarier and more challenging than climbing up!.In modern internet and trekking folklore, Harihar Fort is famously dubbed as one of the 'Scariest Treks in the World'. The sheer drop visible when turning around on the 80-degree steps induces massive vertigo. An enduring local belief is that the water in the summit's rock-cut cisterns possesses medicinal properties; naturally filtered through the ancient basalt rock, it is said to provide immediate relief, healing, and energy to exhausted climbers."
   },
   {
     "id": 93,
@@ -4795,14 +4711,13 @@
       "Kavadi"
     ],
     "image": "/PalaniMurugan.jpg",
-    "video": "",
     "tradition": "Hinduism (Kaumaram / Siddha Philosophy)",
-    "management_history": "Ee kshethram chala purathanadhi, Sangam literature lo dheni gurinchi prastavana undhi. Chera raajulu mariyu local palakulu dhenni abhivruddhi chesaru. Prasthutham idi Tamil Nadu Hindu Religious and Charitable Endowments (HR&CE) dwara nirvahinchabadthundhi.",
+    "management_history": "This shrine is highly ancient, with references to it found in Sangam literature. The Chera kings and local rulers developed it. Currently, it is administered by the Tamil Nadu Hindu Religious and Charitable Endowments (HR&CE) department.",
     "current_administration": "Tamil Nadu HR&CE Department",
-    "description": "Palani lo unna ee kondapaina Velisina Murugan, 'Dhandayudhapani' ga koluvai unnaru. Ante chethilo 'Dhandam' (staff) dharinchina swamy ani artham. Lokam lo unna anni Murugan temples kante idhi chala visheshamainadhi endukante ikkadiki Swamy 'Gnana Panditha' ga, ante sarvam thyagam chesina oka chinna baluniga vachhi settle ayyaru.",
-    "temple_history": "Ee kshethra charithra 'Bhogar Siddhar' ane maha purushunitho mudipadi undhi. Ayana 18 mandhi siddhula lo okaru. Kondapaina unna swamy vigraham raathi tho chesinadhi kadhu, adi 9 rakala visha mulikaltho (Navapashanam) chesinadhi. 2,000 yellu gadichina aa vigraham inka kshayam avvakunda undatam oka peddha miracle.",
-    "deity_legend": "Oka sari Narada maharshi oka 'Gnana Pazham' (Wisdom Fruit) ni Shiva-Parvathulaku istharu. Dhenni evariki ivvala ani aalochanalo unnappudu, evarayithe mudu lokalu chuttu mundhu vastharo variki isthamu ani Shiva antaru. Murugan tana mayura vahanam (peacock) paina vellaga, Vinayakudu thalli-dhandrula chuttu thirigi aa pandunu geluchukuntaru. Dhentho kopachina Murugan, sarvam thyagam chesi, oka 'Kaupeenam' (loincloth) tho ee konda painaki vachhestharu. Shiva-Parvathulu vachhi 'Pazham Nee' (Nuvey aa panduvi) ani bajjavistharu. Aa 'Pazham Nee' ane padam nunde 'Palani' ane peru vachhindhi.",
-    "schedule_time": "<b>Darshana Samayam:</b> Daily morning 6:00 AM nundi rathri 8:00 PM varaku.<br/><i>(Note: Special days lo rathri 9 PM varaku untundhi. Winch mariyu Rope car facility undhi, kani steps dwara velladam chala punyam ani bhakthula nambika.)</i>",
+    "description": "Lord Murugan resides on this hill in Palani as 'Dhandayudhapani', which translates to the Lord holding a 'Dhandam' (staff) in his hand. Among all the Murugan temples in the world, this is incredibly special because the Lord came and settled here as a 'Jnana Panditha' (Lord of Wisdom)—a young ascetic boy who renounced everything.",
+    "temple_history": "The history of this shrine is deeply intertwined with the great sage 'Bhogar Siddhar', who is one of the 18 revered Siddhars. The idol of the Lord on the hill is not made of stone; it is uniquely crafted from 9 types of poisonous herbs (Navapashanam). It is considered a great miracle that even after 2,000 years, the idol remains perfectly intact without any decay.",
+    "deity_legend": "Once, Sage Narada offered a 'Jnana Pazham' (Fruit of Wisdom) to Lord Shiva and Goddess Parvathi. While deciding who to give it to, Shiva declared they would give it to whoever circles the three worlds and returns first. While Murugan set off on his peacock mount, Lord Ganesha simply circled his parents and won the fruit. Angered by this, Murugan renounced everything and came to this hill wearing only a 'Kaupeenam' (loincloth). Shiva and Parvathi came to pacify him, saying 'Pazham Nee' (You yourself are the fruit of wisdom). The name 'Palani' is derived from this very phrase.",
+    "schedule_time": "<b>Darshan Timings:</b> Daily morning 6:00 AM to night 8:00 PM.<br/><i>(Note: On special days, it remains open until 9 PM. Winch and Rope car facilities are available, but devotees believe that climbing the steps brings great spiritual merit.)</i>",
     "temple_complex_deities": [
       "Sri Dhandayudhapani Swamy",
       "Bhogar Siddhar Samadhi",
@@ -4813,18 +4728,17 @@
       {
         "name": "Thiru-avinankudi Temple",
         "relationship": "Foot-hill Shrine",
-        "importance": "Konda kindha unna ee temple ni mundhu darshinchali. Idhi original Arupadaiveedu kshethram ani kooda antaru."
+        "importance": "One should visit this temple at the foothills first. It is also considered the original Arupadaiveedu shrine here."
       },
       {
         "name": "Lord Murugan Temple, Tiruchendur",
         "relationship": "Fellow Arupadaiveedu",
-        "importance": "Beach lo unna Murugan kshethram (ID 90 in your database)."
+        "importance": "The Murugan shrine located on the beach (ID 90 in your database)."
       }
     ],
-    "architecture": "<h1>Konda paina unna Adbhutham</h1>Palani konda chala ettuga untundhi. Ikkadiki velladaniki 600 paina metlu unnayi. Devasthanam Dravidian architecture lo untundhi. Temple paina unna 'Vimanam' (Golden tower) chala prakashavanthanga untundhi. Konda painaki velladaniki 'Winch' (small train) mariyu 'Rope Car' facilities unnayi. Idhi India lo ekkuva mandhi bhakthulu vachhe hill temples lo Tirumala tharuvatha dhenike dakhulayi unnayi.",
-    "festivals": "<b>Thaipusam</b> ikkada doddadaada festival. Laksha mandhi bhakthulu 'Kavadi' moyadam kani, noru-naluka guchhukovadam (vel piercing) kani chesi tana bhakthi ni pradarshistharu. <b>Panguni Uthiram</b> kooda chala grand ga jaruguthundhi. Ee samayam lo swamy variki 'Panchamirtham' tho abhishekam chestharu.",
-    "worship": "Palani temple 'Panchamirtham' prasadam world-famous. Banana, Jaggery, Ghee, Honey, mariyu Cardamom tho dhenni chestharu. Ikkada bhakthulu thala neelalu (hair tonsuring) ivvadam chala common. Ikkada unna Bhogar Siddhar samadhi daggaraki velli dhyanam chesukunte chala manchi results untayani bhakthulu nammutharu.",
-    "modern_folklore": "Ee kshethram lo unna 'Navapashanam' vigraham gurinchi oka goppa vishayam undhi. Ee vigraniki chese abhisheka jalam kani, paalu kani medicinal properties ni kaligi untayi. Aa jalam sevisthe chala chronic diseases thaggipothayani nammutharu. Inka oka nambika entante, 'Idumban' ane rakshasudu ee rendu kondalanu (Sivagiri and Sakthigiri) Kavadi la mosi ikkadiki vachhadu. Andhuke bhakthulu kooda Kavadi mosi swamy variki tana korikalu chepukuntaru."
+    "Architecture": "<h1>The Marvel on the Hill</h1>Palani hill is quite steep, with over 600 steps to reach the top. The temple features classic Dravidian architecture. The 'Vimanam' (Golden tower) above the sanctum is highly radiant. There are 'Winch' (small train) and 'Rope Car' facilities available to reach the hilltop. Among the most visited hill temples in India, it is said to be second only to Tirumala in terms of devotee footfall.",
+    "Festivals": "<b>Thaipusam</b> is the grandest festival here. Lakhs of devotees showcase their immense devotion by carrying the 'Kavadi' or by piercing their mouths and tongues with a Vel. <b>Panguni Uthiram</b> is also celebrated on a massive scale. During this time, the deity is bathed (abhishekam) with the sacred 'Panchamirtham'.",
+    "Worship": "The Palani temple's 'Panchamirtham' prasadam is world-famous. It is traditionally made with banana, jaggery, ghee, honey, and cardamom. Offering hair (tonsuring) by devotees is a very common practice here. Devotees firmly believe that meditating near the Bhogar Siddhar samadhi located here yields excellent spiritual and material results. There is a great significance regarding the 'Navapashanam' idol in this shrine. The water or milk used for the abhishekam of this idol absorbs powerful medicinal properties. It is believed that consuming this liquid cures many chronic diseases. Another belief is that the demon 'Idumban' carried these two hills (Sivagiri and Sakthigiri) here balancing them like a Kavadi. That is why devotees also carry the Kavadi to convey their prayers and wishes to the Lord."
   },
   {
     "id": 94,
@@ -4853,7 +4767,6 @@
       "Ramamadas"
     ],
     "image": "/BhadrachalamRama.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism / Sri Vaishnava Agama)",
     "management_history": "Constructed in the 17th century by Kancharla Gopanna (popularly known as Bhakta Ramadasu), the local revenue official under the Golconda Sultanate (Qutb Shahi dynasty). Today, it is one of the most prominent temples administered by the Telangana State Endowments Department.",
     "current_administration": "Telangana State Endowments Department",
@@ -4879,10 +4792,9 @@
         "importance": "The rituals and agamas at Bhadrachalam were heavily formalized under the guidance of seers connected to the grand Srirangam tradition."
       }
     ],
-    "architecture": "<h1>Dravidian Elegance on the Godavari</h1>The temple features classic <b>Dravidian architecture</b> with a tall Rajagopuram facing the serene Godavari River. Devotees must climb a flight of stairs to reach the main courtyard, symbolizing the ascent of the Bhadra hill. The temple is famous for its massive mandapams, particularly the Kalyana Mandapam, where the celestial wedding is performed. Adjacent to the main temple is a dedicated museum that houses the ancient, original jewelry made by Bhakta Ramadasu for the deities.",
-    "festivals": "<b>Sri Rama Navami</b> is not just a temple festival; it is celebrated as an official State Festival. The highlight is the <i>Sri Sitarama Thirukalyana Mahotsavam</i> (the celestial wedding). Another massive event is <b>Vaikuntha Ekadasi</b>, where a grand <i>Teppotsavam</i> (float festival) is held on the Godavari River, drawing lakhs of pilgrims.",
-    "worship": "Worship here is deeply intertwined with state tradition. Ever since the era of the Qutb Shahi Sultans, and continuing through the Nizams of Hyderabad to the modern democratically elected Chief Ministers of Telangana, it is a strict official tradition for the Head of State to personally present silk robes (Pattu Vastralu) and pearls (Mutyala Talambralu) to the deities on the day of Sri Rama Navami on behalf of the government.",
-    "modern_folklore": "The most powerful true legend of the temple revolves around the <b>Ramamadas (Golden Coins)</b>. When Bhakta Ramadasu was being tortured in the Golconda prison for the missing treasury funds, two young, extraordinarily handsome warriors named Ram Singh and Lakshman Singh suddenly appeared in the Sultan's chambers at midnight. They paid the exact debt in heavy gold coins and took a receipt to release Ramadasu. The next morning, the Sultan realized it was Lord Rama and Lakshmana themselves. The Sultan immediately released Ramadasu, became his disciple, and endowed the temple with permanent grants. Astonishingly, a few of those exact, miraculously given gold coins (Ramamadas)—inscribed with the images of Rama, Sita, and Lakshmana—are still physically preserved in the temple museum today!"
+    "Architecture": "<h1>Dravidian Elegance on the Godavari</h1>The temple features classic <b>Dravidian architecture</b> with a tall Rajagopuram facing the serene Godavari River. Devotees must climb a flight of stairs to reach the main courtyard, symbolizing the ascent of the Bhadra hill. The temple is famous for its massive mandapams, particularly the Kalyana Mandapam, where the celestial wedding is performed. Adjacent to the main temple is a dedicated museum that houses the ancient, original jewelry made by Bhakta Ramadasu for the deities.",
+    "Festivals": "<b>Sri Rama Navami</b> is not just a temple festival; it is celebrated as an official State Festival. The highlight is the <i>Sri Sitarama Thirukalyana Mahotsavam</i> (the celestial wedding). Another massive event is <b>Vaikuntha Ekadasi</b>, where a grand <i>Teppotsavam</i> (float festival) is held on the Godavari River, drawing lakhs of pilgrims.",
+    "Worship": "Worship here is deeply intertwined with state tradition. Ever since the era of the Qutb Shahi Sultans, and continuing through the Nizams of Hyderabad to the modern democratically elected Chief Ministers of Telangana, it is a strict official tradition for the Head of State to personally present silk robes (Pattu Vastralu) and pearls (Mutyala Talambralu) to the deities on the day of Sri Rama Navami on behalf of the government.The most powerful true legend of the temple revolves around the <b>Ramamadas (Golden Coins)</b>. When Bhakta Ramadasu was being tortured in the Golconda prison for the missing treasury funds, two young, extraordinarily handsome warriors named Ram Singh and Lakshman Singh suddenly appeared in the Sultan's chambers at midnight. They paid the exact debt in heavy gold coins and took a receipt to release Ramadasu. The next morning, the Sultan realized it was Lord Rama and Lakshmana themselves. The Sultan immediately released Ramadasu, became his disciple, and endowed the temple with permanent grants. Astonishingly, a few of those exact, miraculously given gold coins (Ramamadas)—inscribed with the images of Rama, Sita, and Lakshmana—are still physically preserved in the temple museum today!"
   },
   {
     "id": 95,
@@ -4906,7 +4818,6 @@
       "Marutha Theertham"
     ],
     "image": "/MaruthamalaiMurugan.jpg",
-    "video": "",
     "tradition": "Hinduism (Kaumaram / Siddha Philosophy)",
     "management_history": "The temple's origins date back over 1,200 years, with historical references found in ancient texts like the 'Perur Puranam'. Over centuries, it was sustained by local kings and indigenous tribes (the Kongu Vettuvas). Today, it is a highly modernized, incredibly wealthy temple administered by the Tamil Nadu Hindu Religious and Charitable Endowments (HR&CE) department.",
     "current_administration": "Tamil Nadu HR&CE Department",
@@ -4932,10 +4843,9 @@
         "importance": "Maruthamalai shares the exact same deity form (Dhandayudhapani) and a similar Siddhar connection (Bhogar Siddhar in Palani, Pambatti Siddhar in Maruthamalai)."
       }
     ],
-    "architecture": "<h1>The Siddhar Cave and Healing Springs</h1>The temple complex is built in traditional <b>Dravidian architecture</b>, beautifully cascading down the slopes of the hill. A highly unique architectural and spiritual feature is the <b>Pambatti Siddhar Cave</b> located slightly down the hill from the main sanctum. Legend states there is a secret, naturally formed underground rock tunnel connecting this cave directly to Lord Murugan's sanctum, through which the Siddhar travels invisibly to worship the Lord every day. The temple also features the 'Marutha Theertham', a sacred water spring bubbling from the rocks.",
-    "festivals": "<b>Thai Poosam</b> (January/February) is celebrated with staggering grandeur, with lakhs of devotees carrying milk pots (Paal Kudam) and walking miles to reach the hill. <b>Panguni Uthiram</b> and <b>Kanda Shasti</b> are also peak festival seasons, transforming the quiet hill into a sea of chanting devotees.",
-    "worship": "Worship here is deeply tied to physical and mental healing. The air on the Maruthamalai hill is thoroughly infused with the natural essence of Ayurvedic roots and herbs from the surrounding Western Ghats. Devotees firmly believe that simply breathing the breeze on this hill and drinking the Marutha Theertham (holy water) cures chronic respiratory diseases, asthma, and prolonged illnesses.",
-    "modern_folklore": "The folklore of the snake is everywhere on this mountain. Because Pambatti Siddhar was originally a snake charmer, locals and priests believe he still roams the dense forests of the hill in the form of a giant, majestic King Cobra. It is a deeply held local belief that if a devotee spots a snake peacefully crossing the steps or the forest path at Maruthamalai, they are not in danger, but have actually just received the ultimate, direct darshan and blessing of the immortal Siddhar himself."
+    "Architecture": "<h1>The Siddhar Cave and Healing Springs</h1>The temple complex is built in traditional <b>Dravidian architecture</b>, beautifully cascading down the slopes of the hill. A highly unique architectural and spiritual feature is the <b>Pambatti Siddhar Cave</b> located slightly down the hill from the main sanctum. Legend states there is a secret, naturally formed underground rock tunnel connecting this cave directly to Lord Murugan's sanctum, through which the Siddhar travels invisibly to worship the Lord every day. The temple also features the 'Marutha Theertham', a sacred water spring bubbling from the rocks.",
+    "Festivals": "<b>Thai Poosam</b> (January/February) is celebrated with staggering grandeur, with lakhs of devotees carrying milk pots (Paal Kudam) and walking miles to reach the hill. <b>Panguni Uthiram</b> and <b>Kanda Shasti</b> are also peak festival seasons, transforming the quiet hill into a sea of chanting devotees.",
+    "Worship": "Worship here is deeply tied to physical and mental healing. The air on the Maruthamalai hill is thoroughly infused with the natural essence of Ayurvedic roots and herbs from the surrounding Western Ghats. Devotees firmly believe that simply breathing the breeze on this hill and drinking the Marutha Theertham (holy water) cures chronic respiratory diseases, asthma, and prolonged illnesses.The folklore of the snake is everywhere on this mountain. Because Pambatti Siddhar was originally a snake charmer, locals and priests believe he still roams the dense forests of the hill in the form of a giant, majestic King Cobra. It is a deeply held local belief that if a devotee spots a snake peacefully crossing the steps or the forest path at Maruthamalai, they are not in danger, but have actually just received the ultimate, direct darshan and blessing of the immortal Siddhar himself."
   },
   {
     "id": 96,
@@ -4960,7 +4870,6 @@
       "Peshwa Architecture"
     ],
     "image": "/Trimbakeshwar.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism)",
     "management_history": "The current majestic black basalt stone temple was constructed by the third Peshwa, Balaji Baji Rao (Nanasaheb), between 1755 and 1786 CE on the site of an older, ruined shrine. Today, it is managed by the Shree Trimbakeshwar Devasthan Trust under the guidance of the local administration.",
     "current_administration": "Shree Trimbakeshwar Devasthan Trust",
@@ -4986,10 +4895,9 @@
         "importance": "Another prominent Jyotirlinga in Maharashtra, often visited by pilgrims touring the state's ancient Shiva temples."
       }
     ],
-    "architecture": "<h1>Hemadpanthi Black Basalt Architecture</h1>The temple is a classic and grand example of <b>Hemadpanthi architecture</b>, constructed entirely out of black basalt rock sourced from the surrounding hills. The temple courtyard is massive, surrounded by thick stone walls, and the main Shikhara (tower) features an ornate, deeply carved Kalasha at its peak. The most unique architectural anomaly is the Garbhagriha (sanctum). The Jyotirlinga is not elevated on a high pedestal; instead, it is situated inside a small depression or cavity on the floor, which constantly contains water oozing naturally from the subterranean roots of the Brahmagiri hill.",
-    "festivals": "The most monumental event is the <b>Nashik-Trimbakeshwar Simhastha Kumbh Mela</b>, held every 12 years, drawing tens of millions of pilgrims and Naga Sadhus. <b>Maha Shivaratri</b> is celebrated with overwhelming grandeur, and the holy month of <b>Shravan</b> sees massive pedestrian pilgrimages (Kanwar Yatra) from surrounding regions.",
-    "worship": "Trimbakeshwar is structurally and ritually unique because the Lingam uniquely embodies the entire Hindu Trinity—represented by three distinct, thumb-sized lingas (Brahma, Vishnu, and Maheshwara) situated inside the hollow depression. Furthermore, the temple is globally famous as the absolute epicenter for highly specialized rituals like <b>Narayan Nagbali</b>, <b>Kalsarpa Shanti</b>, and <b>Tripindi Shraddha</b>, which are exclusively performed here to appease ancestral souls and remove deep astrological curses.",
-    "modern_folklore": "The most dazzling lore involves the temple's legendary <b>Jeweled Crown (Trideva Mukut)</b>. Believed by locals to date back to the era of the Pandavas (though historically gifted by the Peshwas), the golden crown is heavily studded with massive, priceless diamonds, emeralds, and a central ruby. It is kept under heavy police security and is brought out to be placed directly over the Jyotirlinga only on Mondays (between 4:00 PM and 5:00 PM) and during major festivals. Devotees firmly believe that getting darshan of the Lord adorned with this specific crown physically burns away bad karma."
+    "Architecture": "<h1>Hemadpanthi Black Basalt Architecture</h1>The temple is a classic and grand example of <b>Hemadpanthi architecture</b>, constructed entirely out of black basalt rock sourced from the surrounding hills. The temple courtyard is massive, surrounded by thick stone walls, and the main Shikhara (tower) features an ornate, deeply carved Kalasha at its peak. The most unique architectural anomaly is the Garbhagriha (sanctum). The Jyotirlinga is not elevated on a high pedestal; instead, it is situated inside a small depression or cavity on the floor, which constantly contains water oozing naturally from the subterranean roots of the Brahmagiri hill.",
+    "Festivals": "The most monumental event is the <b>Nashik-Trimbakeshwar Simhastha Kumbh Mela</b>, held every 12 years, drawing tens of millions of pilgrims and Naga Sadhus. <b>Maha Shivaratri</b> is celebrated with overwhelming grandeur, and the holy month of <b>Shravan</b> sees massive pedestrian pilgrimages (Kanwar Yatra) from surrounding regions.",
+    "Worship": "Trimbakeshwar is structurally and ritually unique because the Lingam uniquely embodies the entire Hindu Trinity—represented by three distinct, thumb-sized lingas (Brahma, Vishnu, and Maheshwara) situated inside the hollow depression. Furthermore, the temple is globally famous as the absolute epicenter for highly specialized rituals like <b>Narayan Nagbali</b>, <b>Kalsarpa Shanti</b>, and <b>Tripindi Shraddha</b>, which are exclusively performed here to appease ancestral souls and remove deep astrological curses. The most dazzling lore involves the temple's legendary <b>Jeweled Crown (Trideva Mukut)</b>. Believed by locals to date back to the era of the Pandavas (though historically gifted by the Peshwas), the golden crown is heavily studded with massive, priceless diamonds, emeralds, and a central ruby. It is kept under heavy police security and is brought out to be placed directly over the Jyotirlinga only on Mondays (between 4:00 PM and 5:00 PM) and during major festivals. Devotees firmly believe that getting darshan of the Lord adorned with this specific crown physically burns away bad karma."
   },
   {
     "id": 97,
@@ -5018,7 +4926,6 @@
       "Faux Bride-Groom"
     ],
     "image": "/RaulaneKinnaur.jpg",
-    "video": "",
     "tradition": "Indigenous Himalayan Folklore / Animism",
     "management_history": "This is an ancient, community-driven ritual passed down entirely through oral history and lineage for millennia. It is organized and managed collectively by the village elders (divided into 'Sarings' or community wards) in Kalpa and surrounding hamlets.",
     "current_administration": "Local Village Communities & Temple Committees of Kalpa",
@@ -5039,10 +4946,9 @@
         "importance": "Another ancient, wooden architectural marvel in the region dedicated to the serpent god, deeply tied to the valley's indigenous spiritual ecosystem."
       }
     ],
-    "architecture": "<h1>Village Courtyards and the Kinner Kailash</h1>Unlike a static stone monument, Raulane is an <b>embodied, spatial tradition</b>. The entire village becomes a ritual space. Courtyards are washed with cow dung and rice flour. The performances culminate at the traditional wood-and-stone <i>Kath Kuni</i> style temples of Kinnaur, where the natural, breathtaking backdrop of the snow-capped Kinner Kailash mountain serves as the ultimate divine architecture.",
-    "festivals": "The core of the festival is an embodied storytelling ritual featuring the <b>Raula (Groom) and Raulane (Bride)</b>. Two chosen men from the village act as this symbolic pair. They are dressed in heavy, traditional Kinnauri woolens (Doru, Choli, Pattu) and ancestral silver jewelry. Crucially, their entire faces and hands are completely concealed with fabrics and gloves. This signifies that they have shed their human identities to become pure, silent vessels for the celestial spirits.",
-    "worship": "Worship during Raulane is deeply intertwined with ecology and silent reverence. A sacred water procession initiates the event. Because the visiting deities are believed to be mute, the Raula and Raulane perform a slow, rhythmic, hypnotic dance without speaking a single word. They, along with masked figures called <i>Zannpundulu</i> (who ward off evil), throw <b>Sattu (roasted barley flour)</b> at the onlookers as a divine blessing for a prosperous harvest.",
-    "modern_folklore": "In recent years, the visual of fully masked, elaborately dressed men performing a silent 'faux bride-groom' ritual in the snow has gone viral on social media, sparking worldwide curiosity. While the internet marvels at the mystery, the local emotion remains incredibly pure: shedding human ego to thank invisible protectors. The heavy ancestral silver jewelry (like the 'Daglo' and 'Gau') worn by the 'bride' is crowd-sourced from local families, symbolizing that the entire community is collectively marrying off and saying a loving goodbye to their fairy guardians."
+    "Architecture": "<h1>Village Courtyards and the Kinner Kailash</h1>Unlike a static stone monument, Raulane is an <b>embodied, spatial tradition</b>. The entire village becomes a ritual space. Courtyards are washed with cow dung and rice flour. The performances culminate at the traditional wood-and-stone <i>Kath Kuni</i> style temples of Kinnaur, where the natural, breathtaking backdrop of the snow-capped Kinner Kailash mountain serves as the ultimate divine architecture.",
+    "Festivals": "The core of the festival is an embodied storytelling ritual featuring the <b>Raula (Groom) and Raulane (Bride)</b>. Two chosen men from the village act as this symbolic pair. They are dressed in heavy, traditional Kinnauri woolens (Doru, Choli, Pattu) and ancestral silver jewelry. Crucially, their entire faces and hands are completely concealed with fabrics and gloves. This signifies that they have shed their human identities to become pure, silent vessels for the celestial spirits.",
+    "Worship": "Worship during Raulane is deeply intertwined with ecology and silent reverence. A sacred water procession initiates the event. Because the visiting deities are believed to be mute, the Raula and Raulane perform a slow, rhythmic, hypnotic dance without speaking a single word. They, along with masked figures called <i>Zannpundulu</i> (who ward off evil), throw <b>Sattu (roasted barley flour)</b> at the onlookers as a divine blessing for a prosperous harvest. In recent years, the visual of fully masked, elaborately dressed men performing a silent 'faux bride-groom' ritual in the snow has gone viral on social media, sparking worldwide curiosity. While the internet marvels at the mystery, the local emotion remains incredibly pure: shedding human ego to thank invisible protectors. The heavy ancestral silver jewelry (like the 'Daglo' and 'Gau') worn by the 'bride' is crowd-sourced from local families, symbolizing that the entire community is collectively marrying off and saying a loving goodbye to their fairy guardians."
   },
   {
     "id": 98,
@@ -5071,7 +4977,6 @@
       "River Kaveri"
     ],
     "image": "/VenugopalaswamyKRS.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism)",
     "management_history": "Originally constructed in the 12th century by the Hoysala Empire. In the 1930s, it was abandoned and submerged by the construction of the Krishna Raja Sagara (KRS) Dam. In the early 2000s, it was painstakingly relocated and restored by the Khoday Foundation, who currently manage its maintenance and public access.",
     "current_administration": "Khoday Foundation / Sri Venugopalaswamy Trust",
@@ -5095,10 +5000,11 @@
         "importance": "Located nearby on an island in the Kaveri river, it is one of the most important Vaishnava pilgrimage sites in South India."
       }
     ],
-    "architecture": "<h1>The Great Relocation and Reassembly</h1>The original structure was a classic example of <b>Hoysala Architecture</b>, complete with lathe-turned pillars, intricately carved ceilings, and a massive courtyard. What makes it a modern marvel is the 'Translocation' process. When the water level dropped during a drought, experts video-graphed the ruins, numbered over <b>300,000 individual stone blocks</b>, dismantled them using cranes, and transported them to a safer, higher location about a kilometer away. Master artisans then reassembled the temple exactly as it was, using traditional interlocking methods and no cement, proving the absolute genius of the ancient Hoysala builders.",
-    "festivals": "As a newly resurrected temple, traditional ancient car festivals are still growing in scale. However, <b>Krishna Janmashtami</b> is celebrated with immense joy, and the temple site serves as a massive cultural and tourist hub, especially when the KRS dam is full and the water laps against the newly built outer retaining walls.",
-    "worship": "Because the original idol was moved to a different village when the dam was built, a beautiful new idol of Lord Venugopala was consecrated in the relocated temple. Worship here is serene and heavily focused on the beautiful, peaceful environment, offering a stark contrast to heavily commercialized pilgrimage"
+    "Architecture": "<h1>The Great Relocation and Reassembly</h1>The original structure was a classic example of <b>Hoysala Architecture</b>, complete with lathe-turned pillars, intricately carved ceilings, and a massive courtyard. What makes it a modern marvel is the 'Translocation' process. When the water level dropped during a drought, experts video-graphed the ruins, numbered over <b>300,000 individual stone blocks</b>, dismantled them using cranes, and transported them to a safer, higher location about a kilometer away. Master artisans then reassembled the temple exactly as it was, using traditional interlocking methods and no cement, proving the absolute genius of the ancient Hoysala builders.",
+    "Festivals": "As a newly resurrected temple, traditional ancient car festivals are still growing in scale. However, <b>Krishna Janmashtami</b> is celebrated with immense joy, and the temple site serves as a massive cultural and tourist hub, especially when the KRS dam is full and the water laps against the newly built outer retaining walls.",
+    "Worship": "Because the original idol was moved to a different village when the dam was built, a beautiful new idol of Lord Venugopala was consecrated in the relocated temple. Worship here is serene and heavily focused on the beautiful, peaceful environment, offering a stark contrast to heavily commercialized pilgrimage"
   },
+
   {
     "id": 99,
     "name": "Sri Kodandarama Swamy Temple",
@@ -5127,7 +5033,6 @@
       "Chinna Bhadradri"
     ],
     "image": "/GollalaMamidadaRama.jpg",
-    "video": "",
     "tradition": "Hinduism (Vaishnavism)",
     "management_history": "Originally established in 1889 by two devoted vegetable vendors turned philanthropists, Dwarampudi Subbi Reddy and Rami Reddy, who saved money from their daily earnings to build a modest shrine. In 1920, Kovvuri Basivi Reddy took over and spearheaded the construction of the massive stone temple and its iconic gopurams. Today, it is managed by the Andhra Pradesh Endowments Department.",
     "current_administration": "Andhra Pradesh Endowments Department",
@@ -5153,10 +5058,9 @@
         "importance": "The primary Rama temple of the Telugu states (ID 94), to which this temple is heavily tied through its 'Chinna Bhadradri' moniker."
       }
     ],
-    "architecture": "<h1>The Twin Gopurams and the Mirror Hall</h1>The temple is an absolute masterpiece of modern <b>Dravidian Vishwakarma architecture</b>. The monumental 210-foot West Gopuram stands as one of the tallest in Andhra Pradesh. Every single floor of these massive towers is densely adorned with intricate stucco figures narrating continuous episodes from the Ramayana, Mahabharata, and Bhagavata Purana. The absolute crown jewel of the interior is the <b>Addala Mandapam (Mirror Hall)</b> built in 1975. Measuring 120 by 60 feet, the ceiling and walls are entirely covered in mirrors, reflecting the idols in thousands of magical, infinite angles.",
-    "festivals": "<b>Sri Rama Navami</b> in April is the absolute pinnacle of the year, celebrated with a magnificent celestial wedding (Kalyanam) that draws lakhs of devotees from across the state. <b>Vaikuntha Ekadasi</b> and <b>Vijayadasami</b> are also celebrated with grand chariot processions.",
-    "worship": "Worship heavily follows the strict Vaishnava Sampradaya. The temple sits serenely on the banks of the Thulya Bhaga (Antharvahini) river, a tributary of the Godavari. Because the original founders set aside a fraction of their daily vegetable-selling earnings out of pure, unadulterated devotion to build the shrine, offering donations or service here is believed to bring immense prosperity and the pure fulfillment of vows.",
-    "modern_folklore": "The village is colloquially known as 'Mamidada' because it was once enveloped by dense mango orchards (Mamidi Vatika). The sheer scale of the twin towers rising dramatically out of the flat, green, rural coconut canopy of the Godavari delta has made them legendary among locals. For decades, navigators and farmers traditionally used the glowing golden Kalasams atop the 210-foot gopuram as fixed geographical orientation points from miles away across the agricultural plains."
+    "Architecture": "<h1>The Twin Gopurams and the Mirror Hall</h1>The temple is an absolute masterpiece of modern <b>Dravidian Vishwakarma architecture</b>. The monumental 210-foot West Gopuram stands as one of the tallest in Andhra Pradesh. Every single floor of these massive towers is densely adorned with intricate stucco figures narrating continuous episodes from the Ramayana, Mahabharata, and Bhagavata Purana. The absolute crown jewel of the interior is the <b>Addala Mandapam (Mirror Hall)</b> built in 1975. Measuring 120 by 60 feet, the ceiling and walls are entirely covered in mirrors, reflecting the idols in thousands of magical, infinite angles.",
+    "Festivals": "<b>Sri Rama Navami</b> in April is the absolute pinnacle of the year, celebrated with a magnificent celestial wedding (Kalyanam) that draws lakhs of devotees from across the state. <b>Vaikuntha Ekadasi</b> and <b>Vijayadasami</b> are also celebrated with grand chariot processions.",
+    "Worship": "Worship heavily follows the strict Vaishnava Sampradaya. The temple sits serenely on the banks of the Thulya Bhaga (Antharvahini) river, a tributary of the Godavari. Because the original founders set aside a fraction of their daily vegetable-selling earnings out of pure, unadulterated devotion to build the shrine, offering donations or service here is believed to bring immense prosperity and the pure fulfillment of vows. The village is colloquially known as 'Mamidada' because it was once enveloped by dense mango orchards (Mamidi Vatika). The sheer scale of the twin towers rising dramatically out of the flat, green, rural coconut canopy of the Godavari delta has made them legendary among locals. For decades, navigators and farmers traditionally used the glowing golden Kalasams atop the 210-foot gopuram as fixed geographical orientation points from miles away across the agricultural plains."
   },
   {
     "id": 100,
@@ -5185,7 +5089,6 @@
       "Koothambalam"
     ],
     "image": "/ThrissurVadakkunnathan.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism / Kerala Tantric)",
     "management_history": "Historically patronized by the Zamorins of Calicut and later deeply expanded and restructured by Sakthan Thampuran (the King of Cochin) in the 18th century, who also initiated the Thrissur Pooram. In 2012, the temple won the prestigious UNESCO Asia-Pacific Award for Cultural Heritage Conservation. It is currently managed by the Cochin Devaswom Board.",
     "current_administration": "Cochin Devaswom Board",
@@ -5212,10 +5115,9 @@
         "importance": "The second major participating temple in the Thrissur Pooram, engaging in the legendary 'Kudamattam' (umbrella exchange) competition."
       }
     ],
-    "architecture": "<h1>Wood, Stone, and the Koothambalam</h1>The temple is an absolute masterclass in traditional <b>Kerala-style architecture</b>. It features four towering monumental gateways (Gopurams) facing the cardinal directions, with multi-tiered sloping roofs clad in copper. Inside the massive stone walls, the shrines are circular (Vrittakara) and feature incredibly exquisite, 400-year-old natural dye mural paintings depicting the Mahabharata. The complex also houses a magnificent <b>Koothambalam</b> (traditional temple theatre) used for performing ancient Sanskrit arts like Chakyar Koothu and Koodiyattam, built with spellbinding acoustic woodwork without using a single metal nail.",
-    "festivals": "<b>Thrissur Pooram</b> (April/May) is the mother of all temple festivals in India. Interestingly, Vadakkunnathan *does not* participate in the festival with its own idol; instead, the Lord acts as the royal host. Dozens of caparisoned elephants from neighboring temples converge on the Thekkinkadu Maidan to pay respects to Shiva, culminating in a deafening traditional percussion ensemble (Ilanjithara Melam) and an earth-shaking fireworks display. Another major event is <b>Aanayoottu</b> (feeding of elephants) in July.",
-    "worship": "Worship is governed by incredibly strict tantric rituals. The most mind-boggling aspect of worship here is the <b>Neyyabhishekam</b> (Ghee Bath). For centuries, devotees have offered pure ghee to the Shiva Lingam. Over time, this has formed a colossal, solid mound of ghee over the Lingam, currently estimated to be around 10 to 12 feet high and wide, representing the snow-clad Mount Kailash.",
-    "modern_folklore": "The folklore surrounding the Ghee Mound completely baffles modern science. Despite the scorching tropical heat of Kerala, the thousands of burning oil lamps inside the unventilated sanctum, and the fact that ghee is highly perishable, the mountain of ghee never melts, never collapses, and has absolutely no foul smell of rotting fat. In fact, the ancient layers of ghee at the very bottom are considered a highly potent Ayurvedic medicine capable of curing chronic respiratory and skin diseases. Locals firmly believe the absolute purity of the chanting and the raw cosmic energy of the Lingam is what keeps the ghee perfectly solid and fresh for centuries."
+    "Architecture": "<h1>Wood, Stone, and the Koothambalam</h1>The temple is an absolute masterclass in traditional <b>Kerala-style architecture</b>. It features four towering monumental gateways (Gopurams) facing the cardinal directions, with multi-tiered sloping roofs clad in copper. Inside the massive stone walls, the shrines are circular (Vrittakara) and feature incredibly exquisite, 400-year-old natural dye mural paintings depicting the Mahabharata. The complex also houses a magnificent <b>Koothambalam</b> (traditional temple theatre) used for performing ancient Sanskrit arts like Chakyar Koothu and Koodiyattam, built with spellbinding acoustic woodwork without using a single metal nail.",
+    "Festivals": "<b>Thrissur Pooram</b> (April/May) is the mother of all temple festivals in India. Interestingly, Vadakkunnathan *does not* participate in the festival with its own idol; instead, the Lord acts as the royal host. Dozens of caparisoned elephants from neighboring temples converge on the Thekkinkadu Maidan to pay respects to Shiva, culminating in a deafening traditional percussion ensemble (Ilanjithara Melam) and an earth-shaking fireworks display. Another major event is <b>Aanayoottu</b> (feeding of elephants) in July.",
+    "Worship": "Worship is governed by incredibly strict tantric rituals. The most mind-boggling aspect of worship here is the <b>Neyyabhishekam</b> (Ghee Bath). For centuries, devotees have offered pure ghee to the Shiva Lingam. Over time, this has formed a colossal, solid mound of ghee over the Lingam, currently estimated to be around 10 to 12 feet high and wide, representing the snow-clad Mount Kailash. The folklore surrounding the Ghee Mound completely baffles modern science. Despite the scorching tropical heat of Kerala, the thousands of burning oil lamps inside the unventilated sanctum, and the fact that ghee is highly perishable, the mountain of ghee never melts, never collapses, and has absolutely no foul smell of rotting fat. In fact, the ancient layers of ghee at the very bottom are considered a highly potent Ayurvedic medicine capable of curing chronic respiratory and skin diseases. Locals firmly believe the absolute purity of the chanting and the raw cosmic energy of the Lingam is what keeps the ghee perfectly solid and fresh for centuries."
   },
   {
     "id": 101,
@@ -5244,7 +5146,6 @@
       "Tipu Sultan"
     ],
     "image": "/NanjangudSrikanteshwara.jpg",
-    "video": "",
     "tradition": "Hinduism (Shaivism)",
     "management_history": "An ancient site expanded across centuries by the Western Gangas, Cholas, Hoysalas, and the Vijayanagara Empire. The Wadiyars of Mysore provided massive patronage. Interestingly, even the Muslim ruler Tipu Sultan deeply patronized the temple. Today, it is managed by the Karnataka Hindu Religious and Charitable Endowments (HR&CE) department.",
     "current_administration": "Karnataka State HR&CE Department",
@@ -5270,10 +5171,9 @@
         "importance": "Nanjangud is considered the exact spiritual equivalent of Varanasi in South India, sharing the immense power to grant salvation and wash away sins."
       }
     ],
-    "architecture": "<h1>Dravidian Grandeur and the 147-Foot Gopuram</h1>The temple complex is one of the largest in Karnataka, measuring an impressive 385 feet by 160 feet. It features classic <b>Dravidian architecture</b> highlighted by the towering, 9-story Rajagopuram. The outer walls and inner prakarams are breathtakingly lined with over 122 exquisitely carved stone figures depicting the various avatars and manifestations of Lord Shiva, making it a veritable open-air museum of Shaiva iconography.",
-    "festivals": "The absolute grandest event is the <b>Dodda Jathre</b> (Big Chariot Festival) held during the month of March/April. During this staggering event, five massive, elaborately decorated wooden chariots—dedicated to Ganesha, Srikanteshwara, Parvathi, Subramanya, and Chandikeshwara—are pulled through the streets of Nanjangud by hundreds of thousands of ecstatic devotees.",
-    "worship": "Worship here is deeply associated with physical and mental healing. Because Lord Nanjundeshwara is the consumer of poison, devotees suffering from chronic ailments, skin diseases, and poisons frequently perform severe vows here, such as 'Urulu Seve' (rolling around the temple complex). A highly unique tradition involves offering small clay or wooden figures representing afflicted body parts to the temple to seek a cure.",
-    "modern_folklore": "One of the most fascinating pieces of true historical folklore involves <b>Tipu Sultan and 'Hakim Nanjunda'</b>. According to records, Tipu Sultan's favorite royal elephant completely lost its eyesight. After all royal physicians failed, Tipu was advised to pray to Lord Srikanteshwara. For 48 days, the elephant was kept on the temple premises and washed with the holy water of the Kapila river. Miraculously, the elephant's sight was completely restored. Overjoyed and humbled, Tipu Sultan gifted the temple an incredibly precious emerald necklace (which is still adorned by the Lord on special occasions) and officially titled the deity 'Hakim Nanjunda' (The Doctor Nanjunda), cementing a beautiful, enduring story of cross-faith devotion."
+    "Architecture": "<h1>Dravidian Grandeur and the 147-Foot Gopuram</h1>The temple complex is one of the largest in Karnataka, measuring an impressive 385 feet by 160 feet. It features classic <b>Dravidian architecture</b> highlighted by the towering, 9-story Rajagopuram. The outer walls and inner prakarams are breathtakingly lined with over 122 exquisitely carved stone figures depicting the various avatars and manifestations of Lord Shiva, making it a veritable open-air museum of Shaiva iconography.",
+    "Festivals": "The absolute grandest event is the <b>Dodda Jathre</b> (Big Chariot Festival) held during the month of March/April. During this staggering event, five massive, elaborately decorated wooden chariots—dedicated to Ganesha, Srikanteshwara, Parvathi, Subramanya, and Chandikeshwara—are pulled through the streets of Nanjangud by hundreds of thousands of ecstatic devotees.",
+    "Worship": "Worship here is deeply associated with physical and mental healing. Because Lord Nanjundeshwara is the consumer of poison, devotees suffering from chronic ailments, skin diseases, and poisons frequently perform severe vows here, such as 'Urulu Seve' (rolling around the temple complex). A highly unique tradition involves offering small clay or wooden figures representing afflicted body parts to the temple to seek a cure. One of the most fascinating pieces of true historical folklore involves <b>Tipu Sultan and 'Hakim Nanjunda'</b>. According to records, Tipu Sultan's favorite royal elephant completely lost its eyesight. After all royal physicians failed, Tipu was advised to pray to Lord Srikanteshwara. For 48 days, the elephant was kept on the temple premises and washed with the holy water of the Kapila river. Miraculously, the elephant's sight was completely restored. Overjoyed and humbled, Tipu Sultan gifted the temple an incredibly precious emerald necklace (which is still adorned by the Lord on special occasions) and officially titled the deity 'Hakim Nanjunda' (The Doctor Nanjunda), cementing a beautiful, enduring story of cross-faith devotion."
   },
   {
     "id": 102,
@@ -5298,7 +5198,6 @@
       "Kachchhapaghata Dynasty"
     ],
     "image": "/ChausathYoginiMitawali.jpg",
-    "video": "",
     "tradition": "Hinduism (Tantrism / Shaivism)",
     "management_history": "Constructed in the 11th century (around 1055–1075 CE) by King Devapala of the Kachchhapaghata dynasty. Today, it is a protected archaeological and historical monument meticulously maintained by the Archaeological Survey of India (ASI).",
     "current_administration": "Archaeological Survey of India (ASI)",
@@ -5323,10 +5222,9 @@
         "importance": "A smaller, but incredibly potent and well-preserved circular Yogini temple located in Odisha, representing the eastern branch of ancient Tantric networks."
       }
     ],
-    "architecture": "<h1>The Circular Cosmos and the Roofless Sky</h1>The temple is a masterclass in ancient geometry and earthquake-resistant engineering. It is a completely circular structure with a radius of 170 feet, featuring 64 small chambers lining the inner perimeter and a grand, open pavilion in the center housing Lord Shiva. It is strictly <b>Hypaethral (roofless)</b>. According to Tantric architecture, this is mandatory because the Yoginis are believed to magically take flight at night to roam the cosmos, and a roof would trap their immense energy. Furthermore, the massive circular colonnade features an advanced, ancient rainwater harvesting system with perforated pillars that drained water perfectly without flooding the central courtyard.",
-    "festivals": "As an ASI-protected archaeological monument, it does not host grand active agamic festivals or chariot processions. However, the local villagers gather here in large numbers to offer prayers and water to the 64 Shiva Lingams during <b>Maha Shivaratri</b>.",
-    "worship": "Centuries ago, this was the epicenter of nocturnal Tantric worship, involving complex mantras, fire rituals, and esoteric practices aimed at acquiring 'Siddhis' (supernatural powers). Today, the worship is highly pacified; visitors and locals simply offer basic reverence to the Shiva Lingams during the daytime.",
-    "modern_folklore": "The temple is famous for two powerful pieces of modern lore. First, it is an incredibly widespread belief that British architects Sir Edwin Lutyens and Herbert Baker directly copied the unique, pillared circular design of this exact temple when they designed the <b>Old Parliament House of India (Sansad Bhavan)</b> in 1927. Second, local supernatural folklore remains strong: villagers from Mitawali firmly believe that the temple still comes alive at night. It is said that the spirits of the 64 Yoginis return to the roofless temple in the dark, and anyone who dares to stay overnight on the hill will lose their sanity or their life."
+    "Architecture": "<h1>The Circular Cosmos and the Roofless Sky</h1>The temple is a masterclass in ancient geometry and earthquake-resistant engineering. It is a completely circular structure with a radius of 170 feet, featuring 64 small chambers lining the inner perimeter and a grand, open pavilion in the center housing Lord Shiva. It is strictly <b>Hypaethral (roofless)</b>. According to Tantric architecture, this is mandatory because the Yoginis are believed to magically take flight at night to roam the cosmos, and a roof would trap their immense energy. Furthermore, the massive circular colonnade features an advanced, ancient rainwater harvesting system with perforated pillars that drained water perfectly without flooding the central courtyard.",
+    "Festivals": "As an ASI-protected archaeological monument, it does not host grand active agamic festivals or chariot processions. However, the local villagers gather here in large numbers to offer prayers and water to the 64 Shiva Lingams during <b>Maha Shivaratri</b>.",
+    "Worship": "Centuries ago, this was the epicenter of nocturnal Tantric worship, involving complex mantras, fire rituals, and esoteric practices aimed at acquiring 'Siddhis' (supernatural powers). Today, the worship is highly pacified; visitors and locals simply offer basic reverence to the Shiva Lingams during the daytime. The temple is famous for two powerful pieces of modern lore. First, it is an incredibly widespread belief that British architects Sir Edwin Lutyens and Herbert Baker directly copied the unique, pillared circular design of this exact temple when they designed the <b>Old Parliament House of India (Sansad Bhavan)</b> in 1927. Second, local supernatural folklore remains strong: villagers from Mitawali firmly believe that the temple still comes alive at night. It is said that the spirits of the 64 Yoginis return to the roofless temple in the dark, and anyone who dares to stay overnight on the hill will lose their sanity or their life."
   },
   {
     "id": 103,

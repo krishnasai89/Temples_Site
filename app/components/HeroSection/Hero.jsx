@@ -76,19 +76,53 @@ const HeroSection = () => {
   };
 
   const handlePlayClick = () => {
-    if (videoRef.current) {
-      videoRef.current.play();
-      setVideoStarted(true);
+    const video = videoRef.current;
+    if (video) {
+      const playPromise = video.play();
+
+      // Check if the promise exists (modern browsers)
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => {
+            // Video started successfully
+            setVideoStarted(true);
+          })
+          .catch((error) => {
+            // Browser blocked the play action
+            console.warn("Playback prevented:", error);
+          });
+      } else {
+        // Fallback for older browsers
+        setVideoStarted(true);
+      }
     }
   };
 
   const togglePlayPause = () => {
-    if (videoRef.current.paused) {
-      videoRef.current.play();
+    const video = videoRef.current;
+    if (!video) return;
+
+    if (video.paused) {
+      const playPromise = video.play();
+
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => {
+            setVideoStarted(true);
+          })
+          .catch((error) => {
+            console.warn("Playback prevented:", error);
+            setVideoStarted(false);
+          });
+      } else {
+        setVideoStarted(true);
+      }
     } else {
-      videoRef.current.pause();
+      // It is safe to pause here because we only reach this
+      // block if the video is definitively playing
+      video.pause();
+      setVideoStarted(false);
     }
-    setVideoStarted(!videoRef.current.paused);
   };
 
   const toggleMute = () => {
