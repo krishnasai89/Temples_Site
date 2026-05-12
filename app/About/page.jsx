@@ -1,14 +1,52 @@
 "use client";
 
-import React, { useRef } from "react";
-import Image from "next/image";
+import React, { useRef, useState } from "react";
 import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-// import Preloader from "../components/Preloader"; // Uncomment if you didn't put it in RootLayout
 
 gsap.registerPlugin(ScrollTrigger);
+
+// --- PREMIUM SPOTLIGHT CARD COMPONENT ---
+function PillarCard({ pillar, className }) {
+  const cardRef = useRef(null);
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e) => {
+    if (!cardRef.current) return;
+    const rect = cardRef.current.getBoundingClientRect();
+    setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+  };
+
+  return (
+    <div
+      ref={cardRef}
+      onMouseMove={handleMouseMove}
+      className={`group block relative bg-white/[0.02] backdrop-blur-md border border-white/5 rounded-3xl overflow-hidden hover:border-orange-500/40 hover:-translate-y-2 transition-all duration-500 hover:shadow-[0_20px_40px_rgba(249,115,22,0.1)] ${className}`}
+    >
+      {/* Spotlight Effect */}
+      <div
+        className="pointer-events-none absolute -inset-px rounded-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100 z-10"
+        style={{
+          background: `radial-gradient(400px circle at ${mousePos.x}px ${mousePos.y}px, rgba(249, 115, 22, 0.15), transparent 40%)`,
+        }}
+      />
+
+      <div className="relative z-20 p-8 md:p-10 h-full flex flex-col">
+        <div className="w-16 h-16 rounded-full bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-3xl mb-8 group-hover:scale-110 group-hover:bg-orange-500/20 transition-all duration-500 shadow-[0_0_15px_rgba(249,115,22,0.1)]">
+          {pillar.icon}
+        </div>
+        <h3 className="text-2xl font-serif text-white mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-red-500 transition-all duration-300">
+          {pillar.title}
+        </h3>
+        <p className="text-gray-400 text-sm leading-relaxed font-light flex-grow group-hover:text-gray-300 transition-colors">
+          {pillar.desc}
+        </p>
+      </div>
+    </div>
+  );
+}
 
 const About = () => {
   const container = useRef(null);
@@ -16,53 +54,57 @@ const About = () => {
   useGSAP(
     () => {
       // Hero Animations
-      gsap.from(".about-hero", {
-        y: 40,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.2,
-        ease: "power3.out",
-      });
+      gsap.fromTo(
+        ".about-hero",
+        { y: 40, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" },
+      );
 
       // Split Section Animations
-      gsap.from(".about-text-block", {
-        x: -50,
-        opacity: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: ".about-split",
-          start: "top 70%",
+      gsap.fromTo(
+        ".about-text-block",
+        { x: -50, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".about-split",
+            start: "top 75%",
+          },
         },
-      });
+      );
 
-      gsap.from(".about-image-block", {
-        x: 50,
-        opacity: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: ".about-split",
-          start: "top 70%",
+      gsap.fromTo(
+        ".about-image-block",
+        { x: 50, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".about-split",
+            start: "top 75%",
+          },
         },
-      });
+      );
 
-      // Pillar Cards Animations (FIXED WITH TIMELINE)
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".pillars-section",
-          start: "top 80%",
-        },
-      });
-
-      tl.fromTo(
-        ".pillar-card",
-        { y: 60, opacity: 0 }, // Explicit starting point
+      // Pillar Cards Animations
+      gsap.fromTo(
+        ".pillar-card-wrapper",
+        { y: 60, opacity: 0 },
         {
           y: 0,
           opacity: 1,
           duration: 0.8,
-          stagger: 0.2,
+          stagger: 0.15,
           ease: "power2.out",
-          clearProps: "all", // Hands control back to Tailwind after animating
+          scrollTrigger: {
+            trigger: ".pillars-section",
+            start: "top 80%",
+          },
         },
       );
     },
@@ -77,7 +119,7 @@ const About = () => {
     },
     {
       title: "Classical Movement",
-      desc: "Preserving the rigorous discipline and spiritual storytelling of the Natya Shastra through India's 8 major classical dance forms.",
+      desc: "Preserving the rigorous discipline and spiritual storytelling of the Natya Shastra through India's major classical dance forms.",
       icon: "🩰",
     },
     {
@@ -95,27 +137,26 @@ const About = () => {
   return (
     <main
       ref={container}
-      className="min-h-screen bg-[#0a0a0a] pt-32 pb-24 overflow-hidden relative"
+      className="min-h-screen bg-[#050505] pt-32 pb-24 overflow-hidden relative selection:bg-orange-500/30"
     >
-      {/* <Preloader /> */}
-
       {/* Ambient Background Glows */}
-      <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-orange-500/10 blur-[150px] rounded-full pointer-events-none"></div>
-      <div className="absolute bottom-0 right-0 w-[800px] h-[800px] bg-amber-500/5 blur-[150px] rounded-full pointer-events-none"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-orange-600/10 blur-[150px] rounded-full pointer-events-none z-0"></div>
+      <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-red-600/5 blur-[150px] rounded-full pointer-events-none z-0"></div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         {/* --- 1. HERO SECTION --- */}
         <div className="text-center mb-32 pt-10">
-          <span className="about-hero inline-block text-orange-500 font-bold tracking-[0.3em] uppercase text-xs md:text-sm mb-6 border border-orange-500/30 px-4 py-2 rounded-full bg-orange-500/10">
+          <span className="about-hero inline-flex items-center gap-3 text-orange-500 font-bold tracking-[0.3em] uppercase text-[10px] mb-6 border border-orange-500/30 px-5 py-2 rounded-full bg-orange-500/10 backdrop-blur-sm shadow-[0_0_20px_rgba(249,115,22,0.15)]">
+            <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
             The Digital Museum
           </span>
-          <h1 className="about-hero text-5xl md:text-7xl lg:text-8xl font-serif text-white mb-8 leading-tight">
+          <h1 className="about-hero text-6xl md:text-7xl lg:text-8xl font-serif text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-gray-400 mb-8 leading-[1.1] drop-shadow-[0_0_30px_rgba(0,0,0,0.8)]">
             Awakening <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-500 to-red-500">
               Our Heritage
             </span>
           </h1>
-          <p className="about-hero text-lg md:text-xl text-gray-400 max-w-3xl mx-auto font-light leading-relaxed">
+          <p className="about-hero text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed drop-shadow-md">
             Vishwaguru is more than an archive. It is a cinematic bridge
             connecting the profound wisdom of ancient India to the modern
             digital world.
@@ -126,16 +167,17 @@ const About = () => {
         <div className="about-split grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
           {/* Text Side */}
           <div className="about-text-block space-y-8">
-            <h2 className="text-4xl md:text-5xl font-serif text-white leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white leading-tight">
               Preserving the Past. <br /> Inspiring the Future.
             </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-transparent"></div>
+            <div className="w-24 h-px bg-gradient-to-r from-orange-500 to-transparent"></div>
             <p className="text-gray-300 text-lg leading-relaxed font-light">
               For thousands of years, India has been the spiritual and cultural
-              engine of the world—a true <strong>Vishwaguru</strong> (Teacher of
-              the World). Our ancestors encoded advanced science, psychology,
-              and philosophy into stone temples, rhythmic dances, and timeless
-              poetry.
+              engine of the world—a true{" "}
+              <strong className="text-white font-medium">Vishwaguru</strong>{" "}
+              (Teacher of the World). Our ancestors encoded advanced science,
+              psychology, and philosophy into stone temples, rhythmic dances,
+              and timeless poetry.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed font-light">
               However, as the world rapidly modernizes, the deep meaning behind
@@ -145,30 +187,49 @@ const About = () => {
               continues to inspire generations to come.
             </p>
 
-            <div className="pt-4 border-t border-white/10 mt-8">
-              <q className="text-orange-400 font-serif text-xl italic">
+            <div className="pt-6 border-t border-white/10 mt-8 relative">
+              <svg
+                className="absolute top-2 left-0 w-8 h-8 text-orange-500/20 transform -scale-x-100 -scale-y-100"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+              </svg>
+              <q className="text-orange-400 font-serif text-2xl italic pl-10 block">
                 Culture is the widening of the mind and of the spirit.
               </q>
             </div>
           </div>
 
-          {/* Image/Abstract Graphic Side */}
-          <div className="about-image-block relative h-[500px] lg:h-[600px] rounded-3xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_0_50px_rgba(249,115,22,0.1)] group">
-            {/* If you have a real image, use the Next Image component here. Otherwise, this creates a gorgeous abstract placeholder */}
-            <div className="absolute inset-0 bg-gradient-to-br from-black via-[#1a0f0a] to-[#2a1205] z-0"></div>
-            <div className="absolute inset-0 opacity-30 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] z-10 mix-blend-overlay"></div>
+          {/* Abstract Sacred Geometry Side */}
+          <div className="about-image-block relative h-[500px] lg:h-[600px] rounded-[2.5rem] overflow-hidden border border-white/10 bg-[#111]/40 backdrop-blur-xl shadow-[0_20px_50px_rgba(0,0,0,0.5),_inset_0_0_30px_rgba(249,115,22,0.05)] group">
+            <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#1a0f0a] to-[#2a1205] z-0"></div>
 
-            {/* Center Mandala/Abstract Geometry */}
+            {/* Ambient inner glow */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-orange-500/10 blur-[80px] rounded-full z-10"></div>
+
+            {/* Center Sacred Geometry Animation */}
             <div className="absolute inset-0 flex items-center justify-center z-20">
-              <div className="w-64 h-64 border-[0.5px] border-orange-500/30 rounded-full animate-[spin_60s_linear_infinite] flex items-center justify-center">
-                <div className="w-48 h-48 border border-orange-400/20 rounded-full rotate-45 flex items-center justify-center">
-                  <div className="w-32 h-32 border-2 border-orange-500/50 rounded-sm rotate-45 group-hover:rotate-90 transition-transform duration-1000 ease-in-out"></div>
+              {/* Outer dashed ring */}
+              <div className="w-[350px] h-[350px] border border-dashed border-white/10 rounded-full animate-[spin_60s_linear_infinite] flex items-center justify-center">
+                {/* Middle glowing ring */}
+                <div className="w-[280px] h-[280px] border border-orange-500/20 rounded-full animate-[spin_30s_linear_infinite_reverse] flex items-center justify-center shadow-[0_0_30px_rgba(249,115,22,0.1)]">
+                  {/* Square 1 */}
+                  <div className="w-[180px] h-[180px] border border-orange-400/30 rounded-lg animate-[spin_20s_linear_infinite] flex items-center justify-center">
+                    {/* Square 2 (Offset) */}
+                    <div className="w-[180px] h-[180px] border-2 border-orange-500/40 rounded-lg rotate-45 flex items-center justify-center group-hover:scale-110 transition-transform duration-1000 ease-in-out">
+                      {/* Inner Core */}
+                      <div className="w-16 h-16 border border-white/30 rounded-full animate-ping flex items-center justify-center bg-orange-500/10 backdrop-blur-md">
+                        <div className="w-2 h-2 bg-white rounded-full shadow-[0_0_15px_#f97316]"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div className="absolute bottom-8 left-8 z-30">
-              <span className="text-white/50 text-xs tracking-widest uppercase font-bold">
+              <span className="text-orange-500 text-[10px] tracking-[0.3em] uppercase font-bold bg-black/40 backdrop-blur-md px-4 py-2 rounded-full border border-white/10">
                 The Cosmic Blueprint
               </span>
             </div>
@@ -176,58 +237,55 @@ const About = () => {
         </div>
 
         {/* --- 3. THE FOUR PILLARS --- */}
-        <div className="pillars-section mb-32">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif text-white">
+        <div className="pillars-section mb-32 border-t border-white/5 pt-24 relative">
+          {/* Subtle background glow for the pillars section */}
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-32 bg-orange-500/5 blur-[100px] pointer-events-none"></div>
+
+          <div className="text-center mb-16 relative z-10">
+            <span className="text-orange-500 font-bold tracking-[0.3em] uppercase text-[10px] mb-4 block">
+              The Foundation
+            </span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white">
               The Four Pillars
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
             {pillars.map((pillar, index) => (
-              <div
-                key={index}
-                className="pillar-card bg-white/[0.02] border border-white/5 p-8 rounded-2xl hover:bg-white/[0.05] hover:border-orange-500/30 transition-all duration-500 hover:-translate-y-2 group"
-              >
-                <div className="text-4xl mb-6 bg-white/5 w-16 h-16 flex items-center justify-center rounded-full border border-white/10 group-hover:scale-110 transition-transform duration-300">
-                  {pillar.icon}
-                </div>
-                <h3 className="text-xl font-serif text-white mb-4 group-hover:text-orange-400 transition-colors">
-                  {pillar.title}
-                </h3>
-                <p className="text-gray-400 text-sm leading-relaxed font-light">
-                  {pillar.desc}
-                </p>
+              <div key={index} className="pillar-card-wrapper h-full">
+                <PillarCard pillar={pillar} className="h-full" />
               </div>
             ))}
           </div>
         </div>
 
-        {/* --- 4. CALL TO ACTION --- */}
-        <div className="text-center bg-gradient-to-b from-orange-900/20 to-black border border-orange-500/20 rounded-3xl p-12 md:p-20 relative overflow-hidden">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-orange-500/20 blur-[100px] rounded-full pointer-events-none"></div>
+        {/* --- 4. PREMIUM CALL TO ACTION --- */}
+        <div className="text-center bg-gradient-to-b from-[#1a0f0a] to-[#050505] border border-orange-500/20 rounded-[3rem] p-12 md:p-24 relative overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5),_inset_0_0_40px_rgba(249,115,22,0.1)]">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-orange-500/10 blur-[120px] rounded-full pointer-events-none z-0"></div>
 
-          <h2 className="text-3xl md:text-5xl font-serif text-white mb-6 relative z-10">
-            Begin Your Journey
-          </h2>
-          <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto relative z-10">
-            Explore the galleries, read the sacred texts, and witness the
-            movements that have defined civilization.
-          </p>
+          <div className="relative z-10">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6 drop-shadow-lg">
+              Begin Your Journey
+            </h2>
+            <p className="text-gray-400 text-lg md:text-xl mb-12 max-w-2xl mx-auto font-light leading-relaxed">
+              Explore the galleries, read the sacred texts, and witness the
+              movements that have defined civilization.
+            </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
-            <Link
-              href="/Dances"
-              className="px-8 py-4 bg-orange-500 text-black font-bold uppercase text-xs tracking-widest rounded-full hover:bg-white transition-all duration-300 hover:shadow-[0_0_30px_rgba(249,115,22,0.4)]"
-            >
-              Explore Dances
-            </Link>
-            <Link
-              href="/Stories"
-              className="px-8 py-4 bg-transparent border border-white/20 text-white font-bold uppercase text-xs tracking-widest rounded-full hover:border-orange-500 hover:text-orange-400 transition-all duration-300"
-            >
-              Read Stories
-            </Link>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+              <Link
+                href="/Dances"
+                className="w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-orange-500 to-red-600 text-black font-bold uppercase text-[10px] tracking-[0.2em] rounded-full hover:shadow-[0_0_30px_rgba(249,115,22,0.4)] hover:-translate-y-1 transition-all duration-300"
+              >
+                Explore Dances
+              </Link>
+              <Link
+                href="/Stories"
+                className="w-full sm:w-auto px-10 py-4 bg-white/[0.02] backdrop-blur-md border border-white/20 text-white font-bold uppercase text-[10px] tracking-[0.2em] rounded-full hover:border-orange-500 hover:text-orange-400 hover:bg-orange-500/5 hover:-translate-y-1 transition-all duration-300 shadow-lg"
+              >
+                Read Stories
+              </Link>
+            </div>
           </div>
         </div>
       </div>

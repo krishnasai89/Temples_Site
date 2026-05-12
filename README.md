@@ -8,6 +8,8 @@
 
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
+**[🌍 View Live Website](https://temples-site.vercel.app/)** • **[💻 View Source Code](https://github.com/krishnasai89/Temples_Site)**
+
 Vishwaguru is an immersive, cinematic web experience dedicated to preserving and showcasing the profound heritage of India's ancient temples, sacred narratives, and classical arts. Built with modern web technologies, it blends deep historical wisdom with cutting-edge UI/UX design.
 
 ## ✨ Key Features
@@ -85,6 +87,11 @@ In Indian classical tradition, the concept of _Yantra_ refers to sacred geometry
 - **Symmetry:** Grid layouts and flex containers are mathematically balanced.
 - **Motion:** Animations are eased and staggered to mimic the rhythm of classical dance.
 - **Depth:** Drop shadows, backdrop blurs, and gradient overlays create a sense of multi-dimensional space, much like walking into the sanctum of an ancient temple.
+
+👨‍💻 Author
+Designed and developed by Krishna Sai Vellampalli.
+
+GitHub: [@krishnasai89](https://github.com/krishnasai89)
 
 ## 📜 License
 

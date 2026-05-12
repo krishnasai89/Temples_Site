@@ -18,3 +18,53 @@ body {
   overflow-x: hidden;
   max-width: 100%;
 }
+
+/* Hide default cursor only on devices that use a mouse */
+@media (pointer: fine) {
+  body,
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    cursor: none !important;
+  }
+}
+
+/* --- PREMIUM CINEMATIC SCROLLBAR --- */
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(212, 175, 55, 0.5) #050505;
+}
+
+/* Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 10px; /* Vertical scrollbar width */
+  height: 10px; /* Horizontal scrollbar height (if needed) */
+}
+
+/* The track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  background: #050505; /* Matches your darkest background */
+  border-left: 1px solid rgba(255, 255, 255, 0.02); /* Very subtle separation line */
+}
+
+/* The draggable thumb */
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.4); /* Faded temple-gold */
+  border-radius: 20px;
+  /* This border creates a "padding" effect around the thumb so it doesn't touch the edges */
+  border: 3px solid #050505;
+}
+
+/* Hover effect for the thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(
+    249,
+    115,
+    22,
+    0.8
+  ); /* Glows orange/gold when the user grabs it */
+}

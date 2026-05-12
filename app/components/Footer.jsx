@@ -3,35 +3,40 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-gray-950 pt-16 pb-8 border-t border-gray-800 overflow-hidden">
-      {/* Subtle top glow effect */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-orange-500/50 to-transparent"></div>
+    <footer className="relative bg-[#050505] pt-20 pb-8 border-t border-white/5 overflow-hidden font-sans">
+      {/* Ambient Bottom Glow */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-orange-500/5 blur-[150px] pointer-events-none z-0"></div>
 
-      <div className="container mx-auto px-6 lg:px-12 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          {/* Column 1: Brand & Description */}
-          <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2 group mb-4">
-              <div className="w-3 h-3 bg-orange-500 rounded-full shadow-[0_0_10px_rgba(249,115,22,0.8)]"></div>
-              <span className="text-2xl font-extrabold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 drop-shadow-sm">
+      {/* Subtle top border glow effect */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-px bg-gradient-to-r from-transparent via-orange-500/30 to-transparent"></div>
+
+      <div className="container mx-auto px-6 lg:px-12 relative z-10 max-w-7xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
+          {/* Column 1: Brand & Description (Takes up more space) */}
+          <div className="lg:col-span-4 pr-0 lg:pr-8">
+            <Link href="/" className="flex items-center gap-3 group mb-6 w-max">
+              <div className="w-3 h-3 bg-gradient-to-br from-orange-400 to-red-600 rounded-full shadow-[0_0_15px_rgba(249,115,22,0.8)] group-hover:scale-125 transition-transform duration-300"></div>
+              <span className="text-2xl font-serif font-extrabold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white via-orange-100 to-orange-400 drop-shadow-sm">
                 Vishwaguru
               </span>
             </Link>
-            <p className="text-gray-400 text-sm leading-relaxed mb-6">
+            <p className="text-gray-400 text-sm leading-relaxed mb-8 font-light">
               Embark on a spiritual journey through timeless architecture,
               sacred traditions, and the profound stories of ancient temples.
             </p>
-            {/* Social Icons */}
-            <div className="flex space-x-4">
-              {/* GitHub Icon */}
+
+            {/* Social Icons - Glassmorphic */}
+            <div className="flex space-x-3">
+              {/* GitHub */}
               <a
                 href="https://github.com/krishnasai89"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-900 border border-gray-800 text-gray-400 hover:bg-orange-500/10 hover:text-orange-500 hover:border-orange-500/50 transition-all duration-300"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-white/[0.03] border border-white/10 text-gray-400 hover:bg-orange-500/10 hover:text-orange-400 hover:border-orange-500/40 hover:-translate-y-1 transition-all duration-300 shadow-sm"
+                aria-label="GitHub"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-4 h-4"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -39,15 +44,16 @@ const Footer = () => {
                 </svg>
               </a>
 
-              {/* LinkedIn Icon */}
+              {/* LinkedIn */}
               <a
                 href="https://www.linkedin.com/in/krishna-sai-vellampalli/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-900 border border-gray-800 text-gray-400 hover:bg-orange-500/10 hover:text-orange-500 hover:border-orange-500/50 transition-all duration-300"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-white/[0.03] border border-white/10 text-gray-400 hover:bg-orange-500/10 hover:text-orange-400 hover:border-orange-500/40 hover:-translate-y-1 transition-all duration-300 shadow-sm"
+                aria-label="LinkedIn"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-4 h-4"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -55,10 +61,14 @@ const Footer = () => {
                 </svg>
               </a>
 
-              {/* YouTube Icon */}
-              <a className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-900 border border-gray-800 text-gray-400 hover:bg-orange-500/10 hover:text-orange-500 hover:border-orange-500/50 transition-all duration-300">
+              {/* YouTube */}
+              <a
+                href="#"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-white/[0.03] border border-white/10 text-gray-400 hover:bg-orange-500/10 hover:text-orange-400 hover:border-orange-500/40 hover:-translate-y-1 transition-all duration-300 shadow-sm"
+                aria-label="YouTube"
+              >
                 <svg
-                  className="w-5 h-5"
+                  className="w-4 h-4"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -66,13 +76,16 @@ const Footer = () => {
                 </svg>
               </a>
 
-              {/* Instagram Icon */}
+              {/* Instagram */}
               <a
                 href="https://www.instagram.com/swananda2026/"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-900 border border-gray-800 text-gray-400 hover:bg-orange-500/10 hover:text-orange-500 hover:border-orange-500/50 transition-all duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-white/[0.03] border border-white/10 text-gray-400 hover:bg-orange-500/10 hover:text-orange-400 hover:border-orange-500/40 hover:-translate-y-1 transition-all duration-300 shadow-sm"
+                aria-label="Instagram"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-4 h-4"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -80,10 +93,14 @@ const Footer = () => {
                 </svg>
               </a>
 
-              {/* X / Twitter Icon */}
-              <a className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-900 border border-gray-800 text-gray-400 hover:bg-orange-500/10 hover:text-orange-500 hover:border-orange-500/50 transition-all duration-300">
+              {/* Twitter / X */}
+              <a
+                href="#"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-white/[0.03] border border-white/10 text-gray-400 hover:bg-orange-500/10 hover:text-orange-400 hover:border-orange-500/40 hover:-translate-y-1 transition-all duration-300 shadow-sm"
+                aria-label="X / Twitter"
+              >
                 <svg
-                  className="w-5 h-5"
+                  className="w-3.5 h-3.5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -94,9 +111,9 @@ const Footer = () => {
           </div>
 
           {/* Column 2: Quick Links */}
-          <div className="lg:col-span-1">
-            <h3 className="text-white font-semibold mb-6 tracking-wide">
-              Quick Links
+          <div className="lg:col-span-2">
+            <h3 className="text-white/50 text-[10px] font-bold tracking-[0.2em] uppercase mb-6">
+              Navigation
             </h3>
             <ul className="space-y-3">
               {[
@@ -107,9 +124,12 @@ const Footer = () => {
               ].map(({ name, path }, index) => (
                 <li key={index}>
                   <Link
-                    href="path"
-                    className="text-gray-400 hover:text-orange-400 text-sm transition-colors duration-300"
+                    href={path} // FIXED: removed quotes so it uses the variable!
+                    className="group flex items-center text-sm text-gray-400 hover:text-orange-400 transition-colors duration-300 w-max"
                   >
+                    <span className="opacity-0 -ml-3 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300 mr-2 text-orange-500">
+                      ›
+                    </span>
                     {name}
                   </Link>
                 </li>
@@ -118,8 +138,8 @@ const Footer = () => {
           </div>
 
           {/* Column 3: Pilgrimage */}
-          <div className="lg:col-span-1">
-            <h3 className="text-white font-semibold mb-6 tracking-wide">
+          <div className="lg:col-span-2">
+            <h3 className="text-white/50 text-[10px] font-bold tracking-[0.2em] uppercase mb-6">
               Pilgrimage
             </h3>
             <ul className="space-y-3">
@@ -132,8 +152,11 @@ const Footer = () => {
                 <li key={index}>
                   <Link
                     href="#"
-                    className="text-gray-400 hover:text-orange-400 text-sm transition-colors duration-300"
+                    className="group flex items-center text-sm text-gray-400 hover:text-orange-400 transition-colors duration-300 w-max"
                   >
+                    <span className="opacity-0 -ml-3 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300 mr-2 text-orange-500">
+                      ›
+                    </span>
                     {item}
                   </Link>
                 </li>
@@ -142,23 +165,27 @@ const Footer = () => {
           </div>
 
           {/* Column 4: Newsletter */}
-          <div className="lg:col-span-1">
-            <h3 className="text-white font-semibold mb-6 tracking-wide">
+          <div className="lg:col-span-4">
+            <h3 className="text-white/50 text-[10px] font-bold tracking-[0.2em] uppercase mb-6">
               Stay Connected
             </h3>
-            <p className="text-gray-400 text-sm mb-4">
+            <p className="text-gray-400 text-sm mb-5 font-light leading-relaxed">
               Subscribe to receive weekly insights, stories, and heritage
-              updates.
+              updates directly to your inbox.
             </p>
-            <form className="flex flex-col space-y-3">
+
+            {/* Embedded Form Input */}
+            <form className="relative group max-w-md">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-orange-500/0 via-orange-500/20 to-red-500/0 rounded-xl blur opacity-0 group-focus-within:opacity-100 transition duration-500"></div>
               <input
                 type="email"
+                suppressHydrationWarning // FIXED: Prevents browser extension crashes!
                 placeholder="Your email address"
-                className="bg-gray-900 border border-gray-800 text-white text-sm rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition-all"
+                className="relative w-full bg-white/[0.03] backdrop-blur-md border border-white/10 text-white text-sm rounded-xl py-3.5 pl-4 pr-32 focus:outline-none focus:border-orange-500/50 transition-all shadow-inner placeholder-white/30"
               />
               <button
                 type="button"
-                className="bg-orange-500 hover:bg-orange-600 text-white font-medium text-sm rounded-lg px-4 py-3 transition-colors shadow-lg shadow-orange-500/20"
+                className="absolute right-1.5 top-1.5 bottom-1.5 bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-400 hover:to-red-500 text-white font-bold text-[10px] tracking-widest uppercase rounded-lg px-4 transition-all shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:shadow-[0_0_20px_rgba(249,115,22,0.5)]"
               >
                 Subscribe
               </button>
@@ -167,12 +194,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar: Copyright & Legal */}
-        <div className="pt-8 border-t border-gray-800/50 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-xs text-center md:text-left">
+        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-gray-500 text-xs text-center md:text-left font-light tracking-wide">
             &copy; {new Date().getFullYear()} Vishwaguru. Preserving the Divine
             Heritage. All rights reserved.
           </p>
-          <div className="flex space-x-6 text-xs text-gray-500">
+          <div className="flex space-x-6 text-xs text-gray-500 font-light">
             <Link href="#" className="hover:text-orange-400 transition-colors">
               Privacy Policy
             </Link>

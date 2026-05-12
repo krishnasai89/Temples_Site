@@ -8,18 +8,18 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// --- Custom Slider Arrows ---
+// --- Premium Glassmorphic Slider Arrows ---
 const CustomPrevArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 flex items-center justify-center bg-black/50 hover:bg-orange-500 text-white rounded-full backdrop-blur-sm border border-white/10 transition-all duration-300"
+    className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-black/40 hover:bg-gradient-to-br hover:from-orange-400 hover:to-orange-600 text-white rounded-full backdrop-blur-md border border-white/20 transition-all duration-300 shadow-[0_0_15px_rgba(0,0,0,0.5)] group opacity-0 group-hover:opacity-100"
     aria-label="Previous Slide"
   >
     <svg
-      className="w-5 h-5"
+      className="w-5 h-5 group-hover:-translate-x-0.5 transition-transform"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth="2.5"
       viewBox="0 0 24 24"
     >
       <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -30,14 +30,14 @@ const CustomPrevArrow = ({ onClick }) => (
 const CustomNextArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 flex items-center justify-center bg-black/50 hover:bg-orange-500 text-white rounded-full backdrop-blur-sm border border-white/10 transition-all duration-300"
+    className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-black/40 hover:bg-gradient-to-br hover:from-orange-400 hover:to-orange-600 text-white rounded-full backdrop-blur-md border border-white/20 transition-all duration-300 shadow-[0_0_15px_rgba(0,0,0,0.5)] group opacity-0 group-hover:opacity-100"
     aria-label="Next Slide"
   >
     <svg
-      className="w-5 h-5"
+      className="w-5 h-5 group-hover:translate-x-0.5 transition-transform"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth="2.5"
       viewBox="0 0 24 24"
     >
       <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -52,22 +52,23 @@ const HeroSection = () => {
   const videoRef = useRef(null);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // Autoplay is turned OFF so it doesn't skip to the image while you are waiting to play the video
     autoplay: true,
     duration: 500000,
     arrows: true,
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
-    // Appends dots to look better in dark mode
     appendDots: (dots) => (
-      <div style={{ bottom: "10px" }}>
-        <ul className="m-0 p-0"> {dots} </ul>
+      <div style={{ bottom: "20px", zIndex: 30 }}>
+        <ul className="m-0 p-0 flex justify-center gap-2"> {dots} </ul>
       </div>
+    ),
+    customPaging: (i) => (
+      <div className="w-2 h-2 rounded-full bg-white/40 hover:bg-orange-400 transition-colors duration-300"></div>
     ),
   };
 
@@ -79,20 +80,11 @@ const HeroSection = () => {
     const video = videoRef.current;
     if (video) {
       const playPromise = video.play();
-
-      // Check if the promise exists (modern browsers)
       if (playPromise !== undefined) {
         playPromise
-          .then(() => {
-            // Video started successfully
-            setVideoStarted(true);
-          })
-          .catch((error) => {
-            // Browser blocked the play action
-            console.warn("Playback prevented:", error);
-          });
+          .then(() => setVideoStarted(true))
+          .catch((error) => console.warn("Playback prevented:", error));
       } else {
-        // Fallback for older browsers
         setVideoStarted(true);
       }
     }
@@ -104,12 +96,9 @@ const HeroSection = () => {
 
     if (video.paused) {
       const playPromise = video.play();
-
       if (playPromise !== undefined) {
         playPromise
-          .then(() => {
-            setVideoStarted(true);
-          })
+          .then(() => setVideoStarted(true))
           .catch((error) => {
             console.warn("Playback prevented:", error);
             setVideoStarted(false);
@@ -118,8 +107,6 @@ const HeroSection = () => {
         setVideoStarted(true);
       }
     } else {
-      // It is safe to pause here because we only reach this
-      // block if the video is definitively playing
       video.pause();
       setVideoStarted(false);
     }
@@ -133,40 +120,45 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#0a0a0a] py-16 lg:py-24 selection:bg-orange-500/30">
-      <div className="absolute top-0 right-0 -mr-40 -mt-40 w-96 h-96 rounded-full bg-orange-500/5 blur-[120px] pointer-events-none"></div>
-      <div className="container mx-auto px-6 lg:px-12 relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+    <section className="relative w-full overflow-hidden bg-[#050505] py-20 lg:py-32 selection:bg-orange-500/30 font-sans">
+      {/* Deep Cinematic Ambient Glow */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-orange-600/5 blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full bg-red-600/5 blur-[120px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
+
+      <div className="container mx-auto px-6 lg:px-12 relative z-10 max-w-7xl">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+          {/* Left Side: Slider */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="flex justify-center w-full"
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="flex justify-center w-full order-2 md:order-1"
           >
-            <div className="w-full max-w-[28rem] lg:max-w-[35rem] rounded-2xl overflow-hidden relative border border-gray-800 shadow-[0_0_40px_rgba(249,115,22,0.1)]">
+            <div className="w-full max-w-[28rem] lg:max-w-[32rem] rounded-[2rem] overflow-hidden relative border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.8),_0_0_30px_rgba(249,115,22,0.15)] group">
               <Slider ref={sliderRef} {...settings}>
                 {/* 1. Local Video */}
-                <div className="relative outline-none bg-black">
+                <div className="relative outline-none bg-black h-[32rem] lg:h-[40rem]">
                   <video
                     ref={videoRef}
                     src="/HeroSectionVideo.mp4"
                     muted={muted}
-                    preload="auto" // Helps load the first frame so it isn't black
+                    preload="auto"
                     playsInline
-                    webkit-playsinline="true" // Specific fix for iOS/Safari black screens
-                    className="w-full h-[28rem] lg:h-[35rem] object-cover opacity-90"
+                    webkit-playsinline="true"
+                    className="w-full h-full object-cover opacity-90 mix-blend-lighten"
                     onEnded={handleVideoEnd}
                   />
 
+                  {/* Giant Play Button Overlay */}
                   {!videoStarted && (
                     <button
                       onClick={handlePlayClick}
-                      className="absolute inset-0 z-10 w-full h-full flex items-center justify-center bg-black/40 hover:bg-black/50 transition-all duration-300 group"
+                      className="absolute inset-0 z-10 w-full h-full flex items-center justify-center bg-black/30 hover:bg-black/40 backdrop-blur-[2px] transition-all duration-500 group/play"
                       aria-label="Play Video"
                     >
-                      <div className="w-20 h-20 group-hover:h-10 text-orange-400 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border-2 border-[0_0_30px_rgba(249,115,22,0.4)]">
+                      <div className="w-24 h-24 text-white rounded-full flex items-center justify-center group-hover/play:scale-110 transition-transform duration-500 border border-white/20 bg-white/10 backdrop-blur-md shadow-[0_0_30px_rgba(249,115,22,0.3)]">
                         <svg
-                          className="w-20 group-hover:w-10 h-20 text-orange-400 ml-2"
+                          className="w-10 h-10 ml-2"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                         >
@@ -176,15 +168,16 @@ const HeroSection = () => {
                     </button>
                   )}
 
+                  {/* Sleek Glassmorphic Media Controls */}
                   {videoStarted && (
-                    <div className="absolute mb-10 bottom-6 left-1/2 -translate-x-1/2 z-10 flex space-x-3 bg-black/60 p-2 rounded-xl backdrop-blur-md border border-white/5">
+                    <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2 bg-black/40 px-4 py-2 rounded-full backdrop-blur-xl border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <button
                         onClick={togglePlayPause}
                         className="p-2 text-white hover:text-orange-400 transition-colors"
                       >
                         {videoRef.current?.paused ? (
                           <svg
-                            className="w-6 h-6"
+                            className="w-5 h-5"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                           >
@@ -192,7 +185,7 @@ const HeroSection = () => {
                           </svg>
                         ) : (
                           <svg
-                            className="w-6 h-6"
+                            className="w-5 h-5"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                           >
@@ -200,13 +193,14 @@ const HeroSection = () => {
                           </svg>
                         )}
                       </button>
+                      <div className="w-px h-5 bg-white/20"></div>
                       <button
                         onClick={toggleMute}
                         className="p-2 text-white hover:text-orange-400 transition-colors"
                       >
                         {muted ? (
                           <svg
-                            className="w-6 h-6"
+                            className="w-5 h-5"
                             fill="none"
                             stroke="currentColor"
                             strokeWidth="2"
@@ -225,7 +219,7 @@ const HeroSection = () => {
                           </svg>
                         ) : (
                           <svg
-                            className="w-6 h-6"
+                            className="w-5 h-5"
                             fill="none"
                             stroke="currentColor"
                             strokeWidth="2"
@@ -242,283 +236,122 @@ const HeroSection = () => {
                     </div>
                   )}
                 </div>
-                <div className="relative outline-none h-[28rem] lg:h-[35rem] bg-black">
-                  <Image
-                    src="/Temple1.jpg"
-                    alt="Divine Temples and Culture of India"
-                    fill
-                    className="object-cover opacity-80"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent items-end flex p-8">
-                    <h3 className="text-white text-2xl font-bold tracking-wide drop-shadow-md">
-                      Nritya Ganesha
-                    </h3>
+
+                {/* 2-16. Image Slides with Museum Plaques */}
+                {[
+                  { src: "/Temple1.jpg", title: "Nritya Ganesha" },
+                  { src: "/Temple2.jpg", title: "Hoysala Architecture" },
+                  { src: "/Temple3.jpg", title: "Bhairava" },
+                  { src: "/Temple4.jpg", title: "Kartikeya" },
+                  { src: "/Temple5.jpg", title: "Kalyana Chalukyan Style" },
+                  { src: "/Temple6.jpg", title: "" },
+                  { src: "/Temple7.jpg", title: "" },
+                  { src: "/Temple8.jpg", title: "Makara Thorana" },
+                  { src: "/Temple9.jpg", title: "Shilabalika / Madanikas" },
+                  { src: "/Temple10.jpg", title: "" },
+                  { src: "/Temple11.jpg", title: "" },
+                  { src: "/Temple12.jpg", title: "" },
+                  { src: "/Temple13.jpg", title: "" },
+                  {
+                    src: "/Temple14.jpg",
+                    title: "Lord Narasimha Slaying Hiranyakashipu",
+                  },
+                  { src: "/Temple15.jpg", title: "Gajasurasamhara" },
+                  {
+                    src: "/Temple16.jpg",
+                    title: "Bhagadatta on Supratika fighting Bhima",
+                  },
+                ].map((item, idx) => (
+                  <div
+                    key={idx}
+                    className="relative outline-none h-[32rem] lg:h-[40rem] bg-black"
+                  >
+                    <Image
+                      src={item.src}
+                      alt={item.title || "Divine Temples and Culture of India"}
+                      fill
+                      className="object-cover opacity-80"
+                      priority={idx === 0}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent flex items-end p-8 pb-5">
+                      {item.title && (
+                        <div className="bg-black/40 backdrop-blur-md border border-white/10 px-5 py-3 rounded-xl w-full">
+                          <h3 className="text-white text-lg lg:text-xl font-serif leading-snug">
+                            {item.title}
+                          </h3>
+                        </div>
+                      )}
+                    </div>
                   </div>
-                </div>
-                <div className="relative outline-none h-[28rem] lg:h-[35rem] bg-black">
-                  <Image
-                    src="/Temple2.jpg"
-                    alt="Divine Temples and Culture of India"
-                    fill
-                    className="object-cover opacity-80"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent flex items-end p-8">
-                    <h3 className="text-white text-2xl font-bold tracking-wide drop-shadow-md">
-                      Hoysala Architecture
-                    </h3>
-                  </div>
-                </div>
-                <div className="relative outline-none h-[28rem] lg:h-[35rem] bg-black">
-                  <Image
-                    src="/Temple3.jpg"
-                    alt="Divine Temples and Culture of India"
-                    fill
-                    className="object-cover opacity-80"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent flex items-end p-8">
-                    <h3 className="text-white text-2xl font-bold tracking-wide drop-shadow-md">
-                      Bhairava
-                    </h3>
-                  </div>
-                </div>
-                <div className="relative outline-none h-[28rem] lg:h-[35rem] bg-black">
-                  <Image
-                    src="/Temple4.jpg"
-                    alt="Divine Temples and Culture of India"
-                    fill
-                    className="object-cover opacity-80"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent flex items-end p-8">
-                    <h3 className="text-white text-2xl font-bold tracking-wide drop-shadow-md">
-                      Kartikeya
-                    </h3>
-                  </div>
-                </div>
-                <div className="relative outline-none h-[28rem] lg:h-[35rem] bg-black">
-                  <Image
-                    src="/Temple5.jpg"
-                    alt="Divine Temples and Culture of India"
-                    fill
-                    className="object-cover opacity-80"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent flex items-end p-8">
-                    <h3 className="text-white text-2xl font-bold tracking-wide drop-shadow-md">
-                      Kalyana Chalukyan architectural style
-                    </h3>
-                  </div>
-                </div>
-                <div className="relative outline-none h-[28rem] lg:h-[35rem] bg-black">
-                  <Image
-                    src="/Temple6.jpg"
-                    alt="Divine Temples and Culture of India"
-                    fill
-                    className="object-cover opacity-80"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent flex items-end p-8">
-                    <h3 className="text-white text-2xl font-bold tracking-wide drop-shadow-md"></h3>
-                  </div>
-                </div>
-                <div className="relative outline-none h-[28rem] lg:h-[35rem] bg-black">
-                  <Image
-                    src="/Temple7.jpg"
-                    alt="Divine Temples and Culture of India"
-                    fill
-                    className="object-cover opacity-80"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent flex items-end p-8">
-                    <h3 className="text-white text-2xl font-bold tracking-wide drop-shadow-md"></h3>
-                  </div>
-                </div>
-                <div className="relative outline-none h-[28rem] lg:h-[35rem] bg-black">
-                  <Image
-                    src="/Temple8.jpg"
-                    alt="Divine Temples and Culture of India"
-                    fill
-                    className="object-cover opacity-80"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent flex items-end p-8">
-                    <h3 className="text-white text-2xl font-bold tracking-wide drop-shadow-md">
-                      Makara Thorana
-                    </h3>
-                  </div>
-                </div>
-                <div className="relative outline-none h-[28rem] lg:h-[35rem] bg-black">
-                  <Image
-                    src="/Temple9.jpg"
-                    alt="Divine Temples and Culture of India"
-                    fill
-                    className="object-cover opacity-80"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent flex items-end p-8">
-                    <h3 className="text-white text-2xl font-bold tracking-wide drop-shadow-md">
-                      Shilabalika / Madanikas
-                    </h3>
-                  </div>
-                </div>
-                <div className="relative outline-none h-[28rem] lg:h-[35rem] bg-black">
-                  <Image
-                    src="/Temple10.jpg"
-                    alt="Divine Temples and Culture of India"
-                    fill
-                    className="object-cover opacity-80"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent flex items-end p-8">
-                    <h3 className="text-white text-2xl font-bold tracking-wide drop-shadow-md"></h3>
-                  </div>
-                </div>
-                <div className="relative outline-none h-[28rem] lg:h-[35rem] bg-black">
-                  <Image
-                    src="/Temple11.jpg"
-                    alt="Divine Temples and Culture of India"
-                    fill
-                    className="object-cover opacity-80"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent flex items-end p-8">
-                    <h3 className="text-white text-2xl font-bold tracking-wide drop-shadow-md"></h3>
-                  </div>
-                </div>
-                <div className="relative outline-none h-[28rem] lg:h-[35rem] bg-black">
-                  <Image
-                    src="/Temple12.jpg"
-                    alt="Divine Temples and Culture of India"
-                    fill
-                    className="object-cover opacity-80"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent flex items-end p-8">
-                    <h3 className="text-white text-2xl font-bold tracking-wide drop-shadow-md"></h3>
-                  </div>
-                </div>
-                <div className="relative outline-none h-[28rem] lg:h-[35rem] bg-black">
-                  <Image
-                    src="/Temple13.jpg"
-                    alt="Divine Temples and Culture of India"
-                    fill
-                    className="object-cover opacity-80"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent flex items-end p-8">
-                    <h3 className="text-white text-2xl font-bold tracking-wide drop-shadow-md"></h3>
-                  </div>
-                </div>
-                <div className="relative outline-none h-[28rem] lg:h-[35rem] bg-black">
-                  <Image
-                    src="/Temple14.jpg"
-                    alt="Divine Temples and Culture of India"
-                    fill
-                    className="object-cover opacity-80"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent flex items-end p-8">
-                    <h3 className="text-white text-2xl font-bold tracking-wide drop-shadow-md">
-                      Lord Narasimha, the fourth avatar of Lord Vishnu, slaying
-                      the demon king Hiranyakashipu.
-                    </h3>
-                  </div>
-                </div>
-                <div className="relative outline-none h-[28rem] lg:h-[35rem] bg-black">
-                  <Image
-                    src="/Temple15.jpg"
-                    alt="Divine Temples and Culture of India"
-                    fill
-                    className="object-cover opacity-80"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent flex items-end p-8">
-                    <h3 className="text-white text-2xl font-bold tracking-wide drop-shadow-md">
-                      Gajasurasamhara
-                    </h3>
-                  </div>
-                </div>
-                <div className="relative outline-none h-[28rem] lg:h-[35rem] bg-black">
-                  <Image
-                    src="/Temple16.jpg"
-                    alt="Divine Temples and Culture of India"
-                    fill
-                    className="object-cover opacity-80"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent flex items-end p-8">
-                    <h3 className="text-white text-2xl font-bold tracking-wide drop-shadow-md">
-                      Bhagadatta is shown riding his war elephant, Supratika,
-                      fighting against Bhima, who is typically identified by his
-                      weapon, the Gadha (mace).
-                    </h3>
-                  </div>
-                </div>
+                ))}
               </Slider>
             </div>
           </motion.div>
+
+          {/* Right Side: Text & Actions */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            className="flex flex-col justify-center"
+            transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+            className="flex flex-col justify-center order-1 md:order-2"
           >
-            <span className="text-orange-400 font-bold tracking-widest uppercase text-sm mb-3 drop-shadow-sm">
+            <span className="text-orange-500 font-bold tracking-[0.3em] uppercase text-xs mb-4 flex items-center gap-3">
+              <span className="w-8 h-[1px] bg-orange-500/50"></span>
               Sacred Heritage
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-              Discover the{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 drop-shadow-sm">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif text-white leading-[1.1] mb-6 drop-shadow-lg">
+              Discover the <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-500 to-red-500">
                 Divine Forms
-              </span>{" "}
-              of Ancient Temples
+              </span>
             </h1>
-            <p className="text-lg text-gray-300 mb-8 leading-relaxed max-w-lg font-light">
+            <p className="text-lg text-gray-400 mb-10 leading-relaxed max-w-lg font-light">
               Embark on a spiritual journey through timeless architecture,
               sacred traditions, and the profound stories that have shaped our
               rich cultural tapestry for millennia.
             </p>
 
-            <ul className="space-y-4 mb-10">
+            {/* Feature List */}
+            <ul className="space-y-5 mb-12">
               {[
                 "Uncover the mysteries of ancient architectural marvels.",
                 "Read the profound epics and legends of the deities.",
                 "Plan your spiritual pilgrimage to historic sacred sites.",
               ].map((item, index) => (
                 <li key={index} className="flex items-start group">
-                  <svg
-                    className="w-6 h-6 text-orange-500 mr-4 flex-shrink-0 group-hover:scale-110 transition-transform"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                  <span className="text-gray-300 font-medium group-hover:text-white transition-colors">
+                  <div className="w-6 h-6 rounded-full bg-orange-500/10 border border-orange-500/20 flex items-center justify-center mr-4 flex-shrink-0 group-hover:bg-orange-500/20 transition-colors">
+                    <svg
+                      className="w-3.5 h-3.5 text-orange-400"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                  <span className="text-gray-300 font-light group-hover:text-white transition-colors">
                     {item}
                   </span>
                 </li>
               ))}
             </ul>
 
+            {/* Action Buttons */}
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/Stories"
-                className="px-8 py-3.5 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg shadow-[0_0_20px_rgba(249,115,22,0.3)] hover:shadow-[0_0_30px_rgba(249,115,22,0.5)] hover:-translate-y-0.5 transition-all duration-300"
+                className="px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold text-xs uppercase tracking-widest rounded-full shadow-[0_0_20px_rgba(249,115,22,0.3)] hover:shadow-[0_0_35px_rgba(249,115,22,0.6)] hover:-translate-y-1 transition-all duration-300"
               >
                 Read Stories
               </Link>
               <Link
                 href="#Temple"
-                className="px-8 py-3.5 bg-transparent text-orange-400 font-semibold border border-orange-500/50 rounded-lg hover:border-orange-400 hover:bg-orange-500/10 hover:-translate-y-0.5 transition-all duration-300"
+                className="px-8 py-4 bg-white/[0.03] backdrop-blur-md text-orange-400 font-bold text-xs uppercase tracking-widest border border-orange-500/30 rounded-full hover:border-orange-400 hover:bg-orange-500/10 hover:-translate-y-1 transition-all duration-300"
               >
                 Explore Temples
               </Link>

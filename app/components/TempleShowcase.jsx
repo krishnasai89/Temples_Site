@@ -46,59 +46,68 @@ function TempleCard({ temple }) {
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
-      className="temple-card relative block rounded-xl overflow-hidden group h-[420px] bg-white/5 backdrop-blur-sm border border-white/10 hover:border-temple-gold/40 transition-all duration-500 hover:-translate-y-2 shadow-lg hover:shadow-[0_15px_40px_rgba(0,0,0,0.6)]"
+      className="temple-card relative block rounded-2xl overflow-hidden group h-[450px] bg-white/[0.02] backdrop-blur-md border border-white/10 hover:border-temple-gold/50 transition-all duration-700 hover:-translate-y-2 shadow-lg hover:shadow-[0_20px_50px_rgba(0,0,0,0.8)]"
     >
       {/* Interactive Spotlight */}
       <div
-        className="pointer-events-none absolute -inset-px rounded-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-10"
+        className="pointer-events-none absolute -inset-px rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100 z-10"
         style={{
-          background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(212, 175, 55, 0.2), transparent 20%)`,
+          background: `radial-gradient(500px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(212, 175, 55, 0.15), transparent 40%)`,
         }}
       />
 
-      {/* Background Image */}
+      {/* Background Image - Fixed brightness and scaling */}
       <img
-        src={temple.image || null}
+        src={temple.image || "/placeholder.jpg"}
         alt={temple.name}
-        className="absolute inset-0 w-full h-full object-cover scale-105 group-hover:scale-110 transition-transform duration-700 brightness-150"
+        className="absolute inset-0 w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-1000 ease-out opacity-70 group-hover:opacity-100"
       />
 
-      {/* Overlays */}
-      <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition duration-500"></div>
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent"></div>
+      {/* Overlays for perfect text readability */}
+      <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#0a0a0a]/80 to-transparent h-full z-0"></div>
 
       {/* Text Content */}
-      <div className="absolute bottom-0 p-6 z-20 w-full">
-        {/* FIXED: Opacity changed from 40 to 0.4 so the drop-shadow works */}
-        <h3 className="text-2xl font-serif mb-1 transition-all duration-300 text-temple-stone group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:via-temple-gold group-hover:to-[#a18222] group-hover:drop-shadow-[0_0_15px_rgba(212,175,55,0.4)]">
-          <b>{temple.name}</b>
-        </h3>
-
-        <p className="text-sm font-semibold text-temple-stone/60 group-hover:text-cyan-400 uppercase tracking-widest mb-2">
-          📍{temple.city}
+      <div className="absolute bottom-0 p-6 z-20 w-full transform transition-transform duration-500 group-hover:-translate-y-2">
+        <p className="text-[10px] font-bold text-temple-gold/80 group-hover:text-temple-gold uppercase tracking-[0.2em] mb-2 flex items-center gap-1 transition-colors">
+          <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+            <path
+              fillRule="evenodd"
+              d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+              clipRule="evenodd"
+            />
+          </svg>
+          {temple.city}
           {temple.state ? `, ${temple.state}` : ""}
         </p>
-        <p className="text-temple-stone/80 group-hover:text-sm text-xs line-clamp-2">
+
+        <h3 className="text-3xl font-serif mb-3 transition-all duration-500 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:via-temple-gold group-hover:to-orange-400 group-hover:drop-shadow-[0_0_20px_rgba(212,175,55,0.5)]">
+          {temple.name}
+        </h3>
+
+        <p className="text-gray-400 text-sm line-clamp-2 font-light leading-relaxed mb-4 group-hover:text-gray-300 transition-colors">
           {temple.description}
         </p>
-        <div className="mt-4"></div>
-        {Array.isArray(temple.tags) &&
-          (temple.tags || []).slice(0, 2).map((tag, index) => (
-            <span
-              key={index}
-              className="text-[9px] font-bold uppercase tracking-widest bg-black/70 text-temple-gold px-3 py-1 rounded-full border border-temple-gold/30 mr-2"
-            >
-              {tag}
-            </span>
-          ))}
+
+        <div className="flex flex-wrap gap-2">
+          {Array.isArray(temple.tags) &&
+            (temple.tags || []).slice(0, 2).map((tag, index) => (
+              <span
+                key={index}
+                className="text-[10px] font-bold uppercase tracking-widest bg-black/60 backdrop-blur-sm text-temple-stone px-3 py-1.5 rounded-full border border-white/10 group-hover:border-temple-gold/30 group-hover:text-temple-gold transition-colors"
+              >
+                {tag}
+              </span>
+            ))}
+        </div>
       </div>
 
-      {/* Tags (Top Right) - Glassified */}
-      <div className="absolute top-4 right-4 z-20 flex gap-2">
+      {/* Categories (Top Right) */}
+      <div className="absolute top-4 right-4 z-20 flex flex-col gap-2 items-end">
         {(temple.categories || []).slice(0, 2).map((cat, index) => (
           <span
             key={index}
-            className="text-[9px] uppercase tracking-widest px-2 py-1 rounded-full bg-temple-saffron text-temple-gold border border-white/60 backdrop-blur-sm shadow-sm"
+            className="text-[9px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full bg-gradient-to-r from-temple-gold/90 to-orange-500/90 text-black border border-white/20 backdrop-blur-md shadow-[0_0_15px_rgba(212,175,55,0.3)]"
           >
             {cat}
           </span>
@@ -114,6 +123,7 @@ export default function TempleShowcase() {
   const [searchQuery, setSearchQuery] = useState("");
   const container = useRef(null);
   const [showTopBtn, setShowTopBtn] = useState(false);
+
   const filteredTemples = templesData.filter((temple) => {
     const matchesCategory =
       activeFilter === "All" ? true : temple.categories?.includes(activeFilter);
@@ -133,14 +143,12 @@ export default function TempleShowcase() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // If user scrolls down 500px, show the button
       if (window.scrollY > 500) {
         setShowTopBtn(true);
       } else {
         setShowTopBtn(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -156,12 +164,12 @@ export default function TempleShowcase() {
     () => {
       gsap.fromTo(
         ".temple-card",
-        { opacity: 0, y: 40, scale: 0.95 },
+        { opacity: 0, y: 50, scale: 0.98 },
         {
           opacity: 1,
           y: 0,
           scale: 1,
-          duration: 0.6,
+          duration: 0.8,
           stagger: 0.1,
           ease: "power3.out",
         },
@@ -174,51 +182,62 @@ export default function TempleShowcase() {
     <section
       id="Temple"
       ref={container}
-      className="py-24 bg-[#0a0a0a] px-4 md:px-12 min-h-screen relative"
+      className="py-32 bg-[#0a0a0a] px-4 md:px-12 min-h-screen relative overflow-hidden"
     >
+      {/* Subtle Background Ambience */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-temple-gold/5 blur-[150px] rounded-full pointer-events-none z-0"></div>
+
       <div className="max-w-7xl mx-auto relative z-10">
-        {/* Header, Search, & Filters */}
-        <div className="flex flex-col items-center mb-16 text-center">
-          <h2 className="text-4xl md:text-5xl font-serif text-temple-gold mb-8 drop-shadow-lg">
-            Monuments of Devotion
+        {/* Header Section */}
+        <div className="flex flex-col items-center mb-20 text-center">
+          <span className="text-temple-gold text-xs font-bold tracking-[0.3em] uppercase mb-4 px-4 py-1.5 border border-temple-gold/30 rounded-full bg-temple-gold/5">
+            The Sacred Archives
+          </span>
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif text-white mb-10 leading-tight">
+            Monuments of <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-temple-gold via-orange-400 to-amber-600">
+              Devotion
+            </span>
           </h2>
 
-          <div className="relative w-full max-w-md mb-8 group">
+          {/* Upgraded Search Bar */}
+          <div className="relative w-full max-w-2xl mb-12 group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-temple-gold/20 via-orange-500/20 to-temple-gold/20 rounded-full blur opacity-50 group-focus-within:opacity-100 transition duration-500"></div>
             <input
               type="text"
               suppressHydrationWarning
-              placeholder="Search by name or location (e.g., Varanasi)..."
+              placeholder="Search by temple, city, or deity (e.g., Kashi)..."
               value={searchQuery || ""}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full bg-white/5 backdrop-blur-md border border-white/10 rounded-full py-3 px-6 text-white placeholder-white/40 focus:outline-none focus:border-temple-gold/50 focus:bg-white/10 transition-all shadow-[inset_0_0_15px_rgba(255,255,255,0.02)]"
+              className="relative w-full bg-[#111]/80 backdrop-blur-xl border border-white/10 rounded-full py-4 px-8 text-white placeholder-white/30 focus:outline-none focus:border-temple-gold/50 transition-all shadow-2xl text-lg"
             />
             <svg
-              className="absolute right-4 top-3.5 w-5 h-5 text-white/40 group-focus-within:text-temple-gold/70 transition-colors"
+              className="absolute right-6 top-4 w-6 h-6 text-white/30 group-focus-within:text-temple-gold transition-colors duration-300"
               fill="none"
               stroke="currentColor"
+              strokeWidth="2"
               viewBox="0 0 24 24"
             >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth="2"
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
               />
             </svg>
           </div>
 
-          {/* Glass Filter Buttons */}
-          <div className="flex flex-wrap justify-center gap-4 suppressHydrationWarning">
+          {/* Sleeker Filter Buttons */}
+          <div className="flex flex-wrap justify-center gap-3 max-w-5xl suppressHydrationWarning">
             {(categories || []).map((cat) => (
               <button
                 key={cat}
                 type="button"
                 suppressHydrationWarning
                 onClick={() => setActiveFilter(cat)}
-                className={`px-6 py-2 rounded-full border transition-all duration-300 tracking-wider text-sm uppercase backdrop-blur-md ${
+                className={`px-5 py-2.5 rounded-full border transition-all duration-500 tracking-[0.1em] text-[11px] font-bold uppercase backdrop-blur-md ${
                   activeFilter === cat
-                    ? "bg-temple-gold/20 border-temple-gold/60 text-temple-gold font-bold shadow-[0_0_15px_rgba(212,175,55,0.3)]"
-                    : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10 hover:border-temple-gold/50 hover:text-temple-gold"
+                    ? "bg-gradient-to-r from-temple-gold to-orange-500 border-transparent text-black shadow-[0_0_20px_rgba(212,175,55,0.4)] scale-105"
+                    : "bg-white/[0.03] border-white/10 text-gray-400 hover:bg-white/10 hover:border-temple-gold/40 hover:text-white"
                 }`}
               >
                 {cat}
@@ -228,10 +247,17 @@ export default function TempleShowcase() {
         </div>
 
         {/* The Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10">
           {filteredTemples.length === 0 && (
-            <div className="col-span-full text-center text-white/50 py-12 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
-              No temples found matching your search. Try adjusting your filters.
+            <div className="col-span-full flex flex-col items-center justify-center text-center py-24 bg-white/[0.02] backdrop-blur-md rounded-3xl border border-white/5">
+              <span className="text-6xl mb-6">🪔</span>
+              <h3 className="text-2xl font-serif text-white mb-2">
+                No Temples Found
+              </h3>
+              <p className="text-gray-400 max-w-md">
+                We couldn't find any temples matching your current search or
+                category filters.
+              </p>
             </div>
           )}
           {filteredTemples.map((temple) => (
@@ -239,9 +265,11 @@ export default function TempleShowcase() {
           ))}
         </div>
       </div>
+
+      {/* Upgraded Scroll to Top Button */}
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-8 right-8 z-50 p-4 rounded-full bg-temple-gold/10 backdrop-blur-md border border-temple-gold/30 text-temple-gold shadow-[0_0_20px_rgba(212,175,55,0.2)] hover:bg-temple-gold hover:text-black hover:shadow-[0_0_30px_rgba(212,175,55,0.6)] transition-all duration-500 ease-in-out ${
+        className={`fixed bottom-10 right-10 z-50 p-4 rounded-2xl bg-[#111]/80 backdrop-blur-xl border border-temple-gold/30 text-temple-gold shadow-[0_0_20px_rgba(212,175,55,0.15)] hover:bg-temple-gold hover:text-black hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:-translate-y-2 transition-all duration-500 ease-out group ${
           showTopBtn
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-10 pointer-events-none"
@@ -249,7 +277,7 @@ export default function TempleShowcase() {
         aria-label="Scroll to top"
       >
         <svg
-          className="w-6 h-6"
+          className="w-6 h-6 group-hover:-translate-y-1 transition-transform duration-300"
           fill="none"
           stroke="currentColor"
           strokeWidth="2.5"
