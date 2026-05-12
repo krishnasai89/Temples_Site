@@ -89,7 +89,7 @@ In Indian classical tradition, the concept of _Yantra_ refers to sacred geometry
 - **Depth:** Drop shadows, backdrop blurs, and gradient overlays create a sense of multi-dimensional space, much like walking into the sanctum of an ancient temple.
 
 👨‍💻 Author
-Designed and developed by Krishna Sai Vellampalli.
+Designed and developed by Krishna Sai.
 
 GitHub: [@krishnasai89](https://github.com/krishnasai89)
 
